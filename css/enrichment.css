@@ -1,0 +1,218 @@
+.example_btn{
+    color:white !important;
+    background-color: #147662 !important;
+    width:100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0;
+    border:0;
+    line-height: 1.75 !important;
+
+}
+
+.example_btn:hover{
+   background-color: #19947b !important;
+}
+
+
+
+.left_div{
+    font-size: 16px;
+    width:30%;
+    text-align: center;
+
+    float:left;
+
+    display:inline-block;
+    background-color:#E9ECEF;
+
+}
+.center_div{
+    font-size: 16px;
+    width:69%;
+    text-align: center;
+    margin:0 0 0 1%;
+
+    height:604px;
+    display:inline-block;
+    background-color:#E9ECEF;
+    padding:10px 20px 10px 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+.right_div{
+    font-size: 16px;
+    width:30%;
+    text-align: center;
+
+    float:right;
+
+    display:inline-block;
+    background-color:#E9ECEF;
+
+}
+.textarea_input{
+    font-size: 16px;
+    outline:none;
+    background-color:#E9ECEF;
+    width:100%;
+    padding:10px 20px 10px 20px;
+    border: none;
+}
+
+
+html::-webkit-scrollbar{
+    width: 8px;
+    height: 4px;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #c7c4c4;
+}
+html::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+
+}
+html::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+
+.textarea_input::-webkit-scrollbar{
+    width: 8px;
+    height: 4px;
+}
+.textarea_input::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #c7c4c4;
+}
+.textarea_input::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+
+}
+.textarea_input::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+
+.scroll_tbody{
+    display: block;
+    overflow-y: scroll;
+    height:490px;
+
+}
+.scroll_tbody::-webkit-scrollbar{
+    width: 8px;
+    height: 4px;
+}
+/*滚动条滑块*/
+.scroll_tbody::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #c7c4c4;
+}
+/*滚动条里面轨道*/
+.scroll_tbody::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+}
+/*滚动条的小边角*/
+.scroll_tbody::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+#table_div::-webkit-scrollbar{
+    width: 8px;
+    height: 4px;
+}
+/*滚动条滑块*/
+#table_div::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #c7c4c4;
+}
+/*滚动条里面轨道*/
+#table_div::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+}
+/*滚动条的小边角*/
+#table_div::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.td_20{
+    width:20%;
+    display: table-cell;
+    vertical-align: inherit;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.td_25{
+    width:25%;
+    display: table-cell;
+    vertical-align: inherit;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.td_33{
+    width:33%;
+    display: table-cell;
+    vertical-align: inherit;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.td_select{
+    color:white;
+    background-color: #147662 !important;
+}
+.td_select:hover{
+    color:white !important;
+}
+.console_btn{
+    color:white !important;
+    background-color: #147662 !important;
+    height:50px;
+    padding: 2px 20px ;
+    font-weight: 600;
+
+    border-radius: 0;
+    border:0;
+}
+
+.console_btn:hover{
+   background-color: #19947b !important;
+}
+
+.advance {
+    background-color: transparent;
+    border:none;
+    padding: 15px 2px ;
+    text-decoration: underline;
+    color:#19947b !important;
+    float:right;
+    cursor: pointer;
+}
+
+.modal-content-cookie {
+    color:white;
+    background-color: #303030;
+
+    left: 0;
+    top: 0;
+
+
+    padding: 20px;
+    border: 1px solid #888;
+
+    height: auto;
+    overflow:auto;
+    position: relative;
+}
+
+
+

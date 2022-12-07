@@ -1,0 +1,676 @@
+@font-face {
+	font-family: 'AGENCYB';
+	src: url(/static/client/Fonts/AGENCYB.TTF);
+}
+@font-face {
+	font-family: 'ALGER';
+	src: url(/static/client/Fonts/ALGER.TTF);
+}
+@font-face {
+	font-family: 'ANTQUAB';
+	src: url(/static/client/Fonts/ANTQUAB.TTF);
+}
+@font-face {
+	font-family: 'arial';
+	src: url(/static/client/Fonts/arial.ttf);
+}
+@font-face {
+	font-family: 'ARLRDBD';
+	src: url(/static/client/Fonts/ARLRDBD.TTF);
+}
+@font-face {
+	font-family: 'bahnschrift';
+	src: url(/static/client/Fonts/bahnschrift.ttf);
+}
+@font-face {
+	font-family: 'BASKVILL';
+	src: url(/static/client/Fonts/BASKVILL.TTF);
+}
+@font-face {
+	font-family: 'BAUHS93';
+	src: url(/static/client/Fonts/BAUHS93.TTF);
+}
+@font-face {
+	font-family: 'BELL';
+	src: url(/static/client/Fonts/BELL.TTF);
+}
+@font-face {
+	font-family: 'BERNHC';
+	src: url(/static/client/Fonts/BERNHC.TTF);
+}
+@font-face {
+	font-family: 'BKANT';
+	src: url(/static/client/Fonts/BKANT.TTF);
+}
+@font-face {
+	font-family: 'BOD_B';
+	src: url(/static/client/Fonts/BOD_B.TTF);
+}
+@font-face {
+	font-family: 'BOOKOS';
+	src: url(/static/client/Fonts/BOOKOS.TTF);
+}
+@font-face {
+	font-family: 'BRADHITC';
+	src: url(/static/client/Fonts/BRADHITC.TTF);
+}
+@font-face {
+	font-family: 'BRITANIC';
+	src: url(/static/client/Fonts/BRITANIC.TTF);
+}
+@font-face {
+	font-family: 'BRLNSB';
+	src: url(/static/client/Fonts/BRLNSB.TTF);
+}
+@font-face {
+	font-family: 'BRLNSDB';
+	src: url(/static/client/Fonts/BRLNSDB.TTF);
+}
+@font-face {
+	font-family: 'BRLNSR';
+	src: url(/static/client/Fonts/BRLNSR.TTF);
+}
+@font-face {
+	font-family: 'BROADW';
+	src: url(/static/client/Fonts/BROADW.TTF);
+}
+@font-face {
+	font-family: 'BRUSHSCI';
+	src: url(/static/client/Fonts/BRUSHSCI.TTF);
+}
+@font-face {
+	font-family: 'calibri';
+	src: url(/static/client/Fonts/calibri.ttf);
+}
+@font-face {
+	font-family: 'CALIFB';
+	src: url(/static/client/Fonts/CALIFB.TTF);
+}
+@font-face {
+	font-family: 'CALIST';
+	src: url(/static/client/Fonts/CALIST.TTF);
+}
+@font-face {
+	font-family: 'cambriab';
+	src: url(/static/client/Fonts/cambriab.ttf);
+}
+@font-face {
+	font-family: 'Candara';
+	src: url(/static/client/Fonts/Candara.ttf);
+}
+@font-face {
+	font-family: 'CASTELAR';
+	src: url(/static/client/Fonts/CASTELAR.TTF);
+}
+@font-face {
+	font-family: 'CENSCBK';
+	src: url(/static/client/Fonts/CENSCBK.TTF);
+}
+@font-face {
+	font-family: 'CENTAUR';
+	src: url(/static/client/Fonts/CENTAUR.TTF);
+}
+@font-face {
+	font-family: 'CENTURY';
+	src: url(/static/client/Fonts/CENTURY.TTF);
+}
+@font-face {
+	font-family: 'CHILLER';
+	src: url(/static/client/Fonts/CHILLER.TTF);
+}
+@font-face {
+	font-family: 'COLONNA';
+	src: url(/static/client/Fonts/COLONNA.TTF);
+}
+@font-face {
+	font-family: 'comic';
+	src: url(/static/client/Fonts/comic.ttf);
+}
+@font-face {
+	font-family: 'consola';
+	src: url(/static/client/Fonts/consola.ttf);
+}
+@font-face {
+	font-family: 'constan';
+	src: url(/static/client/Fonts/constan.ttf);
+}
+@font-face {
+	font-family: 'COOPBL';
+	src: url(/static/client/Fonts/COOPBL.TTF);
+}
+@font-face {
+	font-family: 'COPRGTB';
+	src: url(/static/client/Fonts/COPRGTB.TTF);
+}
+@font-face {
+	font-family: 'COPRGTL';
+	src: url(/static/client/Fonts/COPRGTL.TTF);
+}
+@font-face {
+	font-family: 'corbel';
+	src: url(/static/client/Fonts/corbel.ttf);
+}
+@font-face {
+	font-family: 'cour';
+	src: url(/static/client/Fonts/cour.ttf);
+}
+@font-face {
+	font-family: 'CURLZ___';
+	src: url(/static/client/Fonts/CURLZ___.TTF);
+}
+@font-face {
+	font-family: 'DejaVuSansMono_0';
+	src: url(/static/client/Fonts/DejaVuSansMono_0.ttf);
+}
+@font-face {
+	font-family: 'ebrima';
+	src: url(/static/client/Fonts/ebrima.ttf);
+}
+@font-face {
+	font-family: 'ELEPHNT';
+	src: url(/static/client/Fonts/ELEPHNT.TTF);
+}
+@font-face {
+	font-family: 'ENGR';
+	src: url(/static/client/Fonts/ENGR.TTF);
+}
+@font-face {
+	font-family: 'ERASBD';
+	src: url(/static/client/Fonts/ERASBD.TTF);
+}
+@font-face {
+	font-family: 'ERASDEMI';
+	src: url(/static/client/Fonts/ERASDEMI.TTF);
+}
+@font-face {
+	font-family: 'ERASLGHT';
+	src: url(/static/client/Fonts/ERASLGHT.TTF);
+}
+@font-face {
+	font-family: 'ERASMD';
+	src: url(/static/client/Fonts/ERASMD.TTF);
+}
+@font-face {
+	font-family: 'FELIXTI';
+	src: url(/static/client/Fonts/FELIXTI.TTF);
+}
+@font-face {
+	font-family: 'FORTE';
+	src: url(/static/client/Fonts/FORTE.TTF);
+}
+@font-face {
+	font-family: 'FRABK';
+	src: url(/static/client/Fonts/FRABK.TTF);
+}
+@font-face {
+	font-family: 'FRADM';
+	src: url(/static/client/Fonts/FRADM.TTF);
+}
+@font-face {
+	font-family: 'FRAHV';
+	src: url(/static/client/Fonts/FRAHV.TTF);
+}
+@font-face {
+	font-family: 'framd';
+	src: url(/static/client/Fonts/framd.ttf);
+}
+@font-face {
+	font-family: 'framdit';
+	src: url(/static/client/Fonts/framdit.ttf);
+}
+@font-face {
+	font-family: 'FREESCPT';
+	src: url(/static/client/Fonts/FREESCPT.TTF);
+}
+@font-face {
+	font-family: 'FRSCRIPT';
+	src: url(/static/client/Fonts/FRSCRIPT.TTF);
+}
+@font-face {
+	font-family: 'FTLTLT';
+	src: url(/static/client/Fonts/FTLTLT.TTF);
+}
+@font-face {
+	font-family: 'FZYTK';
+	src: url(/static/client/Fonts/FZYTK.TTF);
+}
+@font-face {
+	font-family: 'Gabriola';
+	src: url(/static/client/Fonts/Gabriola.ttf);
+}
+@font-face {
+	font-family: 'gadugi';
+	src: url(/static/client/Fonts/gadugi.ttf);
+}
+@font-face {
+	font-family: 'GARA';
+	src: url(/static/client/Fonts/GARA.TTF);
+}
+@font-face {
+	font-family: 'georgia';
+	src: url(/static/client/Fonts/georgia.ttf);
+}
+@font-face {
+	font-family: 'GIGI';
+	src: url(/static/client/Fonts/GIGI.TTF);
+}
+@font-face {
+	font-family: 'GILBI___';
+	src: url(/static/client/Fonts/GILBI___.TTF);
+}
+@font-face {
+	font-family: 'GILB____';
+	src: url(/static/client/Fonts/GILB____.TTF);
+}
+@font-face {
+	font-family: 'GILC____';
+	src: url(/static/client/Fonts/GILC____.TTF);
+}
+@font-face {
+	font-family: 'GILI____';
+	src: url(/static/client/Fonts/GILI____.TTF);
+}
+@font-face {
+	font-family: 'GILLUBCD';
+	src: url(/static/client/Fonts/GILLUBCD.TTF);
+}
+@font-face {
+	font-family: 'GILSANUB';
+	src: url(/static/client/Fonts/GILSANUB.TTF);
+}
+@font-face {
+	font-family: 'GIL_____';
+	src: url(/static/client/Fonts/GIL_____.TTF);
+}
+@font-face {
+	font-family: 'GLECB';
+	src: url(/static/client/Fonts/GLECB.TTF);
+}
+@font-face {
+	font-family: 'GLSNECB';
+	src: url(/static/client/Fonts/GLSNECB.TTF);
+}
+@font-face {
+	font-family: 'GOTHIC';
+	src: url(/static/client/Fonts/GOTHIC.TTF);
+}
+@font-face {
+	font-family: 'GOUDOS';
+	src: url(/static/client/Fonts/GOUDOS.TTF);
+}
+@font-face {
+	font-family: 'GOUDYSTO';
+	src: url(/static/client/Fonts/GOUDYSTO.TTF);
+}
+@font-face {
+	font-family: 'HARLOWSI';
+	src: url(/static/client/Fonts/HARLOWSI.TTF);
+}
+@font-face {
+	font-family: 'HARNGTON';
+	src: url(/static/client/Fonts/HARNGTON.TTF);
+}
+@font-face {
+	font-family: 'HATTEN';
+	src: url(/static/client/Fonts/HATTEN.TTF);
+}
+@font-face {
+	font-family: 'himalaya';
+	src: url(/static/client/Fonts/himalaya.ttf);
+}
+@font-face {
+	font-family: 'HTOWERT';
+	src: url(/static/client/Fonts/HTOWERT.TTF);
+}
+@font-face {
+	font-family: 'HTOWERTI';
+	src: url(/static/client/Fonts/HTOWERTI.TTF);
+}
+@font-face {
+	font-family: 'impact';
+	src: url(/static/client/Fonts/impact.ttf);
+}
+@font-face {
+	font-family: 'IMPRISHA';
+	src: url(/static/client/Fonts/IMPRISHA.TTF);
+}
+@font-face {
+	font-family: 'INFROMAN';
+	src: url(/static/client/Fonts/INFROMAN.TTF);
+}
+@font-face {
+	font-family: 'Inkfree';
+	src: url(/static/client/Fonts/Inkfree.ttf);
+}
+@font-face {
+	font-family: 'ITCBLKAD';
+	src: url(/static/client/Fonts/ITCBLKAD.TTF);
+}
+@font-face {
+	font-family: 'ITCEDSCR';
+	src: url(/static/client/Fonts/ITCEDSCR.TTF);
+}
+@font-face {
+	font-family: 'ITCKRIST';
+	src: url(/static/client/Fonts/ITCKRIST.TTF);
+}
+@font-face {
+	font-family: 'javatext';
+	src: url(/static/client/Fonts/javatext.ttf);
+}
+@font-face {
+	font-family: 'JOKERMAN';
+	src: url(/static/client/Fonts/JOKERMAN.TTF);
+}
+@font-face {
+	font-family: 'JUICE___';
+	src: url(/static/client/Fonts/JUICE___.TTF);
+}
+@font-face {
+	font-family: 'KUNSTLER';
+	src: url(/static/client/Fonts/KUNSTLER.TTF);
+}
+@font-face {
+	font-family: 'LATINWD';
+	src: url(/static/client/Fonts/LATINWD.TTF);
+}
+@font-face {
+	font-family: 'LBRITE';
+	src: url(/static/client/Fonts/LBRITE.TTF);
+}
+@font-face {
+	font-family: 'LBRITED';
+	src: url(/static/client/Fonts/LBRITED.TTF);
+}
+@font-face {
+	font-family: 'LBRITEDI';
+	src: url(/static/client/Fonts/LBRITEDI.TTF);
+}
+@font-face {
+	font-family: 'LBRITEI';
+	src: url(/static/client/Fonts/LBRITEI.TTF);
+}
+@font-face {
+	font-family: 'LCALLIG';
+	src: url(/static/client/Fonts/LCALLIG.TTF);
+}
+@font-face {
+	font-family: 'LeelaUIb';
+	src: url(/static/client/Fonts/LeelaUIb.ttf);
+}
+@font-face {
+	font-family: 'LFAX';
+	src: url(/static/client/Fonts/LFAX.TTF);
+}
+@font-face {
+	font-family: 'LHANDW';
+	src: url(/static/client/Fonts/LHANDW.TTF);
+}
+@font-face {
+	font-family: 'LSANS';
+	src: url(/static/client/Fonts/LSANS.TTF);
+}
+@font-face {
+	font-family: 'LTYPE';
+	src: url(/static/client/Fonts/LTYPE.TTF);
+}
+@font-face {
+	font-family: 'lucon';
+	src: url(/static/client/Fonts/lucon.ttf);
+}
+@font-face {
+	font-family: 'l_10646';
+	src: url(/static/client/Fonts/l_10646.ttf);
+}
+@font-face {
+	font-family: 'MAGNETOB';
+	src: url(/static/client/Fonts/MAGNETOB.TTF);
+}
+@font-face {
+	font-family: 'MAIAN';
+	src: url(/static/client/Fonts/MAIAN.TTF);
+}
+@font-face {
+	font-family: 'malgunsl';
+	src: url(/static/client/Fonts/malgunsl.ttf);
+}
+@font-face {
+	font-family: 'MATURASC';
+	src: url(/static/client/Fonts/MATURASC.TTF);
+}
+@font-face {
+	font-family: 'micross';
+	src: url(/static/client/Fonts/micross.ttf);
+}
+@font-face {
+	font-family: 'MISTRAL';
+	src: url(/static/client/Fonts/MISTRAL.TTF);
+}
+@font-face {
+	font-family: 'mmrtext';
+	src: url(/static/client/Fonts/mmrtext.ttf);
+}
+@font-face {
+	font-family: 'mmrtextb';
+	src: url(/static/client/Fonts/mmrtextb.ttf);
+}
+@font-face {
+	font-family: 'MOD20';
+	src: url(/static/client/Fonts/MOD20.TTF);
+}
+@font-face {
+	font-family: 'monbaiti';
+	src: url(/static/client/Fonts/monbaiti.ttf);
+}
+@font-face {
+	font-family: 'msyi';
+	src: url(/static/client/Fonts/msyi.ttf);
+}
+@font-face {
+	font-family: 'MTCORSVA';
+	src: url(/static/client/Fonts/MTCORSVA.TTF);
+}
+@font-face {
+	font-family: 'mvboli';
+	src: url(/static/client/Fonts/mvboli.ttf);
+}
+@font-face {
+	font-family: 'NIAGENG';
+	src: url(/static/client/Fonts/NIAGENG.TTF);
+}
+@font-face {
+	font-family: 'NIAGSOL';
+	src: url(/static/client/Fonts/NIAGSOL.TTF);
+}
+@font-face {
+	font-family: 'Nirmala';
+	src: url(/static/client/Fonts/Nirmala.ttf);
+}
+@font-face {
+	font-family: 'ntailu';
+	src: url(/static/client/Fonts/ntailu.ttf);
+}
+@font-face {
+	font-family: 'OCRAEXT';
+	src: url(/static/client/Fonts/OCRAEXT.TTF);
+}
+@font-face {
+	font-family: 'OLDENGL';
+	src: url(/static/client/Fonts/OLDENGL.TTF);
+}
+@font-face {
+	font-family: 'ONYX';
+	src: url(/static/client/Fonts/ONYX.TTF);
+}
+@font-face {
+	font-family: 'pala';
+	src: url(/static/client/Fonts/pala.ttf);
+}
+@font-face {
+	font-family: 'PALSCRI';
+	src: url(/static/client/Fonts/PALSCRI.TTF);
+}
+@font-face {
+	font-family: 'PAPYRUS';
+	src: url(/static/client/Fonts/PAPYRUS.TTF);
+}
+@font-face {
+	font-family: 'PARCHM';
+	src: url(/static/client/Fonts/PARCHM.TTF);
+}
+@font-face {
+	font-family: 'PERTIBD';
+	src: url(/static/client/Fonts/PERTIBD.TTF);
+}
+@font-face {
+	font-family: 'PER_____';
+	src: url(/static/client/Fonts/PER_____.TTF);
+}
+@font-face {
+	font-family: 'PLAYBILL';
+	src: url(/static/client/Fonts/PLAYBILL.TTF);
+}
+@font-face {
+	font-family: 'POORICH';
+	src: url(/static/client/Fonts/POORICH.TTF);
+}
+@font-face {
+	font-family: 'PRISTINA';
+	src: url(/static/client/Fonts/PRISTINA.TTF);
+}
+@font-face {
+	font-family: 'RAGE';
+	src: url(/static/client/Fonts/RAGE.TTF);
+}
+@font-face {
+	font-family: 'RAVIE';
+	src: url(/static/client/Fonts/RAVIE.TTF);
+}
+@font-face {
+	font-family: 'REFSAN';
+	src: url(/static/client/Fonts/REFSAN.TTF);
+}
+@font-face {
+	font-family: 'ROCCB___';
+	src: url(/static/client/Fonts/ROCCB___.TTF);
+}
+@font-face {
+	font-family: 'ROCC____';
+	src: url(/static/client/Fonts/ROCC____.TTF);
+}
+@font-face {
+	font-family: 'ROCK';
+	src: url(/static/client/Fonts/ROCK.TTF);
+}
+@font-face {
+	font-family: 'ROCKB';
+	src: url(/static/client/Fonts/ROCKB.TTF);
+}
+@font-face {
+	font-family: 'ROCKEB';
+	src: url(/static/client/Fonts/ROCKEB.TTF);
+}
+@font-face {
+	font-family: 'ROCKI';
+	src: url(/static/client/Fonts/ROCKI.TTF);
+}
+@font-face {
+	font-family: 'SCHLBKB';
+	src: url(/static/client/Fonts/SCHLBKB.TTF);
+}
+@font-face {
+	font-family: 'SCRIPTBL';
+	src: url(/static/client/Fonts/SCRIPTBL.TTF);
+}
+@font-face {
+	font-family: 'segoepr';
+	src: url(/static/client/Fonts/segoepr.ttf);
+}
+@font-face {
+	font-family: 'segoesc';
+	src: url(/static/client/Fonts/segoesc.ttf);
+}
+@font-face {
+	font-family: 'segoeui';
+	src: url(/static/client/Fonts/segoeui.ttf);
+}
+@font-face {
+	font-family: 'SHOWG';
+	src: url(/static/client/Fonts/SHOWG.TTF);
+}
+@font-face {
+	font-family: 'SNAP____';
+	src: url(/static/client/Fonts/SNAP____.TTF);
+}
+@font-face {
+	font-family: 'STENCIL';
+	src: url(/static/client/Fonts/STENCIL.TTF);
+}
+@font-face {
+	font-family: 'STHUPO';
+	src: url(/static/client/Fonts/STHUPO.TTF);
+}
+@font-face {
+	font-family: 'STLITI';
+	src: url(/static/client/Fonts/STLITI.TTF);
+}
+@font-face {
+	font-family: 'STXINGKA';
+	src: url(/static/client/Fonts/STXINGKA.TTF);
+}
+@font-face {
+	font-family: 'STXINWEI';
+	src: url(/static/client/Fonts/STXINWEI.TTF);
+}
+@font-face {
+	font-family: 'sylfaen';
+	src: url(/static/client/Fonts/sylfaen.ttf);
+}
+@font-face {
+	font-family: 'tahomabd';
+	src: url(/static/client/Fonts/tahomabd.ttf);
+}
+@font-face {
+	font-family: 'taile';
+	src: url(/static/client/Fonts/taile.ttf);
+}
+@font-face {
+	font-family: 'TCCB____';
+	src: url(/static/client/Fonts/TCCB____.TTF);
+}
+@font-face {
+	font-family: 'TCCEB';
+	src: url(/static/client/Fonts/TCCEB.TTF);
+}
+@font-face {
+	font-family: 'TCCM____';
+	src: url(/static/client/Fonts/TCCM____.TTF);
+}
+@font-face {
+	font-family: 'TEMPSITC';
+	src: url(/static/client/Fonts/TEMPSITC.TTF);
+}
+@font-face {
+	font-family: 'times';
+	src: url(/static/client/Fonts/times.ttf);
+}
+@font-face {
+	font-family: 'trebuc';
+	src: url(/static/client/Fonts/trebuc.ttf);
+}
+@font-face {
+	font-family: 'verdana';
+	src: url(/static/client/Fonts/verdana.ttf);
+}
+@font-face {
+	font-family: 'VINERITC';
+	src: url(/static/client/Fonts/VINERITC.TTF);
+}
+@font-face {
+	font-family: 'VIVALDII';
+	src: url(/static/client/Fonts/VIVALDII.TTF);
+}
+@font-face {
+	font-family: 'VLADIMIR';
+	src: url(/static/client/Fonts/VLADIMIR.TTF);
+}

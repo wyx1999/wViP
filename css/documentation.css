@@ -1,0 +1,31 @@
+.Parameter_table{
+    font-family: Arial;
+    font-size: 16px;
+    margin-bottom:50px !important;
+}
+h2, h4{
+    font-family: Arial !important;
+}
+p{
+    font-size: 18px;
+    font-family: Arial;
+}
+h2{
+    margin-bottom:30px !important;
+}
+
+.modal-content-cookie {
+    color:white;
+    background-color: #303030;
+
+    left: 0;
+    top: 0;
+
+
+    padding: 20px;
+    border: 1px solid #888;
+
+    height: auto;
+    overflow:auto;
+    position: relative;
+}
