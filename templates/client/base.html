@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+{% load static %}
+{% block title %}
+<title>Base</title>
+{% endblock title %}
+    <link rel="shortcut icon" href="{% static 'client/img/GPS.png' %}" type="image/x-icon" />
+   <link rel="stylesheet" href="{% static 'client/css/tooltip.css' %}">
+    <link rel="stylesheet" href="{% static 'client/assets/css/vendor/vendor.min.css' %}">
+    <link rel="stylesheet" href="{% static 'client/assets/css/plugins/plugins.min.css' %}">
+    <link rel="stylesheet" href="{% static 'client/assets/css/style.min.css' %}">
+
+    <style>
+     .cookie{
+        text-decoration: none;
+        position: fixed;
+        left: 30px;
+        z-index: 999;
+
+        display: block;
+        padding: 0;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 80px;
+        cursor: pointer;
+        background-color: #1C5A99;
+        font-weight:bold !important;
+        background-position: left center;
+        color: #FFF;
+        overflow: hidden;
+        visibility: visible;
+        opacity: 1;
+        bottom: 60px;
+        border-radius: 4px;
+     }
+     .cookie:hover{
+        background-color: #303030;
+        color: #FFF;
+     }
+     .loading{
+              width: 100%;
+              height: 100%;
+              position: fixed;
+              top:0;
+              left: 0;
+              z-index: 9999;
+              display: none;
+              background-color:rgba(255,255,255,0.4);
+      }
+      .loading .pic{
+              width: 64px;
+              height: 64px;
+              background:url({% static 'client/img/Molecular DNA.gif' %});
+
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              margin: auto;
+      }
+     </style>
+</head>
+<body>
+<!-- cookie弹窗 -->
+<div class="modal fade" id="Modal_cookie"   data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" style="overflow: hidden;padding-right: 0px;" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content" style="background-color: rgb(0 0 0 / 10%);">
+    <div class="modal-content-cookie" >
+        <div class="row align-items-center" style="margin: 0 10%;" >
+        <div class="col-12 col-md-8">
+            <h4 style="font-size: 1.5rem;color:white;" >We use cookies to analyse and improve your experience. Manage or accept cookies to continue.</h4>
+            <p >This website is free and open to all users and there is no login requirement.</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <button type="button" class="btn btn-primary" onclick="set_cookie('true');"  data-bs-dismiss="modal" aria-label="Close" style="color:white;width :60%;height:auto;background-color:#f29232;border: none;border-radius: 3px;margin-top:1%;cursor: pointer;" >Accept all cookies</button>
+            <button type="button" class="btn btn-primary" onclick="set_cookie('false');" data-bs-dismiss="modal" aria-label="Close" style="color:white;width :60%;height:auto;background-color:#C8C8C8;border: none;border-radius: 3px;margin-top:2%;cursor: pointer;" >Only the necessary cookies</button>
+        </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+<div class="loading">
+	<div class="pic"></div>
+</div>
+<div id="preloader">
+  <div class="preloader">
+    <div class="spinner-border text-primary"></div>
+  </div>
+</div>
+<!-- Header Area Start Here -->
+<header class="main-header-area header-transparent header-sticky"><!-- Main Header Area Start -->
+  <div class="main-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-2 col-xl-2 col-md-6 col-6">
+          <div class="header-logo d-flex align-items-center"><a href="{% url 'client:index' %}"><img id="logo_img" class="nonsticky-logo img-full" src="{% static 'client/img/logo.png' %}" alt="Header Logo"><img class="sticky-logo img-full" id="white_logo" src="{% static 'client/img/logo_white.png' %}" alt="Header Logo"></a></div>
+        </div>
+        <div class="col-lg-10 col-md-6 col-6 d-flex justify-content-end">
+          <nav class="main-nav d-none d-lg-flex">
+            <ul class="nav">
+              <li><a href="{% url 'client:index' %}" id="li_NLP"><span class="menu-text">Home</span></a></li>
+              <li><a href="{% url 'client:enrichment' %}" id="li_EA"><span class="menu-text">Enrichment Profile</span></a></li>
+              <li><a href="{% url 'client:documentation' %}" id="li_Doc"><span class="menu-text">Documentation</span><i class="fa fa-angle-down"></i></a>
+                <ul class="dropdown-submenu dropdown-hover">
+                  <li><a href="{% url 'client:documentation' %}#tutorial">Tutorial</a></li>
+                  <li><a href="{% url 'client:documentation' %}#parameter">Parameter manual</a></li>
+                  <li><a href="{% url 'client:documentation' %}#FAQ">FAQ</a></li>
+                  <li><a href="{% url 'client:documentation' %}#contact">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-right-area main-nav">
+            <ul class="nav">
+              <li class="mobile-menu-btn d-block d-lg-none"><a class="off-canvas-btn" href="#"><i class="fa fa-bars"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main Header Area End --><!-- off-canvas mobile menu start -->
+  <aside class="off-canvas-wrapper" id="mobileMenu">
+    <div class="off-canvas-overlay"></div>
+    <div class="off-canvas-inner-content">
+      <div class="btn-close-off-canvas"><i class="fa fa-times"></i></div>
+      <div class="off-canvas-inner">
+        <div class="offcanvas-widget-area"><!-- mobile menu start -->
+          <div class="mobile-navigation"><!-- mobile menu navigation start -->
+            <nav>
+              <ul class="mobile-menu">
+                <li><a href="{% url 'client:index' %}">Home</a></li>
+                <li><a href="{% url 'client:enrichment' %}">Enrichment Analysis</a></li>
+                <li><a href="{% url 'client:documentation' %}">Documentation</a></li>
+              </ul>
+            </nav>
+            <!-- mobile menu navigation end --></div>
+          <!-- mobile menu end --></div>
+      </div>
+    </div>
+  </aside>
+  <!-- off-canvas menu end --></header>
+<!-- Header Area End Here -->
+
+{% block content %}
+
+{% endblock content %}
+
+<!-- Footer Section Start Here -->
+<footer class="footer-section pt-90">
+  <div class="footer-widget-area">
+    <div class="container container-default custom-area">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-custom">
+          <div class="single-footer-widget m-0" >
+            <div class="footer-logo pb-3"><a href="{% url 'client:index' %}"><img src="{% static 'client/img/logo.png' %}" alt="Logo Image"></a></div>
+            <div class="info">
+              <div class="info-icon"><a title="GPS" href="https://www.biocuckoo.org/" target="_blank"><img src="{% static 'client/img/GPS.png' %}" ></a></div>
+              <div class="info-content">
+                <h4 class="title" style="font-weight:bold;color:#1C5A99;"><a href="https://www.biocuckoo.org/" target="_blank">The CUCKOO Workgroup</a></h4>
+                <span class="info-text">College of Life Science and Technology, Huazhong University of Science and Technology, Wuhan, Hubei, China.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-custom">
+          <div class="single-footer-widget" >
+            <h2 class="widget-title">Our Tools</h2>
+            <ul class="widget-list pt-3">
+              <li><a href="http://gps.biocuckoo.cn/online.php" target="_blank">Group-based Prediction System</a></li>
+              <li><a href="http://hemi.biocuckoo.cn/" target="_blank">Heatmap Illustrator</a></li>
+              <li><a href="http://dog.biocuckoo.org/" target="_blank">Domain Graph</a></li>
+              <li><a href="http://deepphagy.biocuckoo.org/" target="_blank">Deep learning for autoPhagy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-custom">
+          <div class="single-footer-widget" >
+            <h2 class="widget-title">Quicklink</h2>
+            <ul class="widget-list pt-3">
+              <li><a href="{% url 'client:index' %}">Home</a></li>
+              <li><a href="{% url 'client:enrichment' %}">Enrichment analysis</a></li>
+              <li><a href="{% url 'client:documentation' %}">Documentation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright-area pt-5 border-top mt-90 mb-5">
+    <div class="container custom-area">
+      <div class="row">
+        <div class="col-12 text-center col-custom">
+          <div class="copyright-content">
+            <p class="mb-0">Copyright © 2022 | The&nbsp;<strong>CUCKOO</strong>&nbsp; Workgroup. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer Section End Here -->
+<!-- Scroll Top Start Here -->
+<a href="#" class="scroll-top" id="scroll-top"><i class="arrow-top fa fa-angle-double-up"></i><i class="arrow-bottom fa fa-angle-double-up"></i></a>
+<div  class="cookie"  onclick=" $('#Modal_cookie').modal('show');">Cookie</div>
+
+
+<script src="{% static 'client/assets/js/vendor/vendor.min.js' %}"></script>
+<script src="{% static 'client/assets/js/plugins/plugins.min.js' %}"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+<script>
+      $.ajaxSetup({
+          data:{csrfmiddlewaretoken:'{{ csrf_token }}'}
+      })
+      {% if is_cookie != 'True' %}
+      document.onreadystatechange = function () {//即在加载的过程中执行下面的代码
+        if(document.readyState=="complete"){//complete加载完成
+              $("#Modal_cookie").modal('show');
+        }
+      }
+      {% endif %}
+  </script>
+<script src="{% static 'client/js/base.js' %}"></script>
+<!--Main JS-->
+<script src="{% static 'client/assets/js/main.js' %}"></script>
+{% block js %}
+
+{% endblock js %}
+</body>
+</html>

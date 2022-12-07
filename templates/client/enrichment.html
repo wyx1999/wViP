@@ -1,0 +1,259 @@
+{% extends 'client/base.html' %}
+{% load static %}
+{% block title %}
+<title>Enc</title>
+<link rel="stylesheet" href="{% static 'client/css/enrichment.css' %}">
+{% endblock title %}
+{% block content %}
+
+<!-- toast Start Here -->
+<div class="position-fixed bottom-0 right-0 end-0 p-3" style="z-index: 99999">
+  <div id="liveToast" data-bs-autohide="false" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <i  class="fa fa-envelope" aria-hidden="true"   style="color:#147662;"></i>
+      <strong class="me-auto">&nbsp;&nbsp;Message</strong>
+      <button type="button" class="btn-close  me-2 " style="margin-left:150px;" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body" id="toast-body">
+
+    </div>
+  </div>
+</div>
+<!-- toast End Here -->
+<!-- advanceModal Start Here -->
+<div class="modal fade" id="advanceModal" tabindex="-1" aria-labelledby="advanceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Advance Set</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div style="width:100%;">
+              <label  class="form-label">Sort By: &nbsp;</label>
+              <input type="radio" name="sortBy" value="E" id="sortByE" checked>
+              <label  for="sortByE">
+                <span style="font-style: italic;">&nbsp;E</span>-ratio&nbsp;
+              </label>
+              <input type="radio" name="sortBy" value="P" id="sortByP" >
+              <label for="sortByP">
+                <span style="font-style: italic;">&nbsp;P</span> value
+              </label>
+          </div>
+          <div style="width:100%;">
+              <label  class="form-label" for="p_threshold"><span style="font-style: italic;">&nbsp;P</span> value threshold:</label>
+              <select name="species" id="p_threshold" class="form-control" style="display:inline-block;">
+                        <option value="100" selected>None</option>
+                        <option value="0.05"> &lt; 0.05</option>
+                        <option value="0.01"> &lt; 0.01</option>
+                        <option value="0.001"> &lt; 0.001</option>
+                        <option value="0.0001"> &lt; 0.0001</option>
+              </select>
+              <label  for="e_threshold"><span style="font-style: italic;">&nbsp;E</span>-ratio threshold:</label>
+              <select  id="e_threshold" class="form-control" style="display:inline-block;">
+                        <option value="-999999" selected>None</option>
+                        <option value="0.05"> &gt; 1</option>
+              </select>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary"  onclick="advance_default();">Default</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="advance_change()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- advanceModal End Here -->
+<!-- wordcloudModal Start Here -->
+<div class="modal fade" id="wordcloudModal" tabindex="-1" aria-labelledby="wordcloudModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="wordcloudModalLabel" style="color: #122179; font-size: 24px; font-weight:bold;">Word Cloud</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <div id="main" style="height:100%;width:100%; text-align:center;">
+
+            </div>
+      </div>
+      <div class="modal-footer" style="overflow: auto;justify-content: center;max-height:300px;">
+            <div style="float:left;width:50px;margin-right:30px;" >
+                <a href="{% url 'client:documentation' %}#ea_Parameters" target="_blank" style="color:#198754;background-color:white;" >
+                    <i class="fa fa-question-circle fa-4x" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view the parameter manual."></i>
+                </a>
+            </div>
+            <div style="float:left;width:100px;">
+                <label for="width" class="form-label">Width:</label>
+                <input type="number" class="form-control" id="width" value="1200">
+                 <label for="height" class="form-label">Height:</label>
+                <input type="number" class="form-control" id="height" value="600">
+            </div>
+            <div style="float:left;width:100px;">
+                <label for="max_font_size" class="form-label">Max font size:</label>
+                <input type="number" class="form-control" id="max_font_size" value="20">
+                 <label for="min_font_size" class="form-label">Min font size:</label>
+                <input type="number" class="form-control" id="min_font_size" value="2">
+            </div>
+
+            <div style="float:left;">
+                <label for="color_start" class="form-label">Starting color:</label>
+                <input type="color" class="form-control" id="color_start" value="#0000ff" >
+                 <label for="color_end" class="form-label">Ending color:</label>
+                <input type="color" class="form-control" id="color_end" value="#ff0000" >
+            </div>
+            <div style="float:left;">
+                <label  class="form-label">Font size varies with:</label><br>
+                <input type="radio" name="fontby" id="fontbyE" value="E"  checked>
+                  <label  for="fontbyE">
+                    <span style="font-style: italic;">&nbsp;E</span>-ratio&nbsp;
+                  </label>
+                <input type="radio" name="fontby" id="fontbyP" value="P" >
+                  <label  for="fontbyP">
+                    <span style="font-style: italic;">&nbsp;P</span> value&nbsp;
+                  </label>
+                <br>
+                <label  class="form-label">Color extent varies with:</label><br>
+                <input type="radio" name="colorby" id="colorbyE" value="E"  >
+                  <label  for="colorbyE">
+                    <span style="font-style: italic;">&nbsp;E</span>-ratio&nbsp;
+                  </label>
+                <input type="radio" name="colorby" id="colorbyP" value="P" checked>
+                  <label  for="colorbyP">
+                    <span style="font-style: italic;">&nbsp;P</span> value&nbsp;
+                  </label>
+
+            </div>
+            <div style="float:left;">
+
+                <label for="methods" class="form-label">Methods:</label>
+                <select class="form-select" id="methods" onchange="method_change();">
+                  <option value="treemap" selected>Treemap</option>
+                  <option value="funnel" >Funnel</option>
+                </select>
+                <div class="treemap_method">
+                    <label for="visibleMin" class="form-label" >VisibleMin:</label>
+                    <input type="number" class="form-control" id="visibleMin" value="2000">
+                </div>
+                <div class="funnel_method" style="display:none;">
+                    <label for="funnel_top" class="form-label">Top:</label>
+                    <input type="number" class="form-control" id="funnel_top"  value="10">
+                </div>
+            </div>
+            <div style="float:left;">
+                <button type="button" class="btn btn-success" onclick="plot_word_cloud()">Submit</button>
+                <button type="button" class="btn btn-success" onclick="saveAsImage()">Download</button>
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- wordcloudModal End Here -->
+
+<!-- Search Section Start Here -->
+<div class="about-section pb-90" style="padding-top:100px;background-size: cover;background-position: center;background-image:url('{% static 'client/img/homepage-background.svg' %}');">
+  <div class="container rounded-lg" style="">
+    <div class="row align-items-center" >
+      <div class="col-12"  style="text-align:center;margin:5%;width:90%;" >
+        <div class="sidebar-search" style="margin:10px 0%;text-align:left;font-size: 0;" >
+            <h3 style="color: white; font-size: 48px; font-weight:bold;text-align:left;">Enrichment Profile</h3>
+            <hr style="width:30%;color: #003153;height:2px;margin:0px;">
+            <div class="left_div" >
+                <textarea rows="13"  placeholder="Input gene set." class="textarea_input" id="text_gene"></textarea>
+                <div class="input-group">
+                    <input type="text" class="form-control" disabled placeholder="Please upload the file" />
+                    <span class="input-group-btn">
+                        <label for="upload_geneset" class="form-control btn example_btn">Upload</label>
+                        <input id="upload_geneset" accept=".txt" type="file" onchange="set_placeholder(this);upload_geneset();" style="display: none" />
+                    </span>
+                </div>
+                <div class="input-group">
+                    <select class="form-select" id="species" style="width:50%;display:block;font-style:italic;" >
+                      <option value="human" >Homo sapiens</option>
+                        <option value="mouse">Mus musculus</option>
+                        <option value="rat">Rattus norvegicus</option>
+                        <option value="yeast">Saccharomyces cerevisiae</option>
+                        <option value="fly">Drosophila melanogaster</option>
+                        <option value="arabidopsis" selected>Arabidopsis thaliana</option>
+                        <option value="pig">Sus scrofa</option>
+                        <option value="dog">Canis lupus familiaris</option>
+                        <option value="cow">Bos taurus</option>
+                        <option value="chicken">Gallus gallus</option>
+                        <option value="worm">Caenorhabditis elegans</option>
+                        <option value="zebrafish">Danio rerio</option>
+                    </select>
+                    <select class="form-select" id="way" onchange="way_change();" style="width:50%;display:block;" >
+                        <optgroup label="Gene Ontology">
+                            <option value="go">GO</option>
+                            <option value="bp" selected>GO : Biological Process</option>
+                            <option value="mf">GO : Molecular Function</option>
+                            <option value="cc">GO : Cellular Component</option>
+                        </optgroup>
+                        <optgroup label="Disease Ontology">
+                            <option value="do">DO</option>
+                        </optgroup>
+                        <optgroup label="Kyoto Encyclopedia of Genes and Genomes">
+                            <option value="kegg">KEGG</option>
+                        </optgroup>
+                        <optgroup label="Molecular Signatures Database">
+                            <option value="h">Hallmark Gene Sets</option>
+                            <option value="c1">Positional Gene Sets</option>
+                            <option value="c2">Curated Gene Sets</option>
+                            <option value="c3">Regulatory Target Gene Sets</option>
+                            <option value="c4">Computational Gene Sets</option>
+                            <option value="c5">Ontology Gene Sets</option>
+                            <option value="c6">Oncogenic Signature Gene Sets</option>
+                            <option value="c7">Immunologic Signature Gene Sets</option>
+                            <option value="c8">Cell Type Signature Gene Sets</option>
+                            <option value="all">All Gene Sets</option>
+                        </optgroup>
+                    </select>
+                    <input type="button" class="btn example_btn" onclick="example();"  value="Example">
+                    <button type="button" class="btn example_btn"  onclick="enrichment_analysis();">Enrichment Analysis</button>
+                </div>
+              </div>
+            <div class="center_div" >
+                <div style="width:100%;overflow: auto;height:540px;text-align: center;" id="table_div" class="table-responsive">
+                    <table  class="table table-hover align-middle" style="width:100%;margin:0px;" id="result_table">
+                        <thead style="display: table; width: 100%;" id="main_thead">
+                            <tr style="display: table;width: 100%;">
+                                <th class="td_20">ID</th>
+                                <th class="td_20">Term</th>
+                                <th class="td_20">Ontology</th>
+                                <th class="td_20"><span style="font-style: italic;">&nbsp;E</span>-ratio</th>
+                                <th class="td_20"><span style="font-style: italic;">&nbsp;P</span> value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="Analysis_tbody" class='scroll_tbody'></tbody>
+
+                    </table>
+                </div>
+                <div style="width:100%;">
+                    <div style="float:left;padding: 20px 2px;">
+                      <label for="selectall" >Select All:&nbsp;</label><input type="checkbox"   id="selectall" onchange="selectAll();"></div>
+                      <button type="button" class="console_btn" onclick="download_table();">Download</button>
+                      <button type="button" class="console_btn" data-bs-toggle="modal" data-bs-target="#wordcloudModal" onclick="plot_word_cloud();">Word Cloud</button>
+
+                      <p  class="advance" data-bs-toggle="modal" data-bs-target="#advanceModal">Advance</p>
+                </div>
+                <div id="container" style="height: 100%"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Search Section End Here -->
+
+{% endblock content %}
+{% block js %}
+<script>
+  var csrf = '{{ csrf_token }}';
+</script>
+<script src="{% static 'client/js/echarts.min.js' %}"></script>
+<script src="{% static 'client/js/table2excel.js' %}"></script>
+<script src="{% static 'client/js/both.js' %}"></script>
+<script src="{% static 'client/js/enrichment.js' %}"></script>
+{% endblock js %}

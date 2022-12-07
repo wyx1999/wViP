@@ -1,0 +1,366 @@
+{% extends 'client/base.html' %}
+{% load static %}
+{% block title %}
+<title>Documentation</title>
+<link rel="stylesheet" href="{% static 'client/css/documentation.css' %}">
+{% endblock title %}
+{% block content %}
+
+<!-- Tutorial Section Start Here -->
+<div class="about-section pb-90" style="padding-top:100px;">
+  <div class="container rounded-lg" >
+    <div class="row" >
+      <div class="col-12" >
+        <h1 style="font-size:2.2em;font-weight:bold;color:#1C5A99;margin-bottom:30px;">This website is free and open to all users and there is no login requirement.</h1>
+        <table id="tutorial" class="table" style="margin-bottom:80px;">
+		  <tbody>
+			<tr>
+				<td>OS</td>
+				<td>Version</td>
+				<td>Chrome</td>
+				<td>Firefox</td>
+				<td>Microsoft Edge</td>
+				<td>Safari</td>
+			</tr>
+			<tr>
+				<td>Linux</td>
+				<td>CentOS 7</td>
+				<td>not tested</td>
+				<td>61.0</td>
+				<td>n/a</td>
+				<td>n/a</td>
+			</tr>
+			<tr>
+				<td>MacOS</td>
+				<td>HighSierra</td>
+				<td>not tested</td>
+				<td>61.0</td>
+				<td>n/a</td>
+				<td>12.0</td>
+			</tr>
+			<tr>
+				<td>Windows</td>
+				<td>10</td>
+				<td>not tested</td>
+				<td>61.0</td>
+				<td>42.17134.1.0</td>
+				<td>n/a</td>
+			</tr>
+		  </tbody>
+	    </table>
+
+        <h1  style="font-size:3.2em;font-weight:bold;color:#1C5A99;">Tutorial</h1>
+        <hr style="margin-bottom:20px;">
+        <h2 style="font-size:2em;font-weight:bold;">1. Data loading</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wViP supports users to input text directly through the keyboard and can upload files in three formats: Microsoft Word (07-2019, *.docx), Portable Document Format (*.pdf) and Text File (*.txt).
+        </p>
+        <br>
+        <h2 style="font-size:2em;font-weight:bold;">2. Advance setting</h2>
+        <h4 style="font-size:1.4em;font-weight:bold;">2.1 Dictionary</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set specific phrases for natural language processing. The website provides default dictionaries for many majors and fields, including biology, medicine, etc. Users can import, modify and upload customized dictionaries (*.txt) in the dictionary option.</p>
+
+        <h4 style="font-size:1.4em;font-weight:bold;">2.2 Stop words</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the stop word list to filter out unwanted messages. The default stop list contains determiners, prepositions, pronouns, etc. You can modify, export, and clear the default list. The words in the stop word list will not appear in the natural language processing results and word cloud.</p>
+
+        <h4 style="font-size:1.4em;font-weight:bold;">2.3 Case of word</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To set the case of words in natural language processing, three options are provided: sensitive (keep the text input style unchanged) and insensitive (all letters are lowercase).</p>
+        <div class="blog-details">
+        <blockquote class="blockquote mt-5 mb-5">
+          <p>In the case sensitive option, the case of the same word is treated as different words in the word frequency statistics.</p>
+        </blockquote>
+        </div>
+        <br>
+        <h2 style="font-size:2em;font-weight:bold;">3. Natural language processing</h2>
+        <h4 style="font-size:1.4em;font-weight:bold;">3.1 Tokenizer</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Word segmentation of the input text data according to the set dictionary and stop word list.</p>
+        <h4 style="font-size:1.4em;font-weight:bold;">3.2 Part-Of-Speech tagging</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determine the part of speech of a word according to the corpus and the position of the word in the sentence. Divide words into four categories: <span style="font-weight: bold;color:black;">noun</span>, <span style="font-weight: bold;color:black;">verb</span>, <span style="font-weight: bold;color:black;">adjective</span> and <span style="font-weight: bold;color:black;">adverb</span>. For words with more than one part of speech, the user can adjust as needed in the <span style="font-weight: bold;color:black;">NLP results adjustment</span> option.</p>
+        <h4 style="font-size:1.4em;font-weight:bold;">3.3 Lemmatization</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After word segmentation, each word is restored to the prototype in the dictionary according to the part-of-speech tagging.</p>
+        <h4 style="font-size:1.4em;font-weight:bold;">3.4 Word frequency</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After lemmatization, count the number of occurrences of each word. In the <span style="font-weight: bold;color:black;">NLP results adjustment</span> option, users can adjust the word frequency results and delete the unwanted words.</p>
+        <br>
+        <h2 style="font-size:2em;font-weight:bold;">4. Word cloud</h2>
+        <h4 style="font-size:1.4em;font-weight:bold;">4.1 Static Visualization</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draw a word cloud according to the natural language processing results to show the theme and keywords of the text. Word font size is positively correlated with <span style="font-weight: bold;color:black;">word frequency</span>. To enhance the visual effect, users can select the font color to change with the word frequency. In addition, the Word cloud option provides a variety of fonts and masks to beautify and adapt to various application scenarios.</p>
+        <h4 style="font-size:1.4em;font-weight:bold;">4.2 Interactive Visualization</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to intuitively display the importance of different words in the word cloud, wViP provides interactive visualization. The user can move the mouse over the image to view the word information.</p>
+
+        <br>
+        <h2 style="font-size:2em;font-weight:bold;">5. Enrichment analysis</h2>
+        <h4 style="font-size:1.4em;font-weight:bold;">5.1 Data loading</h4>
+        <p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the enrichment analysis page, users can input UniProt IDs through keyboard input and file upload(*.txt).</p>
+        <h4 style="font-size:1.4em;font-weight:bold;">5.2 Enrichment analysis</h4>
+        <p style="margin-bottom:5px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wViP can be used for enrichment analysis of 12 model species, including <span style="font-style: italic;">Homo sapiens, Mus musculus, Rattus norvegicus, Saccharomyces cerevisiae, Drosophila melanogaster, Arabidopsis thaliana, Sus scrofa, Canis lupus familiaris, Bos taurus, Gallus gallus, Caenorhabditis elegans</span>, and <span style="font-style: italic;">Danio rerio</span>.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wViP compiled 15 types of functional annotations, including 4 sets of Gene Ontology (GO) annotations (All, biology processes, molecular functions, and cellular components), Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways, Disease Ontology (DO) terms, and 9 sets of Hallmark Gene Sets taken from Molecular signatures database (MSigDB) (Positional Gene Sets, Curated Gene Sets, Regulatory Target Gene Sets, Computational Gene Sets, Ontology Gene Sets, Oncogenic Signature Gene Sets, Immunologic Signature Gene Sets, Cell Type Signature Gene Sets, and All Gene Sets mixed). For the enrichment analysis, the hypergeometric test was used to calculate an enrichment ratio (<span style="font-style: italic;">E</span>-ratio) and a <span style="font-style: italic;">P</span> value for each category of functional annotations.</p>
+        <h4 style="font-size:1.4em;font-weight:bold;">5.3 Visualization of results</h4>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the visualization options, two enrichment analysis results display methods (Treemap and Funnel plot) are provided. Users can correlate the font size and color extent with <span style="font-style: italic;">E</span>-ratio or <span style="font-style: italic;">P</span> value respectively.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Tutorial Section End Here-->
+
+
+<!-- Parameter manual Section Start Here -->
+<div class="about-section pb-90" style="padding-top:100px;">
+  <div class="container rounded-lg" >
+    <div class="row align-items-center" >
+      <div class="col-12"  >
+        <h1 id="parameter" style="font-size:3.2em;font-weight:bold;color:#1C5A99;">Parameter manual</h1>
+        <hr style="margin-bottom:20px;">
+          <table class="table Parameter_table" >
+            <thead>
+              <tr>
+                <th scope="col" style="border:0;font-size: 20px;text-align: center;" colspan="2">Static word cloud</th>
+              </tr>
+              <tr>
+                <th scope="col">Parameters</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Width</td>
+                <td>Defining the width of a word cloud figure while there is no image mask.</td>
+              </tr>
+              <tr>
+                <td>Height</td>
+                <td>Defining the height of a word cloud figure while there is no image mask.</td>
+              </tr>
+              <tr>
+                <td>Scale</td>
+                <td>Modifying the canvas magnification.</td>
+              </tr>
+              <tr>
+                <td>Horizontal</td>
+                <td>Deciding the probability of the words displayed horizontally.</td>
+              </tr>
+              <tr>
+                <td>Max font size</td>
+                <td>Modifying the maximum font size of previous NLP results.</td>
+              </tr>
+              <tr>
+                <td>Min font size</td>
+                <td>Modifying the minimum font size of previous NLP results.</td>
+              </tr>
+              <tr>
+                <td>Font Type</td>
+                <td>Choosing the preferred font, with a simple font display box on its top.</td>
+              </tr>
+              <tr>
+                <td>Colormap</td>
+                <td>Choosing the preferred color range, also having a simply color display bar on its top.</td>
+              </tr>
+              <tr>
+                <td>Color varies with Mask</td>
+                <td>Once the option was ticked, the color range will follow the default color of image mask.</td>
+              </tr>
+              <tr>
+                <td>Color varies with font size</td>
+                <td>Once the option was ticked, the color of word cloud will follow the font size of each word with a range varying from 0 to 255.
+                The Color varies with font size option has a higher priority than the Color varies with Mask option. <span style="font-weight:bold;">Once it was ticked, the Color varies with Mask option would be invalid</span>.
+                </td>
+              </tr>
+              <tr>
+                <td>Image mask</td>
+                <td>Choosing the shape of word cloud, including 5 type of model organisms, 10 type of human organs, and 4 type of default figures. If the option wasn’t ticked, there would be no mask for the word cloud figure.</td>
+              </tr>
+              <tr>
+                <td>Upload mask</td>
+                <td>Uploading the user-defined image mask of word cloud, ONLP supports loading of figure file in 3 formats: Portable Network Graphics (*.png) and Joint Photographic Experts Group (*.jpg or *.jpeg).</td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table class="table Parameter_table">
+            <thead>
+              <tr>
+                <th scope="col" style="border:0;font-size: 20px;text-align: center;" colspan="2">Dynamic word cloud</th>
+              </tr>
+              <tr>
+                <th scope="col">Parameters</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Width</td>
+                <td>Defining the width of a word cloud figure.</td>
+              </tr>
+              <tr>
+                <td>Height</td>
+                <td>Defining the height of a word cloud figure.</td>
+              </tr>
+              <tr>
+                <td>Max font size</td>
+                <td>Modifying the maximum font size of previous NLP results.</td>
+              </tr>
+              <tr>
+                <td>Min font size</td>
+                <td>Modifying the minimum font size of previous NLP results.</td>
+              </tr>
+              <tr>
+                <td>Starting color</td>
+                <td>Choosing the preferred starting color to illustrate the word cloud figure, supporting RGB, HSL, and HEX formats. The color picker is also supported.</td>
+              </tr>
+              <tr>
+                <td >Ending color</td>
+                <td>Choosing the preferred ending color to illustrate the word cloud figure, supporting RGB, HSL, and HEX formats. The color picker is also supported.</td>
+              </tr>
+              <tr>
+                <td id="ea_Parameters">Font Type</td>
+                <td>Choosing the preferred font, with a simple font display box on its top.</td>
+              </tr>
+              <tr>
+                <td>Image mask</td>
+                <td>Choosing the shape of word cloud, including 5 type of model organisms, 10 type of human organs, and 4 type of default figures. If the option wasn't ticked, there would be no mask for the word cloud figure.</td>
+              </tr>
+              <tr>
+                <td>Upload mask</td>
+                <td>Uploading the user-defined image mask of word cloud, ONLP supports loading of figure file in 3 formats: Portable Network Graphics (*.png) and Joint Photographic Experts Group (*.jpg or *.jpeg).</td>
+              </tr>
+
+            </tbody>
+          </table>
+          <table class="table Parameter_table" >
+            <thead>
+              <tr>
+                <th scope="col" style="border:0;font-size: 20px;text-align: center;" colspan="2">Enrichment analysis word cloud</th>
+              </tr>
+              <tr>
+                <th scope="col">Parameters</th>
+                <th scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Width</td>
+                <td>Defining the width of a word cloud figure.</td>
+              </tr>
+              <tr>
+                <td>Height</td>
+                <td>Defining the height of a word cloud figure.</td>
+              </tr>
+              <tr>
+                <td>Max font size</td>
+                <td>Modifying the maximum font size of enrichment analysis results.</td>
+              </tr>
+              <tr>
+                <td>Min font size</td>
+                <td>Modifying the minimum font size of enrichment analysis results.</td>
+              </tr>
+              <tr>
+                <td>Starting color</td>
+                <td>Choosing the preferred starting color to illustrate the word cloud figure, supporting RGB, HSL, and HEX formats. The color picker is also supported.</td>
+              </tr>
+              <tr>
+                <td>Ending color</td>
+                <td>Choosing the preferred ending color to illustrate the word cloud figure, supporting RGB, HSL, and HEX formats. The color picker is also supported.</td>
+              </tr>
+
+              <tr>
+                <td>Font varies with</td>
+                <td>Choosing the font size varies with <span style="font-style: italic;">E</span>-ratio or <span style="font-style: italic;">P</span> value.</td>
+              </tr>
+              <tr>
+                <td>Methods</td>
+                <td>Choosing the preferred method to display long words in the enrichment analysis, including 'Treemap' and 'Funnel'.</td>
+              </tr>
+              <tr>
+                <td>visibleMin</td>
+                <td>For Treemap method, the visibleMin parameter defines the minimum size (pixel) of Treemap node.</td>
+              </tr>
+              <tr>
+                <td>Top</td>
+                <td>For Funnel method, the Top parameter defines the top X enrichment analysis results displayed in the funnel figure.</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Parameter manual Section End Here-->
+
+
+<!-- FAQ Section Start Here -->
+<div class="about-section pb-90" style="padding-top:100px;" >
+  <div class="container rounded-lg" >
+    <div class="row align-items-center" >
+      <div class="col-12"  >
+         <h1 id="FAQ" style="font-size:3.2em;font-weight:bold;color:#1C5A99;">FAQ</h1>
+         <hr style="margin-bottom:20px;">
+         <h4 style="font-size:1.4em;font-weight:bold;">1. Q: What does <span style="font-style: italic;">n</span>, <span style="font-style: italic;">m</span>, <span style="font-style: italic;">N</span>, <span style="font-style: italic;">M</span>, <span style="font-style: italic;">E</span>-ratio, <span style="font-style: italic;">P</span> value mean in the enrichment results?</h4>
+         <p>A: <span style="font-style: italic;">N</span> = number of proteins in background annotated by at least one GO term<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-style: italic;">n</span> = number of proteins in background annotated by the GO term <span style="font-style: italic;">t</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-style: italic;">M</span> = number of proteins in foreground annotated by at least one GO term<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-style: italic;">m</span> = number of proteins in foreground annotated by the GO term <span style="font-style: italic;">t</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-style: italic;">E</span>-ratio=(<span style="font-style: italic;">m</span>/<span style="font-style: italic;">M</span>)/(<span style="font-style: italic;">n</span>/<span style="font-style: italic;">N</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="font-style: italic;">P</span> value was calculated with the hypergeometric distribution<br>
+         </p>
+
+         <h4 style="font-size:1.4em;font-weight:bold;">2. Q: When I select both the Color varieties with Mask and Color varieties with font size options, which color range will be displayed?</h4>
+        <p id="contact">A: The Color varies with font size option has a higher priority than the Color varies with Mask option. Once it was ticked, the Color varies with Mask option would be invalid. So, the color range would vary with font size.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FAQ Section End Here-->
+
+
+<!-- Contact Information And Title Area Start -->
+<div class="contact-info mt-5 pt-90 pb-90">
+  <div class="container">
+    <div class="row mb-n10">
+      <div class="col-md-4 mb-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="info">
+          <div class="info-icon"><i class="fa fa-map-marker"></i></div>
+          <div class="info-content">
+            <h4 class="title">Our Locations</h4>
+            <span class="info-text">No. 1037, Luoyu Road, Hongshan District, <br>
+            Wuhan, Hubei, China.</span></div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-10" data-aos="fade-up" data-aos-delay="300">
+        <div class="info">
+          <div class="info-icon"><i class="fa fa-users"></i></div>
+          <div class="info-content">
+            <h4 class="title">About Us</h4>
+            <span class="info-text">The CUCKOO Workgroup <br>
+            &nbsp;</span></div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-10" data-aos="fade-up" data-aos-delay="600">
+        <div class="info">
+          <div class="info-icon"><i class="fa fa-envelope-o"></i></div>
+          <div class="info-content">
+            <h4 class="title">E-mail</h4>
+            <span class="info-text">xueyu@hust.edu.cn<br>
+            &nbsp;</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Contact Information End -->
+
+{% endblock content %}
+{% block js %}
+<script>
+  var csrf = '{{ csrf_token }}';
+  $("#li_Doc").addClass("active");
+
+  window.onload=function(){
+    $("header").removeClass("header-transparent");
+    $("header").addClass("position-relative");
+    $("#white_logo").remove();
+    $("#logo_img").show();
+
+  }
+</script>
+<script src="{% static 'client/js/both.js' %}"></script>
+{% endblock js %}

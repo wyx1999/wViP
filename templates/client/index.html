@@ -1,0 +1,1013 @@
+{% extends 'client/base.html' %}
+{% load static %}
+{% block title %}
+<title>Home</title>
+<link rel="stylesheet" href="{% static 'client/css/index.css' %}">
+<link rel="stylesheet" href="{% static 'client/css/font.css' %}">
+{% endblock title %}
+{% block content %}
+
+
+
+<!-- advanceModal Start Here -->
+<div class="modal fade" id="advanceModal" tabindex="-1" aria-labelledby="advanceModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Advance Setting</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+          <div style="width:100%;">
+              <label  class="form-label">Case of word:</label><br>
+              <input type="radio" name="case" value="unchanged" id="unchanged" checked>
+              <label  for="unchanged">Sensitive&nbsp;</label>
+
+              <input type="radio" name="case" value="lowercase" id="lowercase" >
+              <label for="lowercase">Insensitive</label>
+
+          </div>
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" >Save change</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- advanceModal End Here -->
+<!-- nlpModal Start Here -->
+<div class="modal fade" id="nlpModal" tabindex="-1" aria-labelledby="nlpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" id="nlpModaldiv">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="nlpModalLabel" style="color: #122179; font-size: 22px; font-weight:bold;">NLP</h5>
+
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"  style="margin:0 6%;">
+         <div class="collapse" id="first_div">
+              <table id="first_table" class="table table-hover" >
+                  <thead style="display: table; width: calc(100% - 1em);">
+                      <tr style="display: table;width: 100%;">
+                          <th scope="col" style="width: 33%;">Tokenizer</th>
+                          <th scope="col" style="width: 33%;">Part-Of-Speech tagging</th>
+                          <th scope="col" style="width: 33%;">Lemmatization</th>
+                      </tr>
+                  </thead>
+                  <tbody id="first_tbody" class='scroll_tbody'>
+                  </tbody>
+              </table>
+              <nav aria-label="Page navigation example" style="color:white">
+                <ul class="pagination justify-content-center" id="pagination">
+                </ul>
+              </nav>
+         </div>
+         <div class="collapse" id="second_div">
+              <table id="second_table" class="table table-hover" >
+                  <thead style="display: table; width: calc(100% - 1em);">
+                        <tr style="display: table;width: 100%;">
+                            <th scope="col" style="width: 20%;">Word</th>
+                            <th scope="col" style="width: 20%;">Frequency</th>
+                            <th scope="col" style="width: 20%;">Action</th>
+                        </tr>
+                  </thead>
+                  <tbody id="second_tbody" class='scroll_tbody' >
+                  </tbody>
+              </table>
+         </div>
+      </div>
+      <div class="modal-footer">
+          <div style="width:100%;">
+            <div class="btn-group" >
+                <button type="button" class="btn btn-primary" onclick="nlp_default();">Default</button>
+                <button type="button" class="btn btn-success"  onclick="download_nlp_table();">Download</button>
+            </div>
+            <div class="btn-group" style="float:right;">
+                <button id="next_btn" type="button" class="btn btn-success" onclick="Next();" >Next</button>
+                <button id="previous_btn" type="button" class="btn btn-warning" onclick="Previous();" style="display:none;">Previous</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="saveNLP()" id="save_nlp_btn" style="display:none;">Save</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- nlpModal End Here -->
+
+<!-- wordcloudModal Start Here -->
+<div class="modal fade" id="wordcloudModal" tabindex="-1" aria-labelledby="wordcloudModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="wordcloudModalLabel" style="color: #122179; font-size: 24px; font-weight:bold;">Static Visualization</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <button class="btn_type_change" type="button" style="right: 0;" onclick="type_change();">
+                <span class="fa fa-angle-double-right fa-5x" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <button class="btn_type_change" type="button" style="left: 0;" onclick="type_change();">
+                <span class="fa fa-angle-double-left fa-5x" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div id="main_type1" class="type1" style="height:100%;width:100%; text-align:center;">
+                <img id="wordcloud_pic"  style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);visibility: hidden;" height="480" alt="first">
+            </div>
+            <div id="main_type2" class="type2" style="height:100%;width:80%;margin:0 10%; text-align:center;display:none;"></div>
+      </div>
+      <div class="modal-footer" style="overflow: auto;justify-content: center;max-height:180px;padding:0px;">
+            <div style="float:left;width:50px;margin-right:30px;" >
+                <a href="{% url 'client:documentation' %}#parameter" target="_blank" style="color:#198754;background-color:white;" >
+                    <i class="fa fa-question-circle fa-4x" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view the parameter manual."></i>
+                </a>
+            </div>
+            <div style="float:left;width:100px;display:none;" id="sizediv" class="type1">
+                <label for="width" class="form-label">Width:</label>
+                <input type="number" class="form-control" id="width" value="400">
+                 <label for="height" class="form-label">Height:</label>
+                <input type="number" class="form-control" id="height" value="400">
+            </div>
+            <div style="float:left;width:100px;" class="type1">
+                <label for="scale" class="form-label">Scale:</label>
+                <input type="number" class="form-control" id="scale" value="6">
+                 <label for="prefer_horizontal" class="form-label">Horizontal:</label>
+                <input type="number" class="form-control" id="prefer_horizontal" value="0.9">
+            </div>
+            <div style="float:left;width:100px;" class="type1">
+                <label for="max_font_size" class="form-label">Max font size:</label>
+                <input type="number" class="form-control" id="max_font_size" value="250">
+                 <label for="min_font_size" class="form-label">Min font size:</label>
+                <input type="number" class="form-control" id="min_font_size" value="2">
+            </div>
+
+
+            <div style="float:left;width:100px;" class="type2">
+                <label for="width_type2"  class="form-label">Width:</label>
+                <input type="number" class="form-control" min="200" max="800" id="width_type2" value="400">
+                 <label for="height_type2" class="form-label">Height:</label>
+                <input type="number" class="form-control" min="200" max="600" id="height_type2" value="400">
+            </div>
+            <div style="float:left;width:100px;" class="type2">
+                <label for="max_font_size_type2" class="form-label">Max font size:</label>
+                <input type="number" class="form-control" min="20" max="200" id="max_font_size_type2" value="80">
+                 <label for="min_font_size_type2" class="form-label">Min font size:</label>
+                <input type="number" class="form-control" min="1" max="100" id="min_font_size_type2" value="20">
+            </div>
+            <div style="float:left;" class="type2">
+                <label for="color_start" class="form-label">Starting color:</label>
+                <input type="color" class="form-control" id="color_start" value="#FF0000" >
+                 <label for="color_end" class="form-label">Ending color:</label>
+                <input type="color" class="form-control" id="color_end" value="#007DFF" >
+            </div>
+
+
+            <div style="float:left;">
+                <label for="font_type" class="form-label">Font Type:</label>
+                <img id="show_font" src="{% static 'client/Fonts_img/STENCIL.png' %}"  height="42px;" style="display:inline-block;" >
+                <select class="form-select" id="font_type" onclick="font_change()">
+                    <option value="AGENCYB" >AGENCYB</option >
+                    <option value="ALGER" >ALGER</option >
+                    <option value="ANTQUAB" >ANTQUAB</option >
+                    <option value="arial" >arial</option >
+                    <option value="ARLRDBD" >ARLRDBD</option >
+                    <option value="bahnschrift" >bahnschrift</option >
+                    <option value="BASKVILL" >BASKVILL</option >
+                    <option value="BAUHS93" >BAUHS93</option >
+                    <option value="BELL" >BELL</option >
+                    <option value="BERNHC" >BERNHC</option >
+                    <option value="BKANT" >BKANT</option >
+                    <option value="BOD_B" >BOD_B</option >
+                    <option value="BOOKOS" >BOOKOS</option >
+                    <option value="BRADHITC" >BRADHITC</option >
+                    <option value="BRITANIC" >BRITANIC</option >
+                    <option value="BRLNSB" >BRLNSB</option >
+                    <option value="BRLNSDB" >BRLNSDB</option >
+                    <option value="BRLNSR" >BRLNSR</option >
+                    <option value="BROADW" >BROADW</option >
+                    <option value="BRUSHSCI" >BRUSHSCI</option >
+                    <option value="calibri" >calibri</option >
+                    <option value="CALIFB" >CALIFB</option >
+                    <option value="CALIST" >CALIST</option >
+                    <option value="cambriab" >cambriab</option >
+                    <option value="Candara" >Candara</option >
+                    <option value="CASTELAR" >CASTELAR</option >
+                    <option value="CENSCBK" >CENSCBK</option >
+                    <option value="CENTAUR" >CENTAUR</option >
+                    <option value="CENTURY" >CENTURY</option >
+                    <option value="CHILLER" >CHILLER</option >
+                    <option value="COLONNA" >COLONNA</option >
+                    <option value="comic" >comic</option >
+                    <option value="consola" >consola</option >
+                    <option value="constan" >constan</option >
+                    <option value="COOPBL" >COOPBL</option >
+                    <option value="COPRGTB" >COPRGTB</option >
+                    <option value="COPRGTL" >COPRGTL</option >
+                    <option value="corbel" >corbel</option >
+                    <option value="cour" >cour</option >
+                    <option value="CURLZ___" >CURLZ___</option >
+                    <option value="DejaVuSansMono_0" >DejaVuSansMono_0</option >
+                    <option value="ebrima" >ebrima</option >
+                    <option value="ELEPHNT" >ELEPHNT</option >
+                    <option value="ENGR" >ENGR</option >
+                    <option value="ERASBD" >ERASBD</option >
+                    <option value="ERASDEMI" >ERASDEMI</option >
+                    <option value="ERASLGHT" >ERASLGHT</option >
+                    <option value="ERASMD" >ERASMD</option >
+                    <option value="FELIXTI" >FELIXTI</option >
+                    <option value="FORTE" >FORTE</option >
+                    <option value="FRABK" >FRABK</option >
+                    <option value="FRADM" >FRADM</option >
+                    <option value="FRAHV" >FRAHV</option >
+                    <option value="framd" >framd</option >
+                    <option value="framdit" >framdit</option >
+                    <option value="FREESCPT" >FREESCPT</option >
+                    <option value="FRSCRIPT" >FRSCRIPT</option >
+                    <option value="FTLTLT" >FTLTLT</option >
+                    <option value="FZYTK" >FZYTK</option >
+                    <option value="Gabriola" >Gabriola</option >
+                    <option value="gadugi" >gadugi</option >
+                    <option value="GARA" >GARA</option >
+                    <option value="georgia" >georgia</option >
+                    <option value="GIGI" >GIGI</option >
+                    <option value="GILBI___" >GILBI___</option >
+                    <option value="GILB____" >GILB____</option >
+                    <option value="GILC____" >GILC____</option >
+                    <option value="GILI____" >GILI____</option >
+                    <option value="GILLUBCD" >GILLUBCD</option >
+                    <option value="GILSANUB" >GILSANUB</option >
+                    <option value="GIL_____" >GIL_____</option >
+                    <option value="GLECB" >GLECB</option >
+                    <option value="GLSNECB" >GLSNECB</option >
+                    <option value="GOTHIC" >GOTHIC</option >
+                    <option value="GOUDOS" >GOUDOS</option >
+                    <option value="GOUDYSTO" >GOUDYSTO</option >
+                    <option value="HARLOWSI" >HARLOWSI</option >
+                    <option value="HARNGTON" >HARNGTON</option >
+                    <option value="HATTEN" >HATTEN</option >
+                    <option value="himalaya" >himalaya</option >
+                    <option value="HTOWERT" >HTOWERT</option >
+                    <option value="HTOWERTI" >HTOWERTI</option >
+                    <option value="impact" >impact</option >
+                    <option value="IMPRISHA" >IMPRISHA</option >
+                    <option value="INFROMAN" >INFROMAN</option >
+                    <option value="Inkfree" >Inkfree</option >
+                    <option value="ITCBLKAD" >ITCBLKAD</option >
+                    <option value="ITCEDSCR" >ITCEDSCR</option >
+                    <option value="ITCKRIST" >ITCKRIST</option >
+                    <option value="javatext" >javatext</option >
+                    <option value="JOKERMAN" >JOKERMAN</option >
+                    <option value="JUICE___" >JUICE___</option >
+                    <option value="KUNSTLER" >KUNSTLER</option >
+                    <option value="LATINWD" >LATINWD</option >
+                    <option value="LBRITE" >LBRITE</option >
+                    <option value="LBRITED" >LBRITED</option >
+                    <option value="LBRITEDI" >LBRITEDI</option >
+                    <option value="LBRITEI" >LBRITEI</option >
+                    <option value="LCALLIG" >LCALLIG</option >
+                    <option value="LFAX" >LFAX</option >
+                    <option value="LHANDW" >LHANDW</option >
+                    <option value="LSANS" >LSANS</option >
+                    <option value="LTYPE" >LTYPE</option >
+                    <option value="lucon" >lucon</option >
+                    <option value="l_10646" >l_10646</option >
+                    <option value="MAGNETOB" >MAGNETOB</option >
+                    <option value="MAIAN" >MAIAN</option >
+                    <option value="MATURASC" >MATURASC</option >
+                    <option value="micross" >micross</option >
+                    <option value="MISTRAL" >MISTRAL</option >
+                    <option value="mmrtext" >mmrtext</option >
+                    <option value="mmrtextb" >mmrtextb</option >
+                    <option value="MOD20" >MOD20</option >
+                    <option value="monbaiti" >monbaiti</option >
+                    <option value="msyi" >msyi</option >
+                    <option value="MTCORSVA" >MTCORSVA</option >
+                    <option value="mvboli" >mvboli</option >
+                    <option value="NIAGENG" >NIAGENG</option >
+                    <option value="NIAGSOL" >NIAGSOL</option >
+                    <option value="Nirmala" >Nirmala</option >
+                    <option value="ntailu" >ntailu</option >
+                    <option value="OCRAEXT" >OCRAEXT</option >
+                    <option value="OLDENGL" >OLDENGL</option >
+                    <option value="ONYX" >ONYX</option >
+                    <option value="pala" >pala</option >
+                    <option value="PALSCRI" >PALSCRI</option >
+                    <option value="PAPYRUS" >PAPYRUS</option >
+                    <option value="PARCHM" >PARCHM</option >
+                    <option value="PERTIBD" >PERTIBD</option >
+                    <option value="PER_____" >PER_____</option >
+                    <option value="PLAYBILL" >PLAYBILL</option >
+                    <option value="POORICH" >POORICH</option >
+                    <option value="PRISTINA" >PRISTINA</option >
+                    <option value="RAGE" >RAGE</option >
+                    <option value="RAVIE" >RAVIE</option >
+                    <option value="REFSAN" >REFSAN</option >
+                    <option value="ROCCB___" >ROCCB___</option >
+                    <option value="ROCC____" >ROCC____</option >
+                    <option value="ROCK" >ROCK</option >
+                    <option value="ROCKB" >ROCKB</option >
+                    <option value="ROCKEB" >ROCKEB</option >
+                    <option value="ROCKI" >ROCKI</option >
+                    <option value="SCHLBKB" >SCHLBKB</option >
+                    <option value="SCRIPTBL" >SCRIPTBL</option >
+                    <option value="segoepr" >segoepr</option >
+                    <option value="segoesc" >segoesc</option >
+                    <option value="segoeui" >segoeui</option >
+                    <option value="SHOWG" >SHOWG</option >
+                    <option value="SNAP____" >SNAP____</option >
+                    <option value="STENCIL" selected>STENCIL</option >
+                    <option value="STHUPO" >STHUPO</option >
+                    <option value="STLITI" >STLITI</option >
+                    <option value="STXINGKA" >STXINGKA</option >
+                    <option value="STXINWEI" >STXINWEI</option >
+                    <option value="sylfaen" >sylfaen</option >
+                    <option value="tahomabd" >tahomabd</option >
+                    <option value="taile" >taile</option >
+                    <option value="TCCB____" >TCCB____</option >
+                    <option value="TCCEB" >TCCEB</option >
+                    <option value="TCCM____" >TCCM____</option >
+                    <option value="TEMPSITC" >TEMPSITC</option >
+                    <option value="times" >times</option >
+                    <option value="trebuc" >trebuc</option >
+                    <option value="verdana" >verdana</option >
+                    <option value="VINERITC" >VINERITC</option >
+                    <option value="VIVALDII" >VIVALDII</option >
+                    <option value="VLADIMIR" >VLADIMIR</option >
+                </select>
+                <label for="colormaps" class="form-label type1" >Colormap:</label>
+                <img id="show_color" src="{% static 'client/colormaps/Spectral_r.jpg' %}"  height="42px;" class="type1" style="display:inline-block;" >
+                <select class="form-select type1" id="colormaps" onclick="colormaps_change()">
+                    <option value="Accent" >Accent</option >
+                    <option value="Accent_r">Accent_r</option >
+                    <option value="afmhot">afmhot</option >
+                    <option value="afmhot_r">afmhot_r</option >
+                    <option value="autumn">autumn</option >
+                    <option value="autumn_r">autumn_r</option >
+                    <option value="binary">binary</option >
+                    <option value="binary_r">binary_r</option >
+                    <option value="Blues">Blues</option >
+                    <option value="Blues_r">Blues_r</option >
+                    <option value="bone">bone</option >
+                    <option value="bone_r">bone_r</option >
+                    <option value="BrBG">BrBG</option >
+                    <option value="BrBG_r">BrBG_r</option >
+                    <option value="brg">brg</option >
+                    <option value="brg_r">brg_r</option >
+                    <option value="BuGn">BuGn</option >
+                    <option value="BuGn_r">BuGn_r</option >
+                    <option value="BuPu">BuPu</option >
+                    <option value="BuPu_r">BuPu_r</option >
+                    <option value="bwr">bwr</option >
+                    <option value="bwr_r">bwr_r</option >
+                    <option value="cividis">cividis</option >
+                    <option value="cividis_r">cividis_r</option >
+                    <option value="CMRmap">CMRmap</option >
+                    <option value="CMRmap_r">CMRmap_r</option >
+                    <option value="cool">cool</option >
+                    <option value="coolwarm">coolwarm</option >
+                    <option value="coolwarm_r">coolwarm_r</option >
+                    <option value="cool_r">cool_r</option >
+                    <option value="copper">copper</option >
+                    <option value="copper_r">copper_r</option >
+                    <option value="cubehelix">cubehelix</option >
+                    <option value="cubehelix_r">cubehelix_r</option >
+                    <option value="Dark2">Dark2</option >
+                    <option value="Dark2_r">Dark2_r</option >
+                    <option value="flag">flag</option >
+                    <option value="flag_r">flag_r</option >
+                    <option value="gist_earth">gist_earth</option >
+                    <option value="gist_earth_r">gist_earth_r</option >
+                    <option value="gist_gray">gist_gray</option >
+                    <option value="gist_gray_r">gist_gray_r</option >
+                    <option value="gist_heat">gist_heat</option >
+                    <option value="gist_heat_r">gist_heat_r</option >
+                    <option value="gist_ncar">gist_ncar</option >
+                    <option value="gist_ncar_r">gist_ncar_r</option >
+                    <option value="gist_rainbow">gist_rainbow</option >
+                    <option value="gist_rainbow_r">gist_rainbow_r</option >
+                    <option value="gist_stern">gist_stern</option >
+                    <option value="gist_stern_r">gist_stern_r</option >
+                    <option value="gist_yarg">gist_yarg</option >
+                    <option value="gist_yarg_r">gist_yarg_r</option >
+                    <option value="GnBu">GnBu</option >
+                    <option value="GnBu_r">GnBu_r</option >
+                    <option value="gnuplot">gnuplot</option >
+                    <option value="gnuplot2">gnuplot2</option >
+                    <option value="gnuplot2_r">gnuplot2_r</option >
+                    <option value="gnuplot_r">gnuplot_r</option >
+                    <option value="gray">gray</option >
+                    <option value="gray_r">gray_r</option >
+                    <option value="Greens">Greens</option >
+                    <option value="Greens_r">Greens_r</option >
+                    <option value="Greys">Greys</option >
+                    <option value="Greys_r">Greys_r</option >
+                    <option value="hot">hot</option >
+                    <option value="hot_r">hot_r</option >
+                    <option value="hsv">hsv</option >
+                    <option value="hsv_r">hsv_r</option >
+                    <option value="inferno">inferno</option >
+                    <option value="inferno_r">inferno_r</option >
+                    <option value="jet">jet</option >
+                    <option value="jet_r">jet_r</option >
+                    <option value="magma">magma</option >
+                    <option value="magma_r">magma_r</option >
+                    <option value="nipy_spectral">nipy_spectral</option >
+                    <option value="nipy_spectral_r">nipy_spectral_r</option >
+                    <option value="ocean">ocean</option >
+                    <option value="ocean_r">ocean_r</option >
+                    <option value="Oranges">Oranges</option >
+                    <option value="Oranges_r">Oranges_r</option >
+                    <option value="OrRd">OrRd</option >
+                    <option value="OrRd_r">OrRd_r</option >
+                    <option value="Paired">Paired</option >
+                    <option value="Paired_r">Paired_r</option >
+                    <option value="Pastel1">Pastel1</option >
+                    <option value="Pastel1_r">Pastel1_r</option >
+                    <option value="Pastel2">Pastel2</option >
+                    <option value="Pastel2_r">Pastel2_r</option >
+                    <option value="pink">pink</option >
+                    <option value="pink_r">pink_r</option >
+                    <option value="PiYG">PiYG</option >
+                    <option value="PiYG_r">PiYG_r</option >
+                    <option value="plasma">plasma</option >
+                    <option value="plasma_r">plasma_r</option >
+                    <option value="PRGn">PRGn</option >
+                    <option value="PRGn_r">PRGn_r</option >
+                    <option value="prism">prism</option >
+                    <option value="prism_r">prism_r</option >
+                    <option value="PuBu">PuBu</option >
+                    <option value="PuBuGn">PuBuGn</option >
+                    <option value="PuBuGn_r">PuBuGn_r</option >
+                    <option value="PuBu_r">PuBu_r</option >
+                    <option value="PuOr">PuOr</option >
+                    <option value="PuOr_r">PuOr_r</option >
+                    <option value="PuRd">PuRd</option >
+                    <option value="PuRd_r">PuRd_r</option >
+                    <option value="Purples">Purples</option >
+                    <option value="Purples_r">Purples_r</option >
+                    <option value="rainbow">rainbow</option >
+                    <option value="rainbow_r">rainbow_r</option >
+                    <option value="RdBu">RdBu</option >
+                    <option value="RdBu_r">RdBu_r</option >
+                    <option value="RdGy">RdGy</option >
+                    <option value="RdGy_r">RdGy_r</option >
+                    <option value="RdPu">RdPu</option >
+                    <option value="RdPu_r">RdPu_r</option >
+                    <option value="RdYlBu">RdYlBu</option >
+                    <option value="RdYlBu_r">RdYlBu_r</option >
+                    <option value="RdYlGn">RdYlGn</option >
+                    <option value="RdYlGn_r">RdYlGn_r</option >
+                    <option value="Reds">Reds</option >
+                    <option value="Reds_r">Reds_r</option >
+                    <option value="seismic">seismic</option >
+                    <option value="seismic_r">seismic_r</option >
+                    <option value="Set1">Set1</option >
+                    <option value="Set1_r">Set1_r</option >
+                    <option value="Set2">Set2</option >
+                    <option value="Set2_r">Set2_r</option >
+                    <option value="Set3">Set3</option >
+                    <option value="Set3_r">Set3_r</option >
+                    <option value="Spectral">Spectral</option >
+                    <option value="Spectral_r" selected>Spectral_r</option >
+                    <option value="spring">spring</option >
+                    <option value="spring_r">spring_r</option >
+                    <option value="summer">summer</option >
+                    <option value="summer_r">summer_r</option >
+                    <option value="tab10">tab10</option >
+                    <option value="tab10_r">tab10_r</option >
+                    <option value="tab20">tab20</option >
+                    <option value="tab20b">tab20b</option >
+                    <option value="tab20b_r">tab20b_r</option >
+                    <option value="tab20c">tab20c</option >
+                    <option value="tab20c_r">tab20c_r</option >
+                    <option value="tab20_r">tab20_r</option >
+                    <option value="terrain">terrain</option >
+                    <option value="terrain_r">terrain_r</option >
+                    <option value="turbo">turbo</option >
+                    <option value="turbo_r">turbo_r</option >
+                    <option value="twilight">twilight</option >
+                    <option value="twilight_r">twilight_r</option >
+                    <option value="twilight_shifted">twilight_shifted</option >
+                    <option value="twilight_shifted_r">twilight_shifted_r</option >
+                    <option value="viridis">viridis</option >
+                    <option value="viridis_r">viridis_r</option >
+                    <option value="winter">winter</option >
+                    <option value="winter_r">winter_r</option >
+                    <option value="Wistia">Wistia</option >
+                    <option value="Wistia_r">Wistia_r</option >
+                    <option value="YlGn">YlGn</option >
+                    <option value="YlGnBu">YlGnBu</option >
+                    <option value="YlGnBu_r">YlGnBu_r</option >
+                    <option value="YlGn_r">YlGn_r</option >
+                    <option value="YlOrBr">YlOrBr</option >
+                    <option value="YlOrBr_r">YlOrBr_r</option >
+                    <option value="YlOrRd">YlOrRd</option >
+                    <option value="YlOrRd_r">YlOrRd_r</option >
+                </select>
+            </div>
+
+            <div style="float:left;" class="type1">
+                <label for="width" class="form-label">Color varies with mask:</label>
+                <input type="checkbox"   id="ColorByMask" value="ColorByMask">
+                <hr>
+                <label for="ColorBySize" class="form-label">Color varies with font size:</label>
+                <input type="checkbox"   id="ColorBySize" value="ColorBySize" checked><br>
+                <input type="range" style="width:75%;" step="1" id="ColorBySize_threshold" value="120" min="1" max="255" onchange="document.getElementById('show').innerHTML=value">
+                <span id="show" style="width:20%;float:right;">120</span>
+            </div>
+            <div style="float:left;">
+                <label for="select_mask_img" class="form-label">Image mask:</label>
+                <div class="input-group" >
+                    <div class="input-group-text type1">
+                        <input type="checkbox" id="is_mask" onchange="maskImage_change()" value="is_mask" checked>
+                    </div>
+                    <select class="form-select" id="select_mask_img" onchange="maskImage_change();">
+                      <optgroup label="Organ" class="type1">
+                          <option value="Brain.png">Brain</option>
+                          <option value="Heart.png">Heart</option>
+                          <option value="Gall_bladder.png">Gall bladder</option>
+                          <option value="Kidney.png">Kidney</option>
+                          <option value="Large_intestine.png">Large intestine</option>
+                          <option value="Liver.png">Liver</option>
+                          <option value="Lungs.png">Lungs</option>
+                          <option value="Pancreas.png">Pancreas</option>
+                          <option value="Spleen.png">Spleen</option>
+                          <option value="Stomach.png">Stomach</option>
+                      </optgroup>
+                      <optgroup label="Model organism" class="type1">
+                          <option value="Bacterium.png">Bacterium</option>
+                          <option value="Fly.png">Fly</option>
+                          <option value="Mouse.png" >Mouse</option>
+                          <option value="Rat.png">Rat</option>
+                          <option value="Zebrafish.png">Zebrafish</option>
+                      </optgroup>
+                      <optgroup label="Cell" class="type1">
+                          <option value="Adipocyte.png">Adipocyte</option>
+                          <option value="Hepatocyte.png">Hepatocyte</option>
+                          <option value="Macrophage.png" >Macrophage</option>
+                      </optgroup>
+                      <optgroup label="Organ" class="type2">
+                          <option value="Brain_black.png">Brain</option>
+                          <option value="Heart_black.png">Heart</option>
+                          <option value="Gall_bladder_black.png">Gall bladder</option>
+                          <option value="Kidney_black.png">Kidney</option>
+                          <option value="Large_intestine_black.png">Large intestine</option>
+                          <option value="Liver_black.png">Liver</option>
+                          <option value="Lungs_black.png">Lungs</option>
+                          <option value="Pancreas_black.png">Pancreas</option>
+                          <option value="Spleen_black.png">Spleen</option>
+                          <option value="Stomach_black.png">Stomach</option>
+                      </optgroup>
+                      <optgroup label="Model organism" class="type2">
+                          <option value="Bacterium_black.png">Bacterium</option>
+                          <option value="Fly_black.png">Fly</option>
+                          <option value="Mouse_black.png" >Mouse</option>
+                          <option value="Rat_black.png">Rat</option>
+                          <option value="Zebrafish_black.png">Zebrafish</option>
+                      </optgroup>
+                      <optgroup label="Cell" class="type2">
+                          <option value="Adipocyte_black.png">Adipocyte</option>
+                          <option value="Hepatocyte_black.png">Hepatocyte</option>
+                          <option value="Macrophage_black.png" >Macrophage</option>
+                      </optgroup>
+
+                      <optgroup label="Other">
+                          <option value="love.jpg">Love</option>
+                          <option value="NAR.png" selected>NAR</option>
+                          <option value="rectangular.png">Rectangular</option>
+                      </optgroup>
+                    </select>
+                </div>
+
+                <label for="upload_mask" class="form-label">Upload mask:</label>
+                <label for="upload_mask" class="form-control" style="border: 1px solid #CED4DA;border-radius: 4px;">Upload</label>
+                <input id="upload_mask" type="file" accept=".png, .jpg, .jpeg" onchange="upload_maskImage(this);" style="display: none" />
+            </div>
+            <img id="show_img" src="{% static 'client/img/NAR.png' %}"  height="100px;" style="display:inline-block;vertical-align:middle;" alt="NAR.png">
+        <br>
+        <hr>
+            <div style="float:left;">
+                <button type="button" class="btn btn-success type1" onclick="plot_word_cloud()">Submit</button>
+                <button type="button" class="btn btn-success type2" onclick="plot_word_cloud_type2()" style="display:none;">Submit</button>
+                <button type="button" class="btn btn-success type2" onclick="saveAsImage()" style="display:none;">Download</button>
+
+                <a id="download_a" class="type1" href="JavaScript:void(0)" download="" style="color:white;"><button type="button" class="btn btn-info" onclick="download_wc();">Download</button></a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- wordcloudModal End Here -->
+
+<!-- setModal Start Here -->
+<div class="modal fade" id="setModal" tabindex="-1" aria-labelledby="setModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="setModalLabel" style="color: #122179; font-size: 22px; font-weight:bold;">Dictionary<i class="fa fa-question-circle" style="color:#198754;margin-left:5px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Custom Phrases."></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div style="margin:0 10%; position: relative;">
+           <div style="width:40%;display:inline-block;">
+              <h3 style="color: #003153; font-size: 18px; font-weight:bold;"> User-defined</h3>
+              <hr style="color: #003153;height:2px;margin:0px;">
+               <div id="dt" style="display:none;"></div>
+              <form >
+                <textarea rows="12" id="mwe_text" name="textarea-name" style="outline:none;background-color:#E9ECEF;width:100%;padding:10px 20px 10px 20px;border: none;" ></textarea>
+              </form>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" disabled placeholder="Please upload the file" />
+                    <span class="input-group-btn">
+                        <label for="forexIO_file" class="form-control btn m_btn">Upload</label>
+                        <input id="forexIO_file" type="file" accept=".txt" onchange="set_placeholder(this);uploads();" style="display: none" />
+                    </span>
+                </div>
+                <button type="button"  class="btn m_btn" style="width:100%;margin-top:5px;" onclick="save_dictionary();">Submit</button>
+
+           </div>
+           <div style="text-align:center;display:inline-block;width: 15%;height: 25px;position: absolute;top: 38%;left: 50%;transform: translateX( -50% );">
+               <img src="{% static 'client/img/right-arrow.png' %}" class="img_arrow" onclick="save_dictionary();"  >
+           </div>
+           <div style="width:40%;display:inline-block;float:right;">
+              <h3 style="color: #003153; font-size: 18px; font-weight:bold;"> Record</h3>
+              <hr style="color: #003153;height:2px;margin:0px;">
+              <div style="overflow-y: auto; height: 343px;" id="mwe_record">
+                <table id="record_table"></table>
+              </div>
+
+              <div class="btn-group" style="width:100%;margin-top:5px;">
+                  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Import
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Accounting');">Accounting</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Architecture');">Architecture</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Bible');">Bible</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Biology');">Biology</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Business');">Business</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Chemistry');">Chemistry</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Computing');">Computing</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Ecology');">Ecology</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Economics');">Economics</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Finance and Banking');">Finance and Banking</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Food and Nutrition');">Food and Nutrition</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Geography');">Geography</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Internet');">Internet</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Law');">Law</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Medicines');">Medicines</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Nursing');">Nursing</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Physics');">Physics</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Psychology');">Psychology</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Scientists');">Scientists</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Shakespeare');">Shakespeare</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Sociology');">Sociology</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Twentieth-Century Art');">Twentieth-Century Art</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('Twentieth-Century World History');">Twentieth-Century World History</a></li>
+                    <li><a class="dropdown-item" onclick="import_dictionary_collection('World History');">World History</a></li>
+                  </ul>
+              </div>
+            <!--
+              <div class="input-group">
+                  <select class="form-control" id="select_dictionary_collection">
+                      <option value="Biology_dictionary" selected>Biology dictionary</option>
+                      <option value="Medical_dictionary">Medical dictionary</option>
+                  </select>
+                <span class="input-group-btn">
+                    <label for="import_dictionary" class="form-control btn m_btn">Import</label>
+                    <input id="import_dictionary" type="button"  onclick="import_dictionary_collection();" style="display: none" />
+                </span>
+              </div>
+              -->
+              <button type="button" class="btn m_btn" style="width:100%;margin-top:5px;" onclick="download_dictionary();">Export</button>
+           </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" onclick="clear_dictionary();">Clear</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- setModal End Here -->
+
+<!-- stopwordModal Start Here -->
+<div class="modal fade" id="stopwordModal" tabindex="-1" aria-labelledby="stopwordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="stopwordModalLabel" style="color: #122179; font-size: 22px; font-weight:bold;">Stop Words<i class="fa fa-question-circle" style="color:#198754;margin-left:5px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Filter out useless words。"></i></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div style="margin:0 10%; position: relative;">
+           <div style="width:40%;display:inline-block;">
+              <h3 style="color: #003153; font-size: 18px; font-weight:bold;"> User-defined</h3>
+              <hr style="color: #003153;height:2px;margin:0px;">
+              <form >
+                <textarea rows="12" id="stopwords_text" placeholder="" style="outline:none;background-color:#E9ECEF;width:100%;padding:10px 20px 10px 20px;border: none;" ></textarea>
+              </form>
+                <div class="input-group" >
+                    <input type="text" class="form-control" disabled  placeholder="Please upload the file" />
+                    <span class="input-group-btn">
+                        <label for="stopwords_file" class="form-control btn m_btn">
+                            Upload</label>
+                        <input id="stopwords_file" type="file" accept=".txt" onchange="set_placeholder(this);upload_stopwords();" style="display: none" />
+                    </span>
+                </div>
+                <button type="button" class="btn m_btn" style="width:100%;margin-top:5px;" onclick="save_stopwords();">Submit</button>
+           </div>
+           <div style="text-align:center;display:inline-block;width: 15%;height: 25px;position: absolute;top: 38%;left: 50%;transform: translateX( -50% );">
+               <img src="{% static 'client/img/right-arrow.png' %}" class="img_arrow" onclick="save_stopwords();"  >
+           </div>
+           <div style="width:40%;display:inline-block;float:right;">
+              <h3 style="color: #003153; font-size: 18px; font-weight:bold;"> Record</h3>
+              <hr style="color: #003153;height:2px;margin:0px;">
+              <div style="overflow-y: auto; height: 335px;" id="stopwords_record">
+                <table id="stopwords_record_table"></table>
+              </div>
+
+              <button type="button" class="btn m_btn" style="width:100%;margin-top:5px;" onclick="download_stopword();">Export</button>
+           </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" onclick="clear_stopwords();">Clear</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- stopwordModal End Here -->
+
+
+<!-- Search Section Start Here -->
+<div class="about-section pb-90" style="padding-top:145px;background-size: cover;background-position: center;background-image:url('{% static 'client/img/homepage-background.svg' %}');">
+  <div class="container rounded-lg" style="">
+    <div class="row align-items-center" >
+      <div class="col-12"  style="text-align:center;margin:5%;width:90%;" >
+        <h3 style="color: white; font-size: 48px; font-weight:bold;text-align:left;" id="input_type_title">Files Input</h3>
+        <hr style="width:40%;color: #003153;height:2px;margin:0px;">
+        <div id="carouselExampleControls" data-bs-touch="false" data-bs-interval="false" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item ">
+          <div class="sidebar-search mb-1" style="text-align:left;" >
+                <form style="height:335px;">
+                  <textarea rows="12"  placeholder="Enter a sentence or paragraph." style="outline:none;background-color:#E9ECEF;width:100%;padding:10px 60px 10px 20px;border: none;" id="text" ></textarea>
+                  <button id="fa-btn-blast" data-bs-target="#carouselExampleControls" data-bs-slide="next" class="input_change_btn" style="right:0;" type="button" >
+                      <i id="fa-search-blast" class="fa fa-upload fa-3x fa-fw" aria-hidden="true"   ></i></button>
+                </form>
+          </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="sidebar-search mb-1" style="text-align:left;" >
+                <form >
+                  <div  style="outline:none;background-color:#E9ECEF;width:100%;padding:10px 0px 10px 60px;border: none;height:335px;text-align:center;" >
+                    <div style="height:40%;width:100%;" id="getldiv">
+                      <table class="table table-borderless align-middle" style="width:100%;">
+                        <tbody style="width:100%;">
+                          <tr style="height:58px;width:100%;" id="tr_1"></tr>
+                          <tr style="height:58px;width:100%;" id="tr_2"></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div style="height:20%;width:100%;">
+                      <p id="stamp"  style="display:none;" >0</p>
+                      <input type="file" id="up_file" multiple style="display:none;" onchange="up_files();" accept=".docx,.txt,.pdf">
+                      <button type="button" class="fa fa-upload fa-2x fa-fw" onclick="$('#up_file').click();" id="up_file_btn">
+                      </button>
+                    </div>
+                    <div style="height:40%;width:100%;">
+                      <table class="table table-borderless align-middle" style="width:100%;">
+                        <tbody style="width:100%;">
+                          <tr style="height:58px;width:100%;" id="tr_3"></tr>
+                          <tr style="height:58px;width:100%;" id="tr_4"></tr>
+                        </tbody>
+
+                      </table>
+                    </div>
+
+                  </div>
+                  <button id="fa-btn-blast1" data-bs-target="#carouselExampleControls" data-bs-slide="prev" class="input_change_btn" style="left:0;" type="button" >
+                      <i id="fa-search-blast1" class="fa fa-keyboard-o fa-3x fa-fw" aria-hidden="true"  ></i></button>
+                </form>
+          </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="console_div" id="console_div">
+
+            <div class="input-group mb-3" style="width:auto;float:right;">
+
+                <button type="button" class="btn btn-success nlp_btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Advance Setting</button>
+                <ul class="dropdown-menu" style="padding:0px;">
+                    <li><input style="display:none;" type="checkbox" id="is_dictionary"  value="dictionary" checked>
+                    <input type="button" class="btn" onclick="search_dictionary();" data-bs-toggle="modal" data-bs-target="#setModal" value="Dictionary"></li>
+                    <li><hr style="margin:0;"></li>
+                    <li><div class="input-group-text" style="display:none;"><input type="checkbox" id="is_stopwords"  value="stopwords" checked></div>
+                    <input type="button" class="btn" onclick="search_stopwords();" data-bs-toggle="modal" data-bs-target="#stopwordModal" value="Stop Words"></li>
+                    <li><hr style="margin:0;"><input type="button" class="btn"  data-bs-toggle="modal" data-bs-target="#advanceModal" value="Case of word"></li>
+                </ul>
+                <button type="button" class="btn btn-success" style="margin-left:1px;" data-bs-toggle="modal" data-bs-target="#nlpModal" onclick="if_nlp_1();" id="nlp_btn">NLP results adjustment&nbsp;<i  class="fa fa-cog fa-spin" aria-hidden="true" id="nlp_cog" style="color:#fff;"  ></i> </button>
+
+            </div>
+            <br>
+            <br>
+            <hr>
+            <div class="btn-group example_div" role="group" >
+                <!--
+                <div class="input-group-text" >
+                    <input type="checkbox" id="is_nlp"  value="is_nlp" style="width:18.3px;" checked>
+                </div>
+                <div class="input-group-text"  id="advancediv" data-bs-toggle="tooltip" data-bs-placement="left" title="Advanced option for changing text case." onclick="$('#advanceModal').modal('show');">
+                      <i  class="fa fa-cog fa-spin fa-lg " aria-hidden="true" id="nlp_cog" style="color:#003153;"  ></i>
+                </div>
+                -->
+              <button type="button" class="btn example_btn example_btn_1" data-bs-toggle="tooltip" data-bs-placement="top" title="Research career summary." onclick="example1();">Example1</button>
+              <button type="button" class="btn example_btn example_btn_2" data-bs-toggle="tooltip" data-bs-placement="top" title="Biological finding summarization." onclick="example2();">Example2</button>
+              <button type="button" class="btn example_btn example_btn_3" data-bs-toggle="tooltip" data-bs-placement="top" title="Scientific hotspot highlighting." onclick="example3();">Example3</button>
+              <button type="button" class="btn example_btn example_btn_4" data-bs-toggle="tooltip" data-bs-placement="top" title="Journal's publication profile." onclick="example4();">Example4</button>
+            </div>
+            <div class="input-group" style="width:20%;float:right;">
+                  <button type="button"  onclick="if_plot_word_cloud();" data-bs-toggle="modal" data-bs-target="#wordcloudModal" id="wordcloud_btn">Word Cloud</button>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Search Section End Here-->
+
+<!-- Overview Section Start Here -->
+<div class="about-section" style="padding-top:100px;">
+  <div class="container rounded-lg" >
+    <div class="row align-items-center" >
+      <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-custom"  >
+          <h2 style="font-size:2.5em;font-weight:bold;">Overview</h2>
+          <p style="font-size: 1.2em;text-align: left;">The wViP is an online service for easy-to-use word cloud visualization of biological profiles function.
+              The wViP pipeline is extremely intuitive and both supporting keyboard input and files uploading. With diverse built-in and user-defined options,
+              users can easily complete the natural language processing steps and illustrate their preferred word cloud through a few clicks.</p>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-custom"  style="text-align:center;" >
+          <img src="{% static 'client/img/overview.png' %}" width="100%;">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Overview Section End Here-->
+<!-- Portfolio Section Start Here -->
+<div class="portfolio-section pb-90" style="padding-top:150px;">
+  <div class="container">
+    <div class="row mt-n6">
+      <div class="col-12"  >
+          <h2 style="font-size:2.5em;font-weight:bold;">Gallery</h2>
+          <p style="font-size: 1.2em;text-align: left;">
+              wViP could be applied in various scenarios according to user's requirement. Here we present four application scenarios applicable to wViP, including <span style="font-weight: bold;color:black;">research career summary</span>, <span style="font-weight: bold;color:black;">biological finding summarization</span>,
+              <span style="font-weight: bold;color:black;">scientific hotspot highlighting</span>, <span style="font-weight: bold;color:black;">the journal's publication profile</span>, and <span style="font-weight: bold;color:black;">enrichment analysis visualization</span> (Hover over the image to see more information).
+          </p>
+      </div >
+      <div class="row" style="justify-content: center;margin-top:20px;">
+      <div class="col-12 col-md-12 col-lg-5 mt-30">
+        <div class="single-portfolio-wrap" >
+          <figure class="portfolio-thumb hover-style position-relative m-0"><a href="{% static 'client/img/Example1.png' %}" target="_blank"><img src="{% static 'client/img/Example1.png' %}" alt="usage_3">
+            <div class="overlay-1"></div>
+            </a>
+            <figcaption class="portfolio-details">
+              <div class="port-info">
+                <h3 class="title"><a href="{% static 'client/img/Example1.png' %}" target="_blank">research career summary</a></h3>
+                <nav class="nav portfolio-cate">
+                    <a data-bs-toggle="collapse" href="#details1" role="button" aria-expanded="false" aria-controls="details1">Details</a>
+                    <span>&nbsp;/&nbsp;</span>
+                    <a data-bs-toggle="collapse"  role="button" onclick="parameters_collapse(1);">Parameters</a>
+                </nav>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="collapse multi-collapse" id="details1">
+          <div class="card card-body">
+          You can survey your interesting field intuitively by illustrate a word cloud figure with recently published articles.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-5 mt-30">
+        <div class="single-portfolio-wrap" >
+          <figure class="portfolio-thumb hover-style position-relative m-0"><a href="{% static 'client/img/Example2.png' %}" target="_blank"><img src="{% static 'client/img/Example2.png' %}" alt="usage_3">
+            <div class="overlay-1"></div>
+            </a>
+            <figcaption class="portfolio-details">
+              <div class="port-info">
+                <h3 class="title"><a href="{% static 'client/img/Example2.png' %}" target="_blank">biological finding summarization</a></h3>
+                <nav class="nav portfolio-cate">
+                    <a data-bs-toggle="collapse" href="#details2" role="button" aria-expanded="false" aria-controls="details2">Details</a>
+                    <span>&nbsp;/&nbsp;</span>
+                    <a data-bs-toggle="collapse"  role="button" onclick="parameters_collapse(2);">Parameters</a>
+                </nav>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="collapse multi-collapse" id="details2">
+          <div class="card card-body">
+          You can survey your interesting field intuitively by illustrate a word cloud figure with recently published articles.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-5 mt-30">
+        <div class="single-portfolio-wrap" >
+          <figure class="portfolio-thumb hover-style position-relative m-0"><a href="{% static 'client/img/Example3.png' %}" target="_blank"><img  src="{% static 'client/img/Example3.png' %}" alt="usage_3">
+            <div class="overlay-1"></div>
+            </a>
+            <figcaption class="portfolio-details">
+              <div class="port-info">
+                <h3 class="title"><a href="{% static 'client/img/Example3.png' %}" target="_blank">scientific hotspot highlighting</a></h3>
+                <nav class="nav portfolio-cate">
+                    <a data-bs-toggle="collapse" href="#details3" role="button" aria-expanded="false" aria-controls="details3">Details</a>
+                    <span>&nbsp;/&nbsp;</span>
+                    <a data-bs-toggle="collapse"  role="button" onclick="parameters_collapse(3);">Parameters</a>
+                </nav>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="collapse multi-collapse" id="details3">
+          <div class="card card-body">
+            You can summarize your research career visually by illustrate a word cloud figure with all of your publications.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-5 mt-30">
+        <div class="single-portfolio-wrap" >
+          <figure class="portfolio-thumb hover-style position-relative m-0"><a href="{% static 'client/img/Example4.png' %}" target="_blank"><img src="{% static 'client/img/Example4.png' %}" alt="usage_3">
+            <div class="overlay-1"></div>
+            </a>
+            <figcaption class="portfolio-details">
+              <div class="port-info">
+                <h3 class="title"><a href="{% static 'client/img/Example4.png' %}" target="_blank">journal's publication profile</a></h3>
+                <nav class="nav portfolio-cate">
+                    <a data-bs-toggle="collapse" href="#details4" role="button" aria-expanded="false" aria-controls="details4">Details</a>
+                    <span>&nbsp;/&nbsp;</span>
+                    <a data-bs-toggle="collapse"  role="button" onclick="parameters_collapse(4);">Parameters</a>
+                </nav>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="collapse multi-collapse" id="details4">
+          <div class="card card-body">
+            You can review your journal's publication informatively by illustrate a word cloud figure with all the publications in past years.
+          </div>
+        </div>
+      </div>
+
+      <div class="col-10 mt-30" >
+        <div class="collapse multi-collapse" id="parameters1">
+          <div class="card card-body">
+            <img src="{% static 'client/img/usage_1_para.png' %}">
+          </div>
+        </div>
+        <div class="collapse multi-collapse" id="parameters2">
+          <div class="card card-body">
+            <img src="{% static 'client/img/usage_2_para.png' %}">
+          </div>
+        </div>
+        <div class="collapse multi-collapse" id="parameters3">
+          <div class="card card-body">
+            <img src="{% static 'client/img/usage_3_para.png' %}">
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section End Here  -->
+{% endblock content %}
+{% block js %}
+<script>
+  var csrf = '{{ csrf_token }}';
+
+
+  window.onresize = function(){
+    var h = $("#nlpModaldiv").height()-320;
+    $('#first_tbody').height(h);
+    $('#second_tbody').height(h);
+  }
+</script>
+<script src="{% static 'client/js/echarts.min.js' %}"></script>
+<script src="{% static 'client/js/echarts-wordcloud.min.js' %}"></script>
+<script src="{% static 'client/js/FileSaver.js' %}"></script>
+<script src="{% static 'client/js/table2excel.js' %}"></script>
+<script src="{% static 'client/js/both.js' %}"></script>
+<script src="{% static 'client/js/index.js' %}"></script>
+<script src="{% static 'client/js/example.js' %}"></script>
+{% endblock js %}
