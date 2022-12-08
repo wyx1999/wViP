@@ -1,0 +1,2065 @@
+ARP cache
+ARP spoofing
+ASCII armoured
+ASCII art
+ASCIIbetical order
+AUI connector
+Active Channel®
+Active Database Object®
+Active Desktop®
+Active Server Pages®
+Active X Control
+Active X®
+Address Resolution Protocol
+Advanced Encryption Standard
+Advanced Network and Services
+Advanced Networked Systems Architecture
+Advanced Research Projects Agency
+Advanced Research Projects Agency Network
+Advanced Streaming Format®
+Alta Vista
+Amazon effect
+America Online hell
+American National Standards Institute
+American Registry for Internet Numbers
+American Standard Code for Information Interchange
+Anonymous Internet Mercantile Protocol
+Application Channel
+Asia Pacific Network Information Centre
+Ask Jeeves
+Association for Computing Machinery
+Association for Interactive Media
+Association of Shareware Professionals
+Asymmetrical Digital Subscriber Lines
+Asynchronous Transfer Mode
+At Home
+B channel
+B list
+B2B market
+BNC connector
+BSD UNIX
+Bandwidth Conservation Society
+Barney page
+Because Its Time Network
+Beowulf cluster
+Berkeley Internet Name Domain
+Berkeley Software Distribution
+Better Ethics Online
+Black Thursday
+Bobo the Webmonkey
+Boolean connective
+Border Gateway Protocol
+British Computer Society
+Broadband ISDN
+Broadband Integrated Services Digital Network
+Business Software Alliance
+C2 audit
+C2-level security
+CDF file
+CERN image map format
+CERT advisory
+CGI bin
+CGI programming
+CGI script
+CPU attack
+CSMACA or CSMA-CA
+CSMACD or CSMA-CD
+CU SeeME
+Captain Crunch
+Cartesian coordinate system
+Cellular Digital Packet Data
+Centre for Democracy and Technology
+Challenge Handshake Authentication Protocol
+Change Cipher Spec Protocol
+Channel Definition File®
+Channel Definition Format
+Chernobyl packet
+Christmas tree packet
+Circuit Switched Cellular
+Clipper chip
+Coalition For Networked Information
+Code Division Multiple Access
+Cold Fusion Markup Language®
+Commercial Internet Exchange
+Common Data Security Architecture
+Common Gateway Interface
+Common Intermediate Format
+Common Logfile Format
+Common Management Information Protocol
+Common Object Request Broker Architecture
+Communications Decency Act
+Component Object Model®
+Computer Emergency Response Team
+Computer Graphics Metafile
+Computer Incident Advisory Capability
+Computer Professionals for Social Responsibility
+Computer Science Net
+Conseil européen pour la recherche nucléaire
+Consultative Committee For International Telephone And Telegraph
+Consumer Fraud Alert Network
+Cool Site Of The Day
+Coordinated Universal Time
+Coordinating Committee for Intercontinental Research Networks
+Corporation for Research and Educational Networking
+Cyber Patrol®
+Data Encryption Standard
+Data Interchange Standards Association
+Defense Advanced Research Projects Agency
+Defense Data Network
+Dense Wavelength Division Multiplexing
+Diffie Hellman key agreement
+Digital Audio Video Interactive Council
+Digital Power Line Technology
+Digital Property Rights Language
+Digital Signature Algorithm
+Digital Signature Standard
+Digital Subscriber Line
+Direct Hit
+Directory Access Protocol
+Directory Service Markup Language
+Directory System Protocol
+Distance Vector Multicast Routing Protocol
+Distributed Component Object Model®
+Distributed Computing Environment
+Distributed Queue Dual Bus
+DoS attack
+Document Object Model
+Domain Name System
+Domain Name System Security Standard
+Double DES
+Dynamic Hypertext Markup Language
+EDI service provider
+EDI translator
+Easter egg
+Easter egg hunt
+Electronic Commerce Domain Task Force
+Electronic Frontier Foundation
+Electronic Privacy Information Center
+Eliza effect
+Embedded Font®
+Enterprise JavaBeans®
+European Academic and Research Network
+European Computer Manufacturers' Association
+Extended Binary Coded Decimal Interchange Code
+Extended Logfile Format
+Extensible Business Reporting Language
+Extensible Forms Description Language
+Extensible Hypertext Markup Language
+Extensible Log Format
+Extensible Markup Language
+Extensible Style Language
+Extensible Style Language Transformation
+Exterior Gateway Protocol
+FAQ archive
+FAQ page
+FAX modem
+FAX over IP
+FAX to email service
+FGK algorithm
+FISH queue
+FTP link
+FTP server
+FTP software
+Fast Ethernet
+Fast Local Internet Protocol
+Federal Computer Incident Response Capability
+Federal Information Exchange
+Federal Networking Council
+Federal Trade Commission
+Fibre Distributed Data Interface
+File Transfer Protocol
+Format and Protocols
+Forum of Incident Response and Security Teams
+Free Online Dictionary Of Computing
+Free Software Foundation
+GIF animation
+GIF animation tool
+Gateway-to-Gateway Protocol
+Global Information Infrastructure
+Global Internet Liberty Campaign
+Global Positioning System
+Global System for Mobile Communications
+Godwin's law
+Gopher link
+Graphics Interchange Format
+HTML Writers' Guild
+HTML author
+HTML checker
+HTML editor
+HTML form
+HTML level
+HTML page
+HTML tag
+HTML template
+HTML validation site
+HTTP daemon
+HTTP request
+HTTP response
+HTTP status code
+Hand-Held Device Markup Language
+Hashed Message Authentication Code
+Hello Protocol
+Hierarchic JPEG
+High Bit Rate Digital Subscriber Line
+Huffman coding
+Hypertext Markup Language
+Hypertext Transfer Protocol
+Hypertext Transfer Protocol Daemon
+Hypertext Transfer Protocol Secure
+IIS Standard Log File Format
+IP address
+IP multicast
+IP spoofing
+IP switching
+IP telephony
+IP telephony service provider
+Information Superhighway
+Institute of Electrical and Electronic Engineers
+Institution of Electrical Engineers
+Integrated Digital Subscriber Line
+Integrated Services Digital Network
+Interior Gateway Protocol
+International Atomic Time
+International Data Encryption Algorithm
+International Standards Organization
+International Telecommunications Union
+International Trading in Arms Regulations
+Internet Activities Board
+Internet Architecture Board
+Internet Assigned Number Authority
+Internet Commerce Commission
+Internet Configuration Control Board
+Internet Content Rating Association
+Internet Control Message Protocol
+Internet Corporation for Assigned Names and Numbers
+Internet Domain Name Service
+Internet Engineering Steering Group
+Internet Engineering Task Force
+Internet Engineering and Planning Group
+Internet Explorer®
+Internet Information Server
+Internet Inter-ORB Protocol
+Internet Message Access Protocol
+Internet Message Processor
+Internet Multicast Backbone
+Internet Open Trading Protocol
+Internet PCA Registration Authority
+Internet Packet Exchange
+Internet Protocol
+Internet Protocol Address
+Internet Protocol Version 6
+Internet Protocol datagram header
+Internet Protocol next generation
+Internet Relay Chat
+Internet Research Task Force
+Internet Server Application Programming Interface
+Internet Society
+Internet access provider
+Internet advertising
+Internet advertising bureau
+Internet agent
+Internet applicance
+Internet backbone
+Internet books
+Internet channel enabled threat
+Internet chat
+Internet copyright
+Internet crime
+Internet draft
+Internet game
+Internet history
+Internet holy grail
+Internet layer
+Internet layered architecture
+Internet organizations
+Internet piracy
+Internet pornography
+Internet radio station
+Internet service provider
+Internet standard
+Internet statistics
+Internet telephony
+Internet time
+Internet transaction broker
+Internet worm
+J Random
+J code
+JAR file
+Jargon File
+Java Applet Rating Service
+Java Bean
+Java Database Connectivity
+Java Development Kit
+Java Electronic Commerce Framework
+Java Native Interface
+Java Server Pages
+Java Virtual Machine
+Java archive
+Java stripping
+Joint Electronic Payments Initiative
+Joint Photographic Experts Group
+Kilroy page
+Knowbot Information Service
+LAN bridge
+LAN ignorant program
+Layer Two Tunnelling Protocol
+Lempel Ziv Welsh coding
+Lightweight Directory Access Protocol
+Luhn formula
+MIME type
+MOSS Or MOTSS
+MUD Object-Oriented
+MUD head
+Message Authentication Code
+Message Digest 2
+Message Digest 5
+Microsoft Certified Systems Engineer
+Microsoft Internet Security Framework
+Military Network
+Mining Company
+Mongolian hordes technique
+Morris worm
+Moving JPEG
+Moving Picture Experts Group
+Moving Picture Experts Group Audio Layer 3 File
+Multicast Backbone
+Multilink PPP
+Multilink Point-to-Point Protocol
+Multimedia and Hypermedia Information Coding Expert Group
+Multipurpose Internet Mail Extensions
+Musical Instrument Digital Interface
+NCSA Image Map Format
+NFS attack
+NOMEX underwear
+NSA Line Eater
+Named Pipes
+National Center For Supercomputing Applications
+National Fraud Information Center
+National Information Infrastructure
+National Research And Education Network
+National Science Foundation
+National Security Agency
+Nerd Pride
+Netscape Navigator
+Netscape Server Application Programming Interface
+Network Access Point
+Network Data Management Protocol
+Network File System
+Network Information Service
+Network News Transfer Protocol
+Network Time Protocol
+Northern Light
+Novell Netware
+OSI Reference Model
+Object Management Group
+Open Buying on the Internet
+Open EDI
+Open Financial Exchange
+Open Software Description
+Open Software Foundation
+Open Systems Interconnection
+Open Trading Protocol
+Orange Book
+P JPEG
+PC card
+Packet Internet Groper
+Password Authentication Protocol
+Peer to Peer
+Peripheral Component Interconnect®
+Personal Computer Memory Card International Association
+Platform for Internet Content Selection
+Point Listing
+Point-to-Point Protocol
+Point-to-Point Tunneling Protocol®
+Ponzi scheme
+Portable Document Format
+Portable Network Graphic
+Post Office Protocol
+Post Telegraph and Telephone
+Precision Graphics Markup Language
+Pretty Good Privacy
+Primary Rate Interface
+Privacy Enhanced Mail
+Progressive JPEG
+Project Gutenberg
+RGB value
+RISKS forum
+Real Name®
+Reclaim the Networks
+Recreational Software Advisory Council
+Red Green And Blue
+Redundant Array of Inexpensive Disks
+Remote Method Invocation
+Request for Comment
+Reverse Address Resolution Protocol
+Richard Petty syndrome
+Rivest Shamir Adelman Key Encryption Algorithm
+Routing Information Protocol
+Réseaux IP Européenne Network Coordination Centre
+SIG quote
+SQL server
+SYN flooding
+Safe For Kids
+Secure HTTP
+Secure Hash Algorithm 1
+Secure Multimedia Internet Mail Extensions
+Secure Sockets Layer
+Secure Telnet
+Secured Electronic Transaction Standard
+Security and Exchange Commission
+September that never ended
+Serial Line IP
+Serial Line Internet Protocol
+Silicon Valley
+Simple Mail Transfer Protocol
+Simple Network Management Protocol
+Simple Network Paging Protocol
+Sliding Window Protocol
+Standard for Robot Exclusion
+Standardized General Markup Language
+Structured Query Language
+Switched Digital Video
+Switched Multimegabit Data Services
+Synchronous Digital Hierarchy
+Synchronous Optical Network
+Systems Network Architecture
+T2 carrier
+T3 carrier
+T4 carrier
+TP monitor
+Tagged Image File Format
+Technology Without an Interesting Name
+Telnet link
+The Cyberskills Association
+The Great Renaming
+Tier 1 ISP
+Toolkit Without an Interesting Name
+Transmission Control Protocol
+Transport Layer Security
+Triple DES
+Trivial File Transfer Protocol
+Trojan horse
+Trusted Computer Security Evaluation Criteria
+URL redirection
+Unreliable Datagram Protocol
+Usenet death penalty
+User Data Protocol
+User Datagram Protocol
+VRML author
+VRML browser
+VRML plug-in
+Virtual PIN
+Virtual Reality Modelling Language
+Visual J++
+WWW Worm
+WYSIWYG author
+WYSIWYG editor
+Web Search
+Web TV
+Web accelerator
+Web advertising
+Web application meets bricks and mortar
+Web broker
+Web brownout
+Web cache
+Web cam
+Web design
+Web designer
+Web developer
+Web email
+Web email gateway
+Web end
+Web farm
+Web font
+Web graffiti
+Web guru
+Web hippy
+Web kiosk
+Web log file
+Web logging tool
+Web mining
+Web navigation
+Web page
+Web police
+Web ring
+Web rot
+Web server
+Web server performance metric
+Web server tuning
+Web site
+Web site promotion
+Web trap
+Web wrap agreement
+Web year
+Web-based newsgroup service
+Webstone benchmark
+Wide Area Information Servers
+Windows Metafiles
+Wired For Management
+Wireless Application Protocol
+Wireless Bit Map
+Wireless Markup Language
+World Wide Wanderer
+World Wide Web
+World Wide Web Consortium
+World Wide Web Worm
+X consumer
+X500 server
+XML Schema
+Yellow Book
+Z order
+Zen mail
+above the fold
+absolute link
+absolute path
+acceptable use policy
+access control
+access control list
+access number
+access profile
+access provider
+access right
+access token
+account management
+account name
+acknowledged datagram service
+acoustic coupler
+active attack
+active code or active content
+active repeater
+activity monitor
+actor singer waiter Webmaster
+ad server
+ad space
+ad view
+adaptive Huffman coding
+adaptive Lempel Ziv Welsh coding
+adaptive digital pulse code modulation
+adaptive routing algorithm
+add-on virus
+additional server
+address book
+address harvester
+address resolution
+adjacency search
+administrative address
+administrative log-in
+advert auction
+advert server
+advertisement filter
+affiliate program
+agent name delivery
+aggregate buying site
+aggregated loan scam
+alert protocol
+alerting service
+all in one search engine
+almost face-to-face computer-mediated conferencing
+alpha geek
+alpha software
+alt text
+alta visitor
+amplitude modulation
+analogue signal
+analogue to digital conversion
+analogue to digital converter
+analytical buyer
+anchor image
+angry fruit salad
+animated GIF
+announcement newsgroup
+annoyance bot
+anonymizer site
+anonymous FTP
+anonymous posting
+anonymous remailer service
+answer mode
+anti-spam software
+anti-virus software
+anycast address
+application binary interface
+application gateway
+application interface
+application layer
+application monitor
+application programming interface
+application server
+application service provider
+applicationcentric EDI
+archive site
+armoured virus
+assigned number
+associate program
+asymmetric cryptography
+asynchronous communication
+asynchronous computer-mediated conferencing
+asynchronous learning
+asynchronous transmission
+at party
+at sign
+atomic commit protocol
+atomic multicast
+atomicity consistency isolation durability
+attachment encoding
+audio clip
+audio plug-in
+audio streaming
+audiographic teleconferencing
+audit file
+audit log file
+audit trail
+authentication server
+authorized use policy
+authorizing certificate
+automated clearing house
+automatic data capture
+automatic lockout
+automatic number identification
+automatic repeat request
+autonomous system
+autonomous system number
+back door
+back end database
+back end process
+backbone cabal
+backing up
+backup site
+bait and switch
+bandwidth junkie
+bandwidth theft
+banner advert
+banner advertising
+banner auction
+banner exchange
+barf mail
+base font
+baseband signalling
+basic access
+basic rate interface
+bastion host
+baud barf
+bells and whistles
+below the fold
+best of the Web
+beta software
+beyond the banner
+big book
+big endian
+bill presentment
+binary file
+binary file transfer
+binary large object
+binding data
+biometric identification system
+birthday attack
+bit bucket
+bit error rate
+bit hose
+bitmapped font
+bitmapped graphic
+bits per second
+black hat
+black hole
+black widow
+bleeding edge
+blendo page
+blind carbon copy
+blind signature
+blinking text
+block cipher
+blocking software
+blowing your buffer
+blue badge
+body type
+bogon filter
+bogus marketing scheme
+boil the ocean
+book ramping
+book site
+bookmark portal
+boot off
+boot sector
+boot virus
+bot moderation
+bot war
+bounce message
+bozo filter
+bozo list
+breath of life packet
+brick and mortar company
+bridge page
+broadband Web
+broadcast network
+broadcast quality video
+broadcast storm
+broken graphic
+broken link
+broken pipe
+browser cache
+browser caching
+browser war
+brute force attack
+buddy list
+buffer page
+bullet clicker
+bulletin board
+burglar alarm
+burst page
+bus network
+business to business
+business to customer
+buzzword bingo
+bzzt wrong
+cable modem
+cable system operator
+cable television
+cache hit
+cache miss
+caching Web server
+caching policy
+caching proxy server
+calendar server
+call back
+call detail reporting
+call for votes
+calling line identification
+carbon copy
+carrier sense multiple access collision avoidance
+carrier sense multiple access collision detection
+cascading style sheets
+cascading style sheets level 1
+cast shadow
+cat 5
+cell padding
+central office
+certificate authority
+certificate revocation list
+certified delivery server
+chain letter scam
+chained transaction
+challenge response
+change detection
+change detection tool
+channel hopping
+channel op
+channel operator
+charge back
+chat bot
+chat channel
+chat client
+chat room
+chat server
+chat site
+checkout page
+choke point
+chosen plaintext attack
+cipher text
+circuit switched network
+class A address
+class B address
+class C address
+class D address
+classless interdomain routing
+clear text
+click here
+click intermediary
+click through
+click through rate
+click wrap agreement
+clickable region
+clicks and mortar
+client pull
+client server computing
+client side image map
+clip art
+clock drift
+clock synchronization
+clone bot
+closed network
+clothesline model
+coaxial cable
+cobweb site
+code book
+coffee cup holder
+cold boot
+collaborative agent
+collaborative buying site
+collision detection
+colour depth
+comma delimited file
+command language
+commerce bot
+commerce server
+commerce service provider
+commit protocol
+common carrier
+communication subnet
+communications port
+communications software
+companion virus
+comparison site
+competitive access provider
+competitive local exchange carrier
+compiled programming language
+complete network
+computationally secure
+computer sex
+computer telephone integration
+computer-mediated communication
+computer-mediated conferencing
+computer-supported cooperative work
+concept search
+concurrency control
+conferencing software
+confidential email system
+configuration management
+confirmed service
+congestion control
+connect time
+connection hijacking
+connection laundering
+connection-oriented service
+connectionless protocol
+connectionless service
+contact card
+content control
+content management system
+content network technology
+content provider
+content rating
+content rating system
+contextual commerce
+cookie file
+cookie jar
+cookie poisoning
+cooperative network
+copycat page
+copycat site
+core cancer
+core page
+cost of cracking adjustment
+cost per thousand page views
+counter script
+country code
+courtesy copy
+covert channel
+crack root
+credit card scam
+credit repair scam
+crippled version
+cross site scripting
+cryptographic checksum
+cul de site
+cup holder
+cursor dipped in x
+customizable graphical user interface
+cut and paste
+cyber luddite
+cycle server
+cycle time
+daisy chain
+dancing baloney
+dark fibre
+dark side hacker
+data compression
+data diddling
+data flow computer
+data integrity
+data link layer
+data management bot
+data mart
+data mining
+data replication
+data replication manager
+data shopper
+data source object
+data switching exchange
+data vaulting
+data virus
+data warehouse
+database management system
+database server
+datagram service
+day trading
+dead link
+dead tree
+debt collection scam
+decision support system
+dedicated line
+dedicated port
+deep link
+deep space
+default browser
+default home page
+default mode
+default password
+degradation of service attack
+delay distortion
+delayed response media
+deliberative agent
+delivery failure
+demilitarized zone
+demo account
+demo version
+denial of service attack
+depository directory
+deprecated tag
+device driver virus
+dial-up access
+dial-up account
+dial-up line
+dial-up networking
+dialler program
+diary site
+dick size war
+dictionary attack
+dictionary flame
+differential cryptographic attack
+differential encoding
+differential fault analysis
+digital cash
+digital certificate
+digital coin
+digital library
+digital signal
+digital signature
+digital store
+digital to analogue conversion
+digital to analogue converter
+digital wallet
+digital watermark
+direct connection
+directory agent
+directory search engine
+directory server
+directory service
+directory site
+dirty connection
+discussion group
+disk dancer
+distance learning
+distance vector routing
+distributed database
+distributed deadlock
+distributed file system
+distributed object
+distributed operating system
+distributed system
+distributed time service
+distributed transaction
+distributed transaction coordinator
+document type definition
+dog food
+domain dipping
+domain dropping
+domain name
+domain name deactivation
+domain name deletion
+domain name dispute
+domain name registrar
+domain name registration
+domain name server
+domain name service
+domain trafficking
+domestic grade security
+doorway page
+dormant account
+dot address
+dot comify
+dot commerce
+dotted decimal notation
+dotted quad notation
+double reverse lookup
+double transposition cipher
+download manager
+download site
+draft standard
+drawer attack
+dread question mark disease
+drill down
+drop cable
+drop shadow
+dry line
+dumb terminal
+dumpster diving
+duplex communication
+dynamic adaptive routing
+dynamic content
+dynamic font
+dynamic page
+dynamic rotation
+dynamic web page
+e-nally retentive
+ebay effect
+ebook reader
+echo port
+ecommerce site builder
+edit detection
+editor software
+electronic brokerage
+electronic business
+electronic cheque
+electronic commerce
+electronic commerce agent
+electronic data interchange
+electronic funds transfer at point of sale
+electronic journal
+electronic library
+electronic mall
+electronic paper
+electronic publishing
+electronic storefront
+electronic text
+electronic token
+elliptic curve cryptography
+email address
+email bot
+email directory
+email filter
+email flooding
+email forwarding
+email harassment
+email link
+email list
+email program
+email reader
+email search
+email server
+email tennis
+email volley
+embedded hyperlink
+embedded plug-in
+employment site
+empty element
+encryption algorithm
+end office
+end system
+end tag
+enterprise system
+entropy coding
+entry tunnel
+environment variable
+error correcting code
+error detecting code
+error trapping
+escrow service
+ethernet address
+ethernet meltdown
+event manager
+evil empire
+executable content
+executable virus
+executive information system
+exit page
+exit tunnel
+export grade security
+eye candy
+eye trash
+face time
+face to face
+failure transparency
+fake copy listing
+fake user interface
+fall back
+fall forward
+fall over
+false drop
+fast infector
+fat client
+fat server
+fault management
+fault-tolerant system
+federated naming
+female connection
+fewest hops routing
+fibre media
+fibre optic cable
+fibre to the curb
+fibre to the home
+file attachment
+file compression
+file extension
+file format
+file infector
+file server
+file signature
+fill-out form
+filler app
+filtering router
+financial EDI
+finger of death
+firehose syndrome
+firewall router
+firewall server
+fireworks mode
+first in still here
+first-generation Web site
+fish food
+flame bait
+flame off
+flame on
+flame war
+flapping router
+flash crowd
+flat file
+flat page
+flood bot
+flow-based routing
+flyspeck 3
+follow me service
+font and background spoof
+font description
+font site
+font substitution
+fool file
+fork bomb
+forms processing
+fortune cookie
+forward error correction
+forward slash
+four horsemen of the apocalypsegram
+four zero four
+four zero four compliant
+fourth-generation Web site
+frame rate
+frame relay
+frames per second
+free Internet service provider
+free email
+free net
+freely distributable software
+frequency modulation
+frequency shift keying
+frequently asked question
+frequently asked question list
+friends and family virus
+front end
+frowny face
+full duplex communication
+full-page plug-in
+full-text index
+fully qualified domain name
+fun bot
+funeral attack
+game site
+gang FAQ
+gateway page
+geek code
+geek out
+gender bender
+gender blender
+gender mender
+general public license
+generic font
+get a life
+ghost imaging
+glass wire
+glassroots campaign
+global directory service
+global name service
+global namespace
+global variable
+going down
+going postal
+gossip architecture
+gossip replication
+government bot
+government gigabit
+grammar flame
+graphic anchor
+graphic file format
+graphic format
+graphic image
+graphical user interface
+great runes
+great worm
+greater than
+grey bar land
+grey matter
+grim file reaper
+group account
+groupware server
+guest book
+guru site
+half bridge
+half duplex communication
+half smiley face
+handshake protocol
+hard address
+hard boot
+hardware address
+hardware replication
+hardwired advert
+hash function
+hash sign
+heat index
+heavy client
+help page
+helper application
+heterogeneous network
+heuristic analysis
+hidden URL
+hierarchic caching
+hierarchical naming
+hierarchical routing
+high ping
+hit and run mailing
+hit counter
+hit slut
+hoax email
+holy war
+home box
+home page
+home page directory
+homosexual adaptor
+honey pot
+host name
+hot desking
+hot list
+hot site
+hot site of the day
+hot spot
+hot swapping
+hourglass mode
+hub network
+huge pipe
+human computer interface
+identifying certificate
+identity hacking
+identity theft
+image format
+image map
+image map definition file
+immediate response EDI
+in the wild
+in the zoo
+inappropriate fidelity
+inbound link
+include war
+index page
+index spamming
+information gridlock
+information island
+initialization string
+inline image
+innocent bysender
+insecure host
+insert your favourite ethnic group
+instant messaging
+integrity checker
+intelligent agent
+intelligent bot
+interactive voice response
+interexchange carrier
+interface data unit
+interface definition language
+interlaced GIF
+interlaced image
+intermediate system
+internal navigation aid
+internet café
+interpreted programming language
+intersecting ring network
+interstitial advert
+intrusion detection software
+intrusive virus
+invisible page
+invitation bot
+iron age
+iron box
+irregular network
+isochronous network
+jacking in
+jacking out
+javant garde
+junk email
+junk mailer
+kamikaze packet
+key escrow
+key file
+key library
+key management
+key manager
+key pal
+key recovery encryption system
+key ring
+key search attack
+keyboard plaque
+keyboard sniffer
+keyword advert
+keyword density
+keyword purchasing
+keyword search
+keyword stuffing
+kill file
+kill list
+killer app
+known lazy bastard
+known plaintext attack
+known text attack
+last mile
+last mile problem
+layered architecture
+lead generation site
+leaf page
+leaf site
+leapfrog attack
+learning bridge
+leased line
+least privilege
+legal disclaimer
+less than
+letter bomb
+lexical analysis
+light client
+line conditioning
+line noise
+link checker
+link checking site
+link farm
+link rot
+link segment
+link state packet
+link swapping
+list linking
+little endian
+live newsgroup
+live object
+living in hypertext
+load balancing
+load shedding
+load time
+loaded line
+local access and transport area
+local area network
+local central office
+local exchange
+local exchange carrier
+local loop
+location transparency
+log file
+log file analysis
+log out
+log-on transparency
+logic bomb
+logical clock
+logical time
+long distance carrier
+loopback address
+lorem ipsum
+lossless compression scheme
+lossy compression scheme
+lost URL service
+lost in the noise
+lots of MIPS but no IO
+low ping
+machine code
+macro virus
+magic cookie
+mail bomb
+mail bridge
+mail delivery agent
+mail exploder
+mail filter
+mail management software
+mail merge
+mail program
+mail reflector
+mail server
+mail storm
+mail thread
+mail transfer agent
+mail user agent
+mailing list
+mailing list server
+mailing list service
+mailing list software
+mainframe computer
+male connection
+malicious applet
+malicious code
+man in the middle attack
+management information base
+management support system
+mandatory access control
+markup language
+martian mail
+mass customization
+mass individualization
+maximum transmission unit
+meat space
+media convergence
+meet in the middle attack
+member directory
+merchant account
+merchant fee
+message box
+message digest
+message flooding
+message header
+message of the day
+message passing
+message-oriented middleware
+metasearch engine
+metatag generator
+metatag scanner
+metropolitan area exchange
+metropolitan area network
+mirror site
+mirror world
+mirroring tool
+mobile agent
+mobile client
+mobile code
+mobile computing
+mobile server
+modem optimizer
+modem ready
+moderated newsgroup
+mortuary site
+mouse around
+mouse droppings
+mouse elbow
+mouse potato
+moved to Atlanta
+multi user dimension
+multi user dungeon
+multi user shared illusion
+multicast address
+multicast group
+multihomed host
+multimode fibre
+multipartite virus
+multipath fading
+multiple search engine submission
+multipoint video conferencing
+multisearch engine
+mumble mode
+nak attack
+name resolution
+name server
+name service
+namespace transparency
+nav bar
+navigation bar
+near video on demand
+near-line storage
+net dot
+net god
+net lag
+net personality
+net police
+netary public
+network access server
+network administrator
+network analyser
+network architecture
+network computer
+network file server
+network information centre
+network interface card
+network layer
+network management
+network meltdown
+network modem
+network operating system
+network operations centre
+network operations manager
+network scanning tool
+network service provider
+network topology
+network transparency
+network weaving
+news bot
+news feed
+news site
+news ticker
+newsgroup bot
+newsgroup link
+newsgroup search
+newsgroup server
+newsgroup site
+newsgroup war
+non-adaptive routing algorithm
+non-optimal solution
+non-reusable password
+non-validating XML parser
+nut cluster
+nym server
+object request broker
+object-oriented programming language
+object-oriented technology
+obsolete tag
+off hook
+off line
+off the grid
+off the trolley
+official standard
+offline browser
+offline world
+on line
+on the fly
+one-phase commit protocol
+one-time pad
+one-time password
+online analytical processing
+online auction
+online broker
+online catalogue
+online chat
+online community
+online content provider
+online dictionary
+online magazine
+online mall
+online news service
+online newspaper
+online profile
+online retailer
+online service provider
+online transaction processing
+open collar worker
+open network
+open shirt worker
+open shortest path first
+open source
+open source movement
+operating system
+optical repeater
+orange badge
+organizational registration authority
+originate mode
+orphan Annie
+orphan link
+orphan page
+out of band
+over the wire
+overload attack
+packet filtering
+packet filtering gateway
+packet radio
+packet routing filter
+packet sniffing
+packet switched network
+packet switching
+packet switching node
+padded cell
+page information request
+page jacking
+page popularity
+page positioning
+page request
+page view
+paid link placement
+painting the screen
+palm computing
+paper mail
+paper net
+parallel port
+parent message
+partial URL
+passive attack
+passive star
+password adviser
+password constraint
+password cracker
+password dispenser
+password file
+password modem
+password protection
+password sniffer
+paste bomb
+path name
+path name separator
+pay-by-click model
+pay-by-purchase model
+payment protocol
+peer entity
+peer-to-peer network
+penetration testing
+penis size war
+people finding
+performance management
+performance monitoring
+persistent cookie
+personal Web site
+personal Web site builder
+personal area network
+personal assistant
+personal digital assistant
+personal identification number
+personalization services
+personalized newspaper
+phase of the moon
+phrase search
+physical address
+physical layer
+physical medium
+picture element
+pig tail
+piggy back attack
+ping flooding
+ping o' death
+ping storm
+pixel shim
+plain old telephone system
+plain text
+plan file
+point of presence
+point-to-point network
+point-to-point video conferencing
+policy certification authority
+policy file
+politeness window
+polymorphic virus
+populated segment
+port address
+positioning algorithm
+presentation layer
+press lots of keys to abort
+primary backup server
+primary server
+printing discussion
+prisoner of Bill
+private chat
+private key
+private key encryption
+private packet radio
+promiscuous mode
+propeller head
+proposed standard
+proprietary protocol
+protocol converter
+protocol data unit
+protocol header
+protocol stack
+protocol suite
+proximity operator
+proxy server
+pseudo flaw
+pubic directory
+pubic key
+public directory
+public domain
+public domain software
+public key
+public key encryption
+public key infrastructure
+public switched telephone network
+publicity attack
+pull advertising
+pull technology
+pulling glass
+pump and dump
+punctuation flame
+purchase intermediary
+push advertising
+push technology
+pyramid scheme
+quality of service
+quarantine area
+query language
+quoted text
+rabbit program
+race condition
+radio button
+radio frequency interference
+radio site
+ramp up
+ranking service
+rapid prototyping
+raster burn
+raster graphic
+rating vocabulary
+reactive agent
+read-only user
+readme file
+real time
+real-time chat
+reality distortion field
+reciprocal link
+redirection script
+redirection site
+refer link
+referer or referrer
+reformatting attack
+regional registry
+registration form
+relational database
+relative link
+relay rape
+relevance feedback
+relevancy algorithm
+religious war
+remote access
+remote access concentrator
+remote access server
+remote execution service
+remote network monitor
+remote procedure call
+repetitive sequence suppression
+replay attack
+replicated data server
+replication manager
+replication transparency
+response bot
+response time
+restricted file system
+retransmission timeout
+retro virus
+return from the dead
+reverse auction site
+reverse slash
+rich media
+ring network
+robots exclusion standard
+rogue ISP
+room temperature IQ
+root server
+round trip time
+route tracing
+router droppings
+routing algorithm
+routing table
+sacrificial host
+safe surfing
+salami attack
+scanned image
+scanning attack
+screened host firewall
+screening router
+script kiddie
+scripting language
+scroll bar
+scud email
+search bot
+search directory
+search engine
+search engine submission
+search page
+search query
+search space
+second-generation Web site
+second-level domain
+secondary server
+secret key
+secure URL
+secure server
+security certificate
+security management
+security officer
+select box
+selective flooding
+self-extracting archive
+self-extracting file
+self-mutating virus
+send storm
+serendipity search
+serial equivalence
+serial line
+serial port
+server API
+server farm
+server parsed HTML
+server push
+server side image map
+server side include
+service access point
+service primitive
+service provider
+service user
+session hijacking
+session layer
+shadow password file
+shallow link
+share ramping
+shell virus
+shielded twisted pair cable
+shopping bot
+shopping cart
+shopping reassurance scheme
+shopping trolley
+short message service
+shortest path routing
+shoulder surfing
+sig file
+signal to noise ratio
+signature file
+silly walk
+silver surfer
+similarity measure
+simplex communication
+single-mode fibre
+single-pixel GIF
+site administration software
+site caching
+site manager
+site map
+site ranking
+site submission
+slashdot effect
+slow infector
+slow mail
+slow start protocol
+small office home office
+small-to-medium enterprise
+smart card
+smiley face
+snail mail
+snapshot tool
+sneaker net
+sock puppet
+socket address
+soft boot
+software copyright
+software developer's kit
+software patent
+software piracy
+sorcerer's apprentice mode
+sound card
+sound clip
+sound player
+source code
+source encoding
+source route
+spam attractor
+spam magnet
+special interest group
+specialized search engine
+spelling flame
+splash page
+splash screen
+spoiler space
+sprawl site
+squirt the bird
+stack attack
+stalker site
+star network
+start page
+start-up file
+stateful protocol
+stateful server
+stateless protocol
+stateless server
+static IP
+static audit tool
+static page
+static routing
+statistical attack
+statistical encoding
+status bar
+stealth script
+stealth virus
+sticky content
+stock bot
+stone age
+stop word
+storage service provider
+store and forward network
+stored procedure
+stream cipher
+streaming audio
+streaming technology
+streaming video
+strong encryption
+stub network
+style guide
+style sheet
+subject drift
+subject tree
+submission address
+subnet address
+subnet mask
+substitution cipher
+suck site
+sucking mud
+super searcher
+super source quench
+supply chain
+support site
+swap image
+swap space
+swap space attack
+switched connection
+symmetric key encryption
+synchronous communication
+synchronous computer-mediated conferencing
+synchronous data transfer
+syndicated content
+synonym ring
+system administrator
+system log
+system operator
+tab delimited file
+tail circuit
+tail line
+talk bomb
+tar pit
+technical attack
+technology butler
+ten-finger interface
+term broadening
+term narrowing
+terminal emulation
+terminal server
+text GIF
+text anchor
+text area
+text box
+text file
+text messaging
+thick client
+thick ethernet
+thin client
+thin ethernet
+thin server
+third-generation Web site
+third-level domain
+third-party processor
+three-dimensional graphics
+three-tier model
+throwaway account
+throwaway email address
+thumbnail image
+tick box
+tickler email
+tier n ISP
+tiered service
+tiger team
+time bomb
+time server
+time stamp
+time stamping certificate
+time to live
+timing attack
+token card
+token ring
+toll connecting trunk
+toll office
+top-level domain
+topic drift
+tortoise site
+tossing out
+tourist information
+trading partner
+trading partner agreement
+traffic control
+traffic logging system
+transaction processing
+transaction processing monitor
+transaction server
+transactional certificate
+transactional commerce
+transfer interrupted
+transform encoding
+transit network
+transmission line
+transmission rate
+transparent GIF
+transport layer
+transposition cipher
+tree network
+trellis coding
+tripwire software
+trunk segment
+trusted third party
+tunnelling router
+turning blue
+twisted pair cabling
+two-phase commit protocol
+two-tier model
+typo domain
+typo pirate
+unconfirmed service
+under mouse arrest
+undocumented feature
+unicast address
+uniform resource citation
+uniform resource locator
+unique visitor
+universal messaging service
+unmoderated newsgroup
+unshielded twisted pair cable
+update bot
+upgrade fever
+usage software
+user group
+user identifier
+user name
+validating XML parser
+value-added network
+value-added private network
+vampire tap
+vanity domain
+vector graphic
+vector image
+version control
+version rollback attack
+verti port
+vertical application
+vertical portal
+video clip
+video conferencing
+video on demand
+video plug-in
+video streaming
+viral marketing
+virtual bank
+virtual community
+virtual corporation
+virtual dial-up
+virtual museum
+virtual private line
+virtual private network
+virtual reality
+virtual reality theme park
+virtual safe deposit box
+virtual server
+virtual store front
+virtual world
+virus detection software
+virus signature
+visual tag
+voice grade line
+voice jail system
+voice mail system
+voice over IP
+voice recognition
+vulture capitalist
+war dialler
+war dialling
+warez doodz
+warez kiddies
+warm boot
+we mail
+weak encryption
+wearable computing
+weasel text
+welcome page
+well-known port
+whack a mole
+what you get is what you never thought you had
+what you see is all you get
+white board
+white board attack
+white hat
+white page service
+wide area network
+wide distribution
+window attack
+wireless network
+wok on the wall
+word of mouse
+word spamming
+work factor
+workgroup computing
+world wide wait
+worst of the web
+wrapper software
+wry face
+yellow page service
+yoyo mode
+zip file
+zip software
+zone file
+zone of service
