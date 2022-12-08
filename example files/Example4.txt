@@ -1,0 +1,2408 @@
+1. Nucleic Acids Res. 2022 Mar 23;50(W1):W216-21. doi: 10.1093/nar/gkac194. Online 
+ahead of print.
+
+DAVID: a web server for functional enrichment analysis and functional annotation 
+of gene lists (2021 update).
+
+Sherman BT(1), Hao M(1), Qiu J(1), Jiao X(1), Baseler MW(2), Lane HC(3), 
+Imamichi T(1), Chang W(1).
+
+Author information:
+(1)Laboratory of Human Retrovirology and Immunoinformatics, Applied and 
+Developmental Research Directorate, Frederick National Laboratory for Cancer 
+Research, Frederick, MD 21702, USA.
+(2)Clinical Services Program, Applied and Developmental Research Directorate, 
+Frederick National Laboratory for Cancer Research, Frederick, MD21702, USA.
+(3)Laboratory of Immunoregulation, National Institute of Allergy and Infectious 
+Diseases, National Institutes of Health, Bethesda, MD 20892, USA.
+
+DAVID is a popular bioinformatics resource system including a web server and web 
+service for functional annotation and enrichment analyses of gene lists. It 
+consists of a comprehensive knowledgebase and a set of functional analysis 
+tools. Here, we report all updates made in 2021. The DAVID Gene system was 
+rebuilt to gain coverage of more organisms, which increased the taxonomy 
+coverage from 17 399 to 55 464. All existing annotation types have been updated, 
+if available, based on the new DAVID Gene system. Compared with the last 
+version, the number of gene-term records for most annotation types within the 
+updated Knowledgebase have significantly increased. Moreover, we have 
+incorporated new annotations in the Knowledgebase including small molecule-gene 
+interactions from PubChem, drug-gene interactions from DrugBank, tissue 
+expression information from the Human Protein Atlas, disease information from 
+DisGeNET, and pathways from WikiPathways and PathBank. Eight of ten subgroups 
+split from Uniprot Keyword annotation were assigned to specific types. Finally, 
+we added a species parameter for uploading a list of gene symbols to minimize 
+the ambiguity between species, which increases the efficiency of the list upload 
+and eliminates confusion for users. These current updates have significantly 
+expanded the Knowledgebase and enhanced the discovery power of DAVID.
+
+Published by Oxford University Press on behalf of Nucleic Acids Research 2022.
+
+DOI: 10.1093/nar/gkac194
+PMCID: PMC9252805
+PMID: 35325185
+
+
+2. Nucleic Acids Res. 2022 May 26;50(W1):W568-76. doi: 10.1093/nar/gkac425. Online 
+ahead of print.
+
+PCGA: a comprehensive web server for phenotype-cell-gene association analysis.
+
+Xue C(1), Jiang L(2), Zhou M(1), Long Q(1), Chen Y(1), Li X(1), Peng W(1), Yang 
+Q(1), Li M(1)(3)(4)(5).
+
+Author information:
+(1)Program in Bioinformatics, Zhongshan School of Medicine and The Fifth 
+Affiliated Hospital, Sun Yat-sen University, Guangzhou 510080, China.
+(2)Research Center of Medical Sciences, Guangdong Provincial People's Hospital, 
+Guangdong Academy of Medical Sciences, Guangzhou 510080, China.
+(3)Key Laboratory of Tropical Disease Control (Sun Yat-sen University), Ministry 
+of Education, Guangzhou 510080, China.
+(4)Center for Precision Medicine, Sun Yat-sen University, Guangzhou 510080, 
+China.
+(5)Guangdong Provincial Key Laboratory of Biomedical Imaging and Guangdong 
+Provincial Engineering Research Center of Molecular Imaging, The Fifth 
+Affiliated Hospital, Sun Yat-sen University, Zhuhai 519000, China.
+
+Most complex disease-associated loci mapped by genome-wide association studies 
+(GWAS) are located in non-coding regions. It remains elusive which genes the 
+associated loci regulate and in which tissues/cell types the regulation occurs. 
+Here, we present PCGA (https://pmglab.top/pcga), a comprehensive web server for 
+jointly estimating both associated tissues/cell types and susceptibility genes 
+for complex phenotypes by GWAS summary statistics. The web server is built on 
+our published method, DESE, which represents an effective method to mutually 
+estimate driver tissues and genes by integrating GWAS summary statistics and 
+transcriptome data. By collecting and processing extensive bulk and single-cell 
+RNA sequencing datasets, PCGA has included expression profiles of 54 human 
+tissues, 2,214 human cell types and 4,384 mouse cell types, which provide the 
+basis for estimating associated tissues/cell types and genes for complex 
+phenotypes. We develop a framework to sequentially estimate associated tissues 
+and cell types of a complex phenotype according to their hierarchical 
+relationships we curated. Meanwhile, we construct a phenotype-cell-gene 
+association landscape by estimating the associated tissues/cell types and genes 
+of 1,871 public GWASs. The association landscape is generally consistent with 
+biological knowledge and can be searched and browsed at the PCGA website.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac425
+PMCID: PMC9252750
+PMID: 35639771
+
+
+3. Nucleic Acids Res. 2022 May 25;50(W1):W312-21. doi: 10.1093/nar/gkac399. Online 
+ahead of print.
+
+ExpressVis: a biologist-oriented interactive web server for exploring 
+multi-omics data.
+
+Liu X(1)(2), Xu K(1), Tao X(1)(3), Yin R(1)(4), Ren G(1)(4), Yu M(1)(4), Li 
+C(1)(4), Chen H(1)(4), Zhao K(1)(4), Xiang S(1)(4), Gao H(1)(4), Bo X(2)(4), 
+Chang C(1)(5), Yang X(1)(4).
+
+Author information:
+(1)State Key Laboratory of Proteomics, Beijing Proteome Research Center, 
+National Center for Protein Sciences (Beijing), Beijing Institute of Lifeomics, 
+Beijing 102206, China.
+(2)Institute of Health Service and Transfusion Medicine, Beijing 100850, China.
+(3)School of Computer Science and Technology, Chongqing University of Posts and 
+Telecommunications, Chongqing 400065, China.
+(4)Beijing Institute of Radiation Medicine, Beijing 100850, China.
+(5)Research Unit of Proteomics Driven Cancer Precision Medicine, Chinese Academy 
+of Medical Sciences, Beijing 102206, China.
+
+In the era of life-omics, huge amounts of multi-omics data have been generated 
+and widely used in biomedical research. It is challenging for biologists with 
+limited programming skills to obtain biological insights from multi-omics data. 
+Thus, a biologist-oriented platform containing visualization functions is needed 
+to make complex omics data digestible. Here, we propose an easy-to-use, 
+interactive web server named ExpressVis. In ExpressVis, users can prepare 
+datasets; perform differential expression analysis, clustering analysis, and 
+survival analysis; and integrate expression data with protein-protein 
+interaction networks and pathway maps. These analyses are organized into six 
+modules. Users can use each module independently or use several modules 
+interactively. ExpressVis displays analysis results in interactive figures and 
+tables, and provides comprehensive interactive operations in each figure and 
+table, between figures or tables in each module, and among different modules. It 
+is freely accessible at https://omicsmining.ncpsb.org.cn/ExpressVis and does not 
+require login. To test the performance of ExpressVis for multi-omics studies of 
+clinical cohorts, we re-analyzed a published hepatocellular carcinoma dataset 
+and reproduced their main findings, suggesting that ExpressVis is convenient 
+enough to analyze multi-omics data. Based on its complete analysis processes and 
+unique interactive operations, ExpressVis provides an easy-to-use solution for 
+exploring multi-omics data.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac399
+PMCID: PMC9252728
+PMID: 35639516
+
+
+4. Nucleic Acids Res. 2022 May 24;50(W1):W29-35. doi: 10.1093/nar/gkac391. Online 
+ahead of print.
+
+AlignMe: an update of the web server for alignment of membrane protein 
+sequences.
+
+Staritzbichler R(1), Yaklich E(2), Sarti E(3), Ristic N(1), Hildebrand PW(1)(4), 
+Forrest LR(2).
+
+Author information:
+(1)University of Leipzig, Institute of Medical Physics and Biophysics, 
+Härtelstr. 16-18, 04107 Leipzig, Germany.
+(2)Computational Structural Biology Section, National Institutes of Neurological 
+Disorders and Stroke, National Institutes of Health, Bethesda, MD 20892, USA.
+(3)Algorithms, Biology, Structure Unit Inria Sophia Antipolis - Méditerranée, 
+06902 Valbonne, France.
+(4)Charité -Universitätsmedizin Berlin, corporate member of Freie Universität 
+Berlin and Humboldt-Universität zu Berlin, Institute of Medical Physics and 
+Biophysics, 10117 Berlin, Germany.
+
+The AlignMe web server is dedicated to accurately aligning sequences of membrane 
+proteins, a particularly challenging task due to the strong evolutionary 
+divergence and the low compositional complexity of hydrophobic membrane-spanning 
+proteins. AlignMe can create pairwise alignments of either two primary amino 
+acid sequences or two hydropathy profiles. The web server for AlignMe has been 
+continuously available for >10 years, supporting 1000s of users per year. Recent 
+improvements include anchoring, multiple submissions, and structure 
+visualization. Anchoring is the ability to constrain a position in an alignment, 
+which allows expert information about related residues in proteins to be 
+incorporated into an alignment without manual modification. The original web 
+interface to the server limited the user to one alignment per submission, 
+hindering larger scale studies. Now, batches of alignments can be initiated with 
+a single submission. Finally, to provide structural context for the relationship 
+between proteins, sequence similarity can now be mapped onto one or more 
+structures (or structural models) of the proteins being aligned, by links to 
+MutationExplorer, a web-based visualization tool. Together with a refreshed user 
+interface, these features further enhance an important resource in the membrane 
+protein community. The AlignMe web server is freely available at 
+https://www.bioinfo.mpg.de/AlignMe/.
+
+Published by Oxford University Press on behalf of Nucleic Acids Research 2022.
+
+DOI: 10.1093/nar/gkac391
+PMCID: PMC9252776
+PMID: 35609986
+
+
+5. Nucleic Acids Res. 2022 May 11;50(W1):W670-6. doi: 10.1093/nar/gkac312. Online 
+ahead of print.
+
+RSAT 2022: regulatory sequence analysis tools.
+
+Santana-Garcia W(1), Castro-Mondragon JA(2), Padilla-Gálvez M(3), Nguyen NTT(1), 
+Elizondo-Salas A(3), Ksouri N(4), Gerbes F(5), Thieffry D(1), Vincens P(1), 
+Contreras-Moreira B(4), van Helden J(5)(6), Thomas-Chollier M(1), Medina-Rivera 
+A(3).
+
+Author information:
+(1)Institut de biologie de l'Ecole normale supérieure (IBENS), Ecole normale 
+supérieure, CNRS, INSERM, PSL Université Paris, 75005 Paris, France.
+(2)Centre for Molecular Medicine Norway (NCMM), Nordic EMBL Partnership, 
+University of Oslo, 0318 Oslo, Norway.
+(3)Laboratorio Internacional de Investigación sobre el Genoma Humano, 
+Universidad Nacional Autónoma de México, Campus Juriquilla, Blvd Juriquilla 
+3001, 76230 Santiago de Querétaro, México.
+(4)Estación Experimental de Aula Dei-CSIC, 50059 Zaragoza, Spain.
+(5)CNRS, Institut Français de Bioinformatique, IFB-core, UMS 3601, Evry, France.
+(6)Aix-Marseille Univ, INSERM UMR_S 1090, Lab Theory and Approaches of Genome 
+Complexity (TAGC), F-13288 Marseille, France.
+
+RSAT (Regulatory Sequence Analysis Tools) enables the detection and the analysis 
+of cis-regulatory elements in genomic sequences. This software suite performs 
+(i) de novo motif discovery (including from genome-wide datasets like 
+ChIP-seq/ATAC-seq) (ii) genomic sequences scanning with known motifs, (iii) 
+motif analysis (quality assessment, comparisons and clustering), (iv) analysis 
+of regulatory variations and (v) comparative genomics. RSAT comprises 50 tools. 
+Six public Web servers (including a teaching server) are offered to meet the 
+needs of different biological communities. RSAT philosophy and originality are: 
+(i) a multi-modal access depending on the user needs, through web forms, 
+command-line for local installation and programmatic web services, (ii) a 
+support for virtually any genome (animals, bacteria, plants, totalizing over 10 
+000 genomes directly accessible). Since the 2018 NAR Web Software Issue, we have 
+developed a large REST API, extended the support for additional genomes and 
+external motif collections, enhanced some tools and Web forms, and developed a 
+novel tool that builds or refine gene regulatory networks using motif scanning 
+(network-interactions). The RSAT website provides extensive documentation, 
+tutorials and published protocols. RSAT code is under open-source license and 
+now hosted in GitHub. RSAT is available at http://www.rsat.eu/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac312
+PMCID: PMC9252783
+PMID: 35544234
+
+
+6. Nucleic Acids Res. 2022 May 25;50(W1):W4-W12. doi: 10.1093/nar/gkac396. Online 
+ahead of print.
+
+3DGenBench: a web-server to benchmark computational models for 3D Genomics.
+
+International Nucleome Consortium.
+
+Collaborators: Belokopytova P, Viesná E, Chiliński M, Qi Y, Salari H, Di Stefano 
+M, Esposito A, Conte M, Chiariello AM, Teif VB, Plewczynski D, Zhang B, Jost D, 
+Fishman V.
+
+Modeling 3D genome organisation has been booming in the last years thanks to the 
+availability of experimental datasets of genomic contacts. However, the field is 
+currently missing the standardisation of methods and metrics to compare 
+predictions and experiments. We present 3DGenBench, a web server available at 
+https://inc-cost.eu/benchmarking/, that allows benchmarking computational models 
+of 3D Genomics. The benchmark is performed using a manually curated dataset of 
+39 capture Hi-C profiles in wild type and genome-edited mouse cells, and five 
+genome-wide Hi-C profiles in human, mouse, and Drosophila cells. 3DGenBench 
+performs two kinds of analysis, each supplied with a specific scoring module 
+that compares predictions of a computational method to experimental data using 
+several metrics. With 3DGenBench, the user obtains model performance scores, 
+allowing an unbiased comparison with other models. 3DGenBench aims to become a 
+reference web server to test new 3D genomics models and is conceived as an 
+evolving platform where new types of analysis will be implemented in the future.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac396
+PMCID: PMC9252746
+PMID: 35639501
+
+
+7. Nucleic Acids Res. 2022 May 10;50(W1):W427-33. doi: 10.1093/nar/gkac322. Online 
+ahead of print.
+
+ICARUS, an interactive web server for single cell RNA-seq analysis.
+
+Jiang A(1), Lehnert K(1), You L(2), Snell RG(1).
+
+Author information:
+(1)Applied Translational Genetics Group, School of Biological Sciences, The 
+University of Auckland, Auckland, New Zealand.
+(2)Department of Human Anatomy & Histoembryology, School of Basic Medical 
+Sciences, Fudan University, Shanghai, China.
+
+Here we present ICARUS, a web server to enable users without experience in R to 
+undertake single cell RNA-seq analysis. The focal point of ICARUS is its 
+intuitive tutorial-style user interface, designed to guide logical navigation 
+through the multitude of pre-processing, analysis and visualization steps. 
+ICARUS is easily accessible through a dedicated web server 
+(https://launch.icarus-scrnaseq.cloud.edu.au/) and avoids installation of 
+software on the user's computer. Notable features include the facility to apply 
+quality control thresholds and adjust dimensionality reduction and cell 
+clustering parameters. Data is visualized through 2D/3D UMAP and t-SNE plots and 
+may be curated to remove potential confounders such as cell cycle heterogeneity. 
+ICARUS offers flexible differential expression analysis with user-defined cell 
+groups and gene set enrichment analysis to identify likely affected biological 
+pathways. Eleven organisms including human, dog, mouse, rat, zebrafish, fruit 
+fly, nematode, yeast, cattle, chicken and pig are currently supported. 
+Visualization of multimodal data including those generated by CITE-seq and the 
+10X Genomics Multiome kit is included. ICARUS incorporates a function to save 
+the current state of analysis avoiding computationally intensive steps during 
+repeat analysis. The complete analysis of a typical single cell RNA-seq dataset 
+by inexperienced users may be achieved in 1-2 h.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac322
+PMCID: PMC9252722
+PMID: 35536286
+
+
+8. Nucleic Acids Res. 2022 May 25;50(W1):W541-50. doi: 10.1093/nar/gkac400. Online 
+ahead of print.
+
+PADLOC: a web server for the identification of antiviral defence systems in 
+microbial genomes.
+
+Payne LJ(1), Meaden S(2), Mestre MR(3), Palmer C(4), Toro N(5), Fineran 
+PC(1)(6)(7)(8), Jackson SA(1)(6)(7)(8).
+
+Author information:
+(1)Department of Microbiology and Immunology, University of Otago, Dunedin, New 
+Zealand.
+(2)Biosciences, University of Exeter, Penryn, UK.
+(3)Independent Researcher, Spain.
+(4)Information Technology Services Research and Teaching Group, University of 
+Otago, Dunedin, New Zealand.
+(5)Department of Soil Microbiology and Symbiotic Systems, Estación Experimental 
+del Zaidín, Consejo Superior de Investigaciones Científicas, Structure, Dynamics 
+and Function of Rhizobacterial Genomes, Grupo de Ecología Genética de la 
+Rizosfera, Granada, Spain.
+(6)Genetics Otago, University of Otago, Dunedin, New Zealand.
+(7)Bioprotection Aotearoa, University of Otago, Dunedin, New Zealand.
+(8)Maurice Wilkins Centre for Molecular Biodiscovery, University of Otago, 
+Dunedin, New Zealand.
+
+Most bacteria and archaea possess multiple antiviral defence systems that 
+protect against infection by phages, archaeal viruses and mobile genetic 
+elements. Our understanding of the diversity of defence systems has increased 
+greatly in the last few years, and many more systems likely await discovery. To 
+identify defence-related genes, we recently developed the Prokaryotic Antiviral 
+Defence LOCator (PADLOC) bioinformatics tool. To increase the accessibility of 
+PADLOC, we describe here the PADLOC web server (freely available at 
+https://padloc.otago.ac.nz), allowing users to analyse whole genomes, 
+metagenomic contigs, plasmids, phages and archaeal viruses. The web server 
+includes a more than 5-fold increase in defence system types detected (since the 
+first release) and expanded functionality enabling detection of CRISPR arrays 
+and retron ncRNAs. Here, we provide user information such as input options, 
+description of the multiple outputs, limitations and considerations for 
+interpretation of the results, and guidance for subsequent analyses. The PADLOC 
+web server also houses a precomputed database of the defence systems 
+in > 230,000 RefSeq genomes. These data reveal two taxa, Campylobacterota and 
+Spriochaetota, with unusual defence system diversity and abundance. Overall, the 
+PADLOC web server provides a convenient and accessible resource for the 
+detection of antiviral defence systems.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac400
+PMCID: PMC9252829
+PMID: 35639517
+
+
+9. Nucleic Acids Res. 2022 May 17;50(W1):W358-66. doi: 10.1093/nar/gkac335. Online 
+ahead of print.
+
+GenePlexus: a web-server for gene discovery using network-based machine 
+learning.
+
+Mancuso CA(1), Bills PS(2), Krum D(2), Newsted J(2), Liu R(1), Krishnan A(1)(3).
+
+Author information:
+(1)Department Of Computational Mathematics, Science and Engineering, Michigan 
+State University, East Lansing, MI 48824, USA.
+(2)Data Management and Analytics, IT Services, Michigan State University, East 
+Lansing, MI 48824, USA.
+(3)Department of Biochemistry and Molecular Biology, Michigan State University, 
+East Lansing, MI 48824, USA.
+
+Biomedical researchers take advantage of high-throughput, high-coverage 
+technologies to routinely generate sets of genes of interest across a wide range 
+of biological conditions. Although these technologies have directly shed light 
+on the molecular underpinnings of various biological processes and diseases, the 
+list of genes from any individual experiment is often noisy and incomplete. 
+Additionally, interpreting these lists of genes can be challenging in terms of 
+how they are related to each other and to other genes in the genome. In this 
+work, we present GenePlexus (https://www.geneplexus.net/), a web-server that 
+allows a researcher to utilize a powerful, network-based machine learning method 
+to gain insights into their gene set of interest and additional functionally 
+similar genes. Once a user uploads their own set of human genes and chooses 
+between a number of different human network representations, GenePlexus provides 
+predictions of how associated every gene in the network is to the input set. The 
+web-server also provides interpretability through network visualization and 
+comparison to other machine learning models trained on thousands of known 
+process/pathway and disease gene sets. GenePlexus is free and open to all users 
+without the need for registration.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac335
+PMCID: PMC9252732
+PMID: 35580053
+
+
+10. Nucleic Acids Res. 2022 Jun 3;50(W1):W183-90. doi: 10.1093/nar/gkac419. Online 
+ahead of print.
+
+CircadiOmics: circadian omic web portal.
+
+Samad M(1)(2), Agostinelli F(3), Sato T(4), Shimaji K(4), Baldi P(1)(2).
+
+Author information:
+(1)Department of Computer Science, University of California Irvine, Irvine, 
+CA 92697, USA.
+(2)Institute for Genomics and Bioinformatics, University of California, Irvine 
+CA 92697, USA.
+(3)Department of Computer Science and Engineering, University of South Carolina, 
+Columbia, SC 29208, USA.
+(4)Department of Biological Chemistry, Center for Epigenetics and Metabolism, 
+School of Medicine, University of California, Irvine, CA 92697, USA.
+
+Circadian rhythms are a foundational aspect of biology. These rhythms are found 
+at the molecular level in every cell of every living organism and they play a 
+fundamental role in homeostasis and a variety of physiological processes. As a 
+result, biomedical research of circadian rhythms continues to expand at a rapid 
+pace. To support this research, CircadiOmics (http://circadiomics.igb.uci.edu/) 
+is the largest annotated repository and analytic web server for high-throughput 
+omic (e.g. transcriptomic, metabolomic, proteomic) circadian time series 
+experimental data. CircadiOmics contains over 290 experiments and over 100 
+million individual measurements, across >20 unique tissues/organs, and 11 
+different species. Users are able to visualize and mine these datasets by 
+deriving and comparing periodicity statistics for oscillating molecular species 
+including: period, amplitude, phase, P-value and q-value. These statistics are 
+obtained from BIO_CYCLE and JTK_CYCLE and are intuitively aggregated and 
+displayed for comparison. CircadiOmics is the most up-to-date and cutting-edge 
+web portal for searching and analyzing circadian omic data and is used by 
+researchers around the world.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac419
+PMCID: PMC9252794
+PMID: 35657089
+
+
+11. Nucleic Acids Res. 2022 May 25;50(W1):W290-7. doi: 10.1093/nar/gkac397. Online 
+ahead of print.
+
+EPIXplorer: A web server for prediction, analysis and visualization of 
+enhancer-promoter interactions.
+
+Tang L(1), Zhong Z(1), Lin Y(1), Yang Y(1), Wang J(2), Martin JF(3)(4)(5), Li 
+M(1).
+
+Author information:
+(1)Hunan Provincial Key Lab on Bioinformatics, School of Computer Science and 
+Engineering, Central South University, Changsha 410083, China.
+(2)Department of Pediatrics, McGovern Medical School, The University of Texas 
+Health Science Center at Houston, Houston, TX 77030, USA.
+(3)Department of Molecular Physiology and Biophysics, Baylor College of 
+Medicine, Houston, TX 77030, USA.
+(4)Cardiovascular Research Institute, Baylor College of Medicine, Houston, TX 
+77030, USA.
+(5)Texas Heart Institute, Houston, TX 77030, USA.
+
+Long distance enhancers can physically interact with promoters to regulate gene 
+expression through formation of enhancer-promoter (E-P) interactions. 
+Identification of E-P interactions is also important for profound understanding 
+of normal developmental and disease-associated risk variants. Although the 
+state-of-art predictive computation methods facilitate the identification of E-P 
+interactions to a certain extent, currently there is no efficient method that 
+can meet various requirements of usage. Here we developed EPIXplorer, a 
+user-friendly web server for efficient prediction, analysis and visualization of 
+E-P interactions. EPIXplorer integrates 9 robust predictive algorithms, supports 
+multiple types of 3D contact data and multi-omics data as input. The output from 
+EPIXplorer is scored, fully annotated by regulatory elements and risk 
+single-nucleotide polymorphisms (SNPs). In addition, the Visualization and 
+Downstream module provide further functional analysis, all the output files and 
+high-quality images are available for download. Together, EPIXplorer provides a 
+user-friendly interface to predict the E-P interactions in an acceptable time, 
+as well as understand how the genome-wide association study (GWAS) variants 
+influence disease pathology by altering DNA looping between enhancers and the 
+target gene promoters. EPIXplorer is available at 
+https://www.csuligroup.com/EPIXplorer.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac397
+PMCID: PMC9252822
+PMID: 35639508
+
+
+12. Nucleic Acids Res. 2022 May 30;50(W1):W36-43. doi: 10.1093/nar/gkac446. Online 
+ahead of print.
+
+AllerCatPro 2.0: a web server for predicting protein allergenicity potential.
+
+Nguyen MN(1)(2), Krutz NL(3), Limviphuvadh V(1)(2), Lopata AL(1)(4)(5), 
+Gerberick GF(6), Maurer-Stroh S(1)(2)(7).
+
+Author information:
+(1)Bioinformatics Institute, 30 Biopolis Street, #07-01, Matrix 138671, 
+Singapore.
+(2)IFCS Programme, Singapore Institute for Food and Biotechnology Innovation, 
+Agency for Science, Technology and Research, Singapore.
+(3)NV Procter & Gamble Services Company SA, Strombeek-Bever, Belgium.
+(4)Molecular Allergy Research Laboratory, Australian Institute of Tropical 
+Health and Medicine, James Cook University, Townsville, QLD, Australia.
+(5)Tropical Futures Institute, James Cook University, Singapore.
+(6)GF3 Consultancy LLC, West Chester, OH, USA.
+(7)Department of Biological Sciences, National University of Singapore, 14 
+Science Drive 4, 117543, Singapore.
+
+Proteins in food and personal care products can pose a risk for an immediate 
+immunoglobulin E (IgE)-mediated allergic response. Bioinformatic tools can 
+assist to predict and investigate the allergenic potential of proteins. Here we 
+present AllerCatPro 2.0, a web server that can be used to predict protein 
+allergenicity potential with better accuracy than other computational methods 
+and new features that help assessors making informed decisions. AllerCatPro 2.0 
+predicts the similarity between input proteins using both their amino acid 
+sequences and predicted 3D structures towards the most comprehensive datasets of 
+reliable proteins associated with allergenicity. These datasets currently 
+include 4979 protein allergens, 162 low allergenic proteins, and 165 autoimmune 
+allergens with manual expert curation from the databases of WHO/International 
+Union of Immunological Societies (IUIS), Comprehensive Protein Allergen Resource 
+(COMPARE), Food Allergy Research and Resource Program (FARRP), UniProtKB and 
+Allergome. Various examples of profilins, autoimmune allergens, low allergenic 
+proteins, very large proteins, and nucleotide input sequences showcase the 
+utility of AllerCatPro 2.0 for predicting protein allergenicity potential. The 
+AllerCatPro 2.0 web server is freely accessible at 
+https://allercatpro.bii.a-star.edu.sg.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac446
+PMCID: PMC9252832
+PMID: 35640594
+
+
+13. Nucleic Acids Res. 2022 May 24;50(W1):W398-404. doi: 10.1093/nar/gkac377. Online 
+ahead of print.
+
+GRNbenchmark - a web server for benchmarking directed gene regulatory network 
+inference methods.
+
+Seçilmiş D(1), Hillerton T(1), Sonnhammer ELL(1).
+
+Author information:
+(1)Department of Biochemistry and Biophysics, Stockholm University, Science for 
+Life Laboratory, Box 1031, 17121 Solna, Sweden.
+
+Accurate inference of gene regulatory networks (GRN) is an essential component 
+of systems biology, and there is a constant development of new inference 
+methods. The most common approach to assess accuracy for publications is to 
+benchmark the new method against a selection of existing algorithms. This often 
+leads to a very limited comparison, potentially biasing the results, which may 
+stem from tuning the benchmark's properties or incorrect application of other 
+methods. These issues can be avoided by a web server with a broad range of data 
+properties and inference algorithms, that makes it easy to perform comprehensive 
+benchmarking of new methods, and provides a more objective assessment. Here we 
+present https://GRNbenchmark.org/ - a new web server for benchmarking GRN 
+inference methods, which provides the user with a set of benchmarks with several 
+datasets, each spanning a range of properties including multiple noise levels. 
+As soon as the web server has performed the benchmarking, the accuracy results 
+are made privately available to the user via interactive summary plots and 
+underlying curves. The user can then download these results for any purpose, and 
+decide whether or not to make them public to share with the community.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac377
+PMCID: PMC9252735
+PMID: 35609981
+
+
+14. Nucleic Acids Res. 2022 May 24;50(W1):W165-74. doi: 10.1093/nar/gkac383. Online 
+ahead of print.
+
+CFM-ID 4.0 - a web server for accurate MS-based metabolite identification.
+
+Wang F(1), Allen D(2), Tian S(2), Oler E(2), Gautam V(2), Greiner R(1)(3), Metz 
+TO(4), Wishart DS(1)(2)(5)(6)(4).
+
+Author information:
+(1)Department of Computing Science, University of Alberta, Edmonton, AB, T6G 
+2E8, Canada.
+(2)Department of Biological Sciences, University of Alberta, Edmonton, AB, T6G 
+2E9, Canada.
+(3)Alberta Machine Intelligence Institute, University of Alberta, Edmonton, AB, 
+T6G 2E8, Canada.
+(4)Biological Sciences Division, Pacific Northwest National Laboratory, 
+Richland, WA 99352, USA.
+(5)Department of Laboratory Medicine and Pathology, University of Alberta, 
+Edmonton, AB, T6G 2B7, Canada.
+(6)Faculty of Pharmacy and Pharmaceutical Sciences, University of Alberta, 
+Edmonton, AB, T6G 2H7, Canada.
+
+The CFM-ID 4.0 web server (https://cfmid.wishartlab.com) is an online tool for 
+predicting, annotating and interpreting tandem mass (MS/MS) spectra of small 
+molecules. It is specifically designed to assist researchers pursuing studies in 
+metabolomics, exposomics and analytical chemistry. More specifically, CFM-ID 4.0 
+supports the: 1) prediction of electrospray ionization quadrupole time-of-flight 
+tandem mass spectra (ESI-QTOF-MS/MS) for small molecules over multiple collision 
+energies (10 eV, 20 eV, and 40 eV); 2) annotation of ESI-QTOF-MS/MS spectra 
+given the structure of the compound; and 3) identification of a small molecule 
+that generated a given ESI-QTOF-MS/MS spectrum at one or more collision 
+energies. The CFM-ID 4.0 web server makes use of a substantially improved MS 
+fragmentation algorithm, a much larger database of experimental and in silico 
+predicted MS/MS spectra and improved scoring methods to offer more accurate 
+MS/MS spectral prediction and MS/MS-based compound identification. Compared to 
+earlier versions of CFM-ID, this new version has an MS/MS spectral prediction 
+performance that is ∼22% better and a compound identification accuracy that is 
+∼35% better on a standard (CASMI 2016) testing dataset. CFM-ID 4.0 also features 
+a neutral loss function that allows users to identify similar or substituent 
+compounds where no match can be found using CFM-ID's regular MS/MS-to-compound 
+identification utility. Finally, the CFM-ID 4.0 web server now offers a much 
+more refined user interface that is easier to use, supports molecular formula 
+identification (from MS/MS data), provides more interactively viewable data 
+(including proposed fragment ion structures) and displays MS mirror plots for 
+comparing predicted with observed MS/MS spectra. These improvements should make 
+CFM-ID 4.0 much more useful to the community and should make small molecule 
+identification much easier, faster, and more accurate.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac383
+PMCID: PMC9252813
+PMID: 35610037
+
+
+15. Nucleic Acids Res. 2022 May 25;50(W1):W21-8. doi: 10.1093/nar/gkac423. Online 
+ahead of print.
+
+5NosoAE: a web server for nosocomial bacterial antibiogram investigation and 
+epidemiology survey.
+
+Chen CC(1), Liu YY(2), Yang YC(1), Hsu CY(1).
+
+Author information:
+(1)Institute of Medical Science and Technology, National Sun Yat-sen University, 
+Kaohsiung, Taiwan.
+(2)Department of Public Health, China Medical University, Taichung, Taiwan.
+
+5NosoAE is a webserver that can be used for nosocomial bacterial analysis 
+including the identification of similar strains based on antimicrobial 
+resistance profiles (antibiogram) and the spatiotemporal distribution 
+visualization and phylogenetic analysis of identified strains with similar 
+antibiograms. The extensive use of antibiotics has caused many pathogenic 
+bacteria to develop multiple drug resistance, resulting in clinical infection 
+treatment challenges and posing a major threat to global public health. Relevant 
+studies have investigated the key determinants of antimicrobial resistance in 
+the whole-genome sequence of bacteria. However, a web server is currently not 
+available for performing large-scale strain searches according to antimicrobial 
+resistance profiles and visualizing epidemiological information including the 
+spatiotemporal distribution, antibiogram heatmap, and phylogeny of identified 
+strains. Here, we implemented these functions in the new server, referred to as 
+5NosoAE. This server accepts the genome sequence file in the FASTA format of 
+five nosocomial bacteria, namely Acinetobacter baumannii, Pseudomonas 
+aeruginosa, Klebsiella pneumoniae, Enterococcus faecium and Staphylococcus 
+aureus for query. All visualizations are implemented in JavaScript and PHP. This 
+server will be useful for physicians and epidemiologists involved in research on 
+infectious disease. The 5NosoAE platform is available at 
+https://nosoae.imst.nsysu.edu.tw.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac423
+PMCID: PMC9252726
+PMID: 35639518
+
+
+16. Nucleic Acids Res. 2022 Jun 7;50(W1):W412-9. doi: 10.1093/nar/gkac481. Online 
+ahead of print.
+
+iBIS2Analyzer: a web server for a phylogeny-driven coevolution analysis of 
+protein families.
+
+Oteri F(1), Sarti E(1), Nadalin F(1), Carbone A(1).
+
+Author information:
+(1)Sorbonne Université, CNRS, IBPS, UMR 7238, Laboratoire de Biologie 
+Computationnelle et Quantitative (LCQB), 75005 Paris, France.
+
+Residue coevolution within and between proteins is used as a marker of physical 
+interaction and/or residue functional cooperation. Pairs or groups of coevolving 
+residues are extracted from multiple sequence alignments based on a variety of 
+computational approaches. However, coevolution signals emerging in subsets of 
+sequences might be lost if the full alignment is considered. iBIS2Analyzer is a 
+web server dedicated to a phylogeny-driven coevolution analysis of protein 
+families with different evolutionary pressure. It is based on the iterative 
+version, iBIS2, of the coevolution analysis method BIS, Blocks in Sequences. 
+iBIS2 is designed to iteratively select and analyse subtrees in phylogenetic 
+trees, possibly large and comprising thousands of sequences. With iBIS2Analyzer, 
+openly accessible at http://ibis2analyzer.lcqb.upmc.fr/, the user visualizes, 
+compares and inspects clusters of coevolving residues by mapping them onto 
+sequences, alignments or structures of choice, greatly simplifying downstream 
+analysis steps. A rich and interactive graphic interface facilitates the 
+biological interpretation of the results.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac481
+PMCID: PMC9252744
+PMID: 35670671
+
+
+17. Nucleic Acids Res. 2022 May 10;50(W1):W115-23. doi: 10.1093/nar/gkac313. Online 
+ahead of print.
+
+BioTransformer 3.0-a web server for accurately predicting metabolic 
+transformation products.
+
+Wishart DS(1)(2)(3)(4)(5), Tian S(1), Allen D(1), Oler E(1), Peters H(1), Lui 
+VW(1), Gautam V(1), Djoumbou-Feunang Y(6), Greiner R(2)(7), Metz TO(5).
+
+Author information:
+(1)Department of Biological Sciences, University of Alberta, Edmonton, AB T6G 
+2E9, Canada.
+(2)Department of Computing Science, University of Alberta, Edmonton, AB T6G 2E8, 
+Canada.
+(3)Department of Laboratory Medicine and Pathology, University of Alberta, 
+Edmonton, AB T6G 2B7, Canada.
+(4)Faculty of Pharmacy and Pharmaceutical Sciences, University of Alberta, 
+Edmonton, AB T6G 2H7, Canada.
+(5)Biological Sciences Division, Pacific Northwest National Laboratory, 
+Richland, WA 99352, USA.
+(6)Corteva Agriscience, Indianapolis, IN 46268, USA.
+(7)Alberta Machine Intelligence Institute, University of Alberta, Edmonton, AB 
+T6G 2E8, Canada.
+
+BioTransformer 3.0 (https://biotransformer.ca) is a freely available web server 
+that supports accurate, rapid and comprehensive in silico metabolism prediction. 
+It combines machine learning approaches with a rule-based system to predict 
+small-molecule metabolism in human tissues, the human gut as well as the 
+external environment (soil and water microbiota). Simply stated, BioTransformer 
+takes a molecular structure as input (SMILES or SDF) and outputs an 
+interactively sortable table of the predicted metabolites or transformation 
+products (SMILES, PNG images) along with the enzymes that are predicted to be 
+responsible for those reactions and richly annotated downloadable files (CSV and 
+JSON). The entire process typically takes less than a minute. Previous versions 
+of BioTransformer focused exclusively on predicting the metabolism of 
+xenobiotics (such as plant natural products, drugs, cosmetics and other 
+synthetic compounds) using a limited number of pre-defined steps and somewhat 
+limited rule-based methods. BioTransformer 3.0 uses much more sophisticated 
+methods and incorporates new databases, new constraints and new prediction 
+modules to not only more accurately predict the metabolic transformation 
+products of exogenous xenobiotics but also the transformation products of 
+endogenous metabolites, such as amino acids, peptides, carbohydrates, organic 
+acids, and lipids. BioTransformer 3.0 can also support customized sequential 
+combinations of these transformations along with multiple iterations to simulate 
+multi-step human biotransformation events. Performance tests indicate that 
+BioTransformer 3.0 is 40-50% more accurate, far less prone to combinatorial 
+'explosions' and much more comprehensive in terms of metabolite 
+coverage/capabilities than previous versions of BioTransformer.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac313
+PMCID: PMC9252798
+PMID: 35536252
+
+
+18. Nucleic Acids Res. 2022 May 7;50(W1):W500-9. doi: 10.1093/nar/gkac301. Online 
+ahead of print.
+
+Multi-CSAR: a web server for scaffolding contigs using multiple reference 
+genomes.
+
+Liu SC(1), Ju YR(1), Lu CL(1).
+
+Author information:
+(1)Department of Computer Science, National Tsing Hua University, Hsinchu 30013, 
+Taiwan.
+
+Multi-CSAR is a web server that can efficiently and more accurately order and 
+orient the contigs in the assembly of a target genome into larger scaffolds 
+based on multiple reference genomes. Given a target genome and multiple 
+reference genomes, Multi-CSAR first identifies sequence markers shared between 
+the target genome and each reference genome, then utilizes these sequence 
+markers to compute a scaffold for the target genome based on each single 
+reference genome, and finally combines all the single reference-derived 
+scaffolds into a multiple reference-derived scaffold. To run Multi-CSAR, the 
+users need to upload a target genome to be scaffolded and one or more reference 
+genomes in multi-FASTA format. The users can also choose to use the 'weighting 
+scheme of reference genomes' for Multi-CSAR to automatically calculate different 
+weights for the reference genomes and choose either 'NUCmer on nucleotides' or 
+'PROmer on translated amino acids' for Multi-CSAR to identify sequence markers. 
+In the output page, Multi-CSAR displays its multiple reference-derived scaffold 
+in two graphical representations (i.e. Circos plot and dotplot) for the users to 
+visually validate the correctness of scaffolded contigs and in a tabular 
+representation to further validate the scaffold in detail. Multi-CSAR is 
+available online at http://genome.cs.nthu.edu.tw/Multi-CSAR/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac301
+PMCID: PMC9252826
+PMID: 35524553
+
+
+19. Nucleic Acids Res. 2022 May 24;50(W1):W210-5. doi: 10.1093/nar/gkac387. Online 
+ahead of print.
+
+Dali server: structural unification of protein families.
+
+Holm L(1).
+
+Author information:
+(1)Institute of Biotechnology, Helsinki Institute of Life Sciences, and 
+Organismal and Evolutionary Biology Research Program, Faculty of Biosciences, 
+University of Helsinki, Finland.
+
+Protein structure is key to understanding biological function. Structure 
+comparison deciphers deep phylogenies, providing insight into functional 
+conservation and functional shifts during evolution. Until recently, structural 
+coverage of the protein universe was limited by the cost and labour involved in 
+experimental structure determination. Recent breakthroughs in deep learning 
+revolutionized structural bioinformatics by providing accurate structural models 
+of numerous protein families for which no structural information existed. The 
+Dali server for 3D protein structure comparison is widely used by 
+crystallographers to relate new structures to pre-existing ones. Here, we report 
+two most recent upgrades to the web server: (i) the foldomes of key organisms in 
+the AlphaFold Database (version 1) are searchable by Dali, (ii) structural 
+alignments are annotated with protein families. Using these new features, we 
+discovered a novel functionally diverse subgroup within the WRKY/GCM1 clan. This 
+was accomplished by linking the structurally characterized SWI/SNF and NAM 
+families as well as the structural models of the CG-1 family and uncharacterized 
+proteins to the structure of Gti1/Pac2, a previously known member of the 
+WRKY/GCM1 clan. The Dali server is available at 
+http://ekhidna2.biocenter.helsinki.fi/dali. This website is free and open to all 
+users and there is no login requirement.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac387
+PMCID: PMC9252788
+PMID: 35610055
+
+
+20. Nucleic Acids Res. 2022 May 12;50(W1):W761-7. doi: 10.1093/nar/gkac374. Online 
+ahead of print.
+
+TIRSF: a web server for screening gene signatures to predict Tumor immunotherapy 
+response.
+
+Chen L(1), Chen T(1), Zhang Y(1), Lin H(1), Wang R(1), Wang Y(1), Li H(1), Zuo 
+Z(2), Ren J(1)(2), Xie Y(1).
+
+Author information:
+(1)School of Life Sciences, Institute of Precision Medicine, the First 
+Affiliated Hospital, Sun Yat-sen University, Guangzhou 510060, China.
+(2)State Key Laboratory of Oncology in South China, Cancer Center, Collaborative 
+Innovation Center for Cancer Medicine, Sun Yat-sen University, 
+Guangzhou 510060, China.
+
+Immune checkpoint blockade (ICB) therapy has been successfully applied to 
+clinically therapeutics in multiple cancers, but its efficacy varies greatly 
+among different patients and cancer types. Therefore, the construction of gene 
+signatures to identify patients who could benefit from ICB therapy is 
+particularly important for precision cancer treatment. However, due to the lack 
+of a user-friendly platform, the construction of such gene signatures is a great 
+challenge for clinical investigators who have limited programming skills. In 
+light of this challenge, we developed a web server called Tumor Immunotherapy 
+Response Signature Finder(TIRSF) for the construction of gene signatures to 
+predict ICB therapy response in cancer patients. TIRSF consists of three 
+functional modules. The first module is the Signature Discovery module which 
+provides signature construction and performance evaluation functionalities. The 
+second is a module for response prediction based on the TIRSF signatures, which 
+enables response prediction and prognostic analysis of immunotherapy samples. 
+The last is a module for response prediction based on existing signatures. This 
+module currently integrates 24 published signatures for ICB therapy response 
+prediction. Together, all of above features can be freely accessed at 
+http://tirsf.renlab.org/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac374
+PMCID: PMC9252797
+PMID: 35554556
+
+
+21. Nucleic Acids Res. 2022 May 17;50(W1):W732-8. doi: 10.1093/nar/gkac370. Online 
+ahead of print.
+
+SWORD2: hierarchical analysis of protein 3D structures.
+
+Cretin G(1)(2), Galochkina T(1)(2), Vander Meersche Y(1)(2), de Brevern 
+AG(1)(2), Postic G(3), Gelly JC(1)(2).
+
+Author information:
+(1)Université Paris Cité and Université des Antilles and Université de la 
+Réunion, INSERM, BIGR, F-75015 Paris, France.
+(2)Laboratoire d'Excellence GR-Ex, 75015 Paris, France.
+(3)Université Paris-Saclay, Univ Evry, IBISC, 91020 Evry-Courcouronnes, France.
+
+Understanding the functions and origins of proteins requires splitting these 
+macromolecules into fragments that could be independent in terms of folding, 
+activity, or evolution. For that purpose, structural domains are the typical 
+level of analysis, but shorter segments, such as subdomains and supersecondary 
+structures, are insightful as well. Here, we propose SWORD2, a web server for 
+exploring how an input protein structure may be decomposed into 'Protein Units' 
+that can be hierarchically assembled to delimit structural domains. For each 
+partitioning solution, the relevance of the identified substructures is 
+estimated through different measures. This multilevel analysis is achieved by 
+integrating our previous work on domain delineation, 'protein peeling' and model 
+quality assessment. We hope that SWORD2 will be useful to biologists searching 
+for key regions in their proteins of interest and to bioinformaticians building 
+datasets of protein structures. The web server is freely available online: 
+https://www.dsimb.inserm.fr/SWORD2.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac370
+PMCID: PMC9252838
+PMID: 35580056
+
+
+22. Nucleic Acids Res. 2022 May 10;50(W1):W616-22. doi: 10.1093/nar/gkac310. Online 
+ahead of print.
+
+pubmedKB: an interactive web server for exploring biomedical entity relations in 
+the biomedical literature.
+
+Li PH(1), Chen TF(1), Yu JY(1), Shih SH(1), Su CH(1), Lin YH(1), Tsai HK(1)(2), 
+Juan HF(1)(3)(4), Chen CY(1)(4)(5), Huang JH(1).
+
+Author information:
+(1)Taiwan AI Labs, Taipei 10351, Taiwan.
+(2)Institute of Information Science, Academia Sinica, Taipei, 11529, Taiwan.
+(3)Department of Life Science, National Taiwan University, Taipei 10617, Taiwan.
+(4)Center for Computational and Systems Biology, National Taiwan University, 
+Taipei 10617, Taiwan.
+(5)Department of Biomechatronics Engineering, National Taiwan University, 
+Taipei, 10617, Taiwan.
+
+With the proliferation of genomic sequence data for biomedical research, the 
+exploration of human genetic information by domain experts requires a 
+comprehensive interrogation of large numbers of scientific publications in 
+PubMed. However, a query in PubMed essentially provides search results sorted 
+only by the date of publication. A search engine for retrieving and interpreting 
+complex relations between biomedical concepts in scientific publications remains 
+lacking. Here, we present pubmedKB, a web server designed to extract and 
+visualize semantic relationships between four biomedical entity types: variants, 
+genes, diseases, and chemicals. pubmedKB uses state-of-the-art natural language 
+processing techniques to extract semantic relations from the large number of 
+PubMed abstracts. Currently, over 2 million semantic relations between 
+biomedical entity pairs are extracted from over 33 million PubMed abstracts in 
+pubmedKB. pubmedKB has a user-friendly interface with an interactive semantic 
+graph, enabling the user to easily query entities and explore entity relations. 
+Supporting sentences with the highlighted snippets allow to easily navigate the 
+publications. Combined with a new explorative approach to literature mining and 
+an interactive interface for researchers, pubmedKB thus enables rapid, 
+intelligent searching of the large biomedical literature to provide useful 
+knowledge and insights. pubmedKB is available at https://www.pubmedkb.cc/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac310
+PMCID: PMC9252824
+PMID: 35536289
+
+
+23. Nucleic Acids Res. 2022 May 31;50(W1):W330-6. doi: 10.1093/nar/gkac441. Online 
+ahead of print.
+
+FUNAGE-Pro: comprehensive web server for gene set enrichment analysis of 
+prokaryotes.
+
+de Jong A(1), Kuipers OP(1), Kok J(1).
+
+Author information:
+(1)Department of Molecular Genetics, University of Groningen, Groningen 
+Biomolecular Sciences and Biotechnology Institute, the Netherlands.
+
+Recent advances in the field of high throughput (meta-)transcriptomics and 
+proteomics call for easy and rapid methods enabling to explore not only single 
+genes or proteins but also extended biological systems. Gene set enrichment 
+analysis is commonly used to find relations in a set of genes and helps to 
+uncover the biological meaning in results derived from high-throughput data. The 
+basis for gene set enrichment analysis is a solid functional classification of 
+genes. Here, we describe a comprehensive database containing multiple functional 
+classifications of genes of all (>55 000) publicly available complete bacterial 
+genomes. In addition to the most common functional classes such as COG and GO, 
+also KEGG, InterPro, PFAM, eggnog and operon classes are supported. As 
+classification data for features is often not available, we offer fast 
+annotation and classification of proteins in any newly sequenced bacterial 
+genome. The web server FUNAGE-Pro enables fast functional analysis on single 
+gene sets, multiple experiments, time series data, clusters, and gene network 
+modules for any prokaryote species or strain. FUNAGE-Pro is freely available at 
+http://funagepro.molgenrug.nl.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac441
+PMCID: PMC9252808
+PMID: 35641095
+
+
+24. Nucleic Acids Res. 2022 Aug 3:gkac646. doi: 10.1093/nar/gkac646. Online ahead of 
+print.
+
+ABC portal: a single-cell database and web server for blood cells.
+
+Gao X(1), Hong F(1), Hu Z(1), Zhang Z(1), Lei Y(1), Li X(1), Cheng T(1).
+
+Author information:
+(1)State Key Laboratory of Experimental Hematology, National Clinical Research 
+Center for Blood Diseases, Haihe Laboratory of Cell Ecosystem, Institute of 
+Hematology & Blood Diseases Hospital, Chinese Academy of Medical Sciences & 
+Peking Union Medical College, Tianjin 300020, China.
+
+ABC portal (http://abc.sklehabc.com) is a database and web portal containing 198 
+single-cell transcriptomic datasets of development, differentiation and disorder 
+of blood/immune cells. All the datasets were re-annotated with a manually 
+curated and unified single-cell reference, especially for the haematopoietic 
+stem and progenitor cells. ABC portal provides web-based interactive analysis 
+modules, especially a comprehensive cell-cell communication analysis and 
+disease-related gene signature analysis. Importantly, ABC portal allows 
+customized sample selection based on a combination of several metadata for 
+downstream analysis and comparison analysis across datasets. ABC portal also 
+allows users to select multiple cell types for analysis in the modules. 
+Together, ABC portal provides an interactive interface of single-cell data 
+exploration and re-analysis with customized analysis modules for the researchers 
+and clinicians, and will facilitate understanding of haematopoiesis and 
+blood/immune disorders.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac646
+PMID: 35920330
+
+
+25. Nucleic Acids Res. 2022 May 24;50(W1):W534-40. doi: 10.1093/nar/gkac385. Online 
+ahead of print.
+
+OrthoQuantum: visualizing evolutionary repertoire of eukaryotic proteins.
+
+Ilnitskiy IS(1)(2), Zharikova AA(1)(2), Mironov AA(1)(2).
+
+Author information:
+(1)Faculty of Bioengineering and Bioinformatics, Lomonosov Moscow State 
+University, Lomonosovsky Prospect 27, Building 10, 119991 Moscow, Russia.
+(2)Kharkevich Institute of Information Transmission Problems, Russian Academy of 
+Sciences, Big Karetny Lane 19, Building 1, 127051 Moscow, Russia.
+
+Extensive amounts of data from next-generation sequencing and omics studies have 
+led to the accumulation of information that provides insight into the 
+evolutionary landscape of related proteins. Here, we present OrthoQuantum, a web 
+server that allows for time-efficient analysis and visualization of phylogenetic 
+profiles of any set of eukaryotic proteins. It is a simple-to-use tool capable 
+of searching large input sets of proteins. Using data from open source databases 
+of orthologous sequences in a wide range of taxonomic groups, it enables users 
+to assess coupled evolutionary patterns and helps define lineage-specific 
+innovations. The web interface allows to perform queries with gene names and 
+UniProt identifiers in different phylogenetic clades and supplement presence 
+with an additional BLAST search. The conservation patterns of proteins are coded 
+as binary vectors, i.e., strings that encode the presence or absence of 
+orthologous proteins in other genomes. These strings are used to calculate 
+top-scoring correlation pairs needed for finding co-inherited proteins which are 
+simultaneously present or simultaneously absent in specific lineages. Profiles 
+are visualized in combination with phylogenetic trees in a JavaScript-based 
+interface. The OrthoQuantum v1.0 web server is freely available at 
+http://orthoq.bioinf.fbb.msu.ru along with documentation and tutorial.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac385
+PMCID: PMC9252792
+PMID: 35610035
+
+
+26. Nucleic Acids Res. 2022 May 7;50(W1):W744-52. doi: 10.1093/nar/gkac318. Online 
+ahead of print.
+
+TADeus2: a web server facilitating the clinical diagnosis by pathogenicity 
+assessment of structural variations disarranging 3D chromatin structure.
+
+Poszewiecka B(1), Pienkowski VM(2)(3), Nowosad K(4)(5)(6), Robin JD(2), 
+Gogolewski K(1), Gambin A(1).
+
+Author information:
+(1)Faculty of Mathematics, Informatics, and Mechanics, University of Warsaw, 2 
+Banacha street, 02-097 Warsaw, Poland.
+(2)Aix Marseille Univ, INSERM, Marseille Medical Genetics, MMG, Marseille, 
+France.
+(3)Department of Medical Genetics, Medical University of Warsaw, Adolfa 
+Pawińskiego 3c, 02-106 Warsaw, Poland.
+(4)Department of Cell Biology, Erasmus Medical Center, Doctor Molewaterplein 40, 
+3015 GD Rotterdam, Netherlands.
+(5)Department of Biomedical Sciences, Laboratory of Molecular Genetics, Medical 
+University of Lublin, Doktora Witolda Chodźki 1, 20-400 Lublin, Poland.
+(6)The Postgraduate School of Molecular Medicine, Medical University of Warsaw, 
+Żwirki i Wigury 61, 02-091 Warsaw, Poland.
+
+In recent years great progress has been made in identification of structural 
+variants (SV) in the human genome. However, the interpretation of SVs, 
+especially located in non-coding DNA, remains challenging. One of the reasons 
+stems in the lack of tools exclusively designed for clinical SVs evaluation 
+acknowledging the 3D chromatin architecture. Therefore, we present TADeus2 a web 
+server dedicated for a quick investigation of chromatin conformation changes, 
+providing a visual framework for the interpretation of SVs affecting 
+topologically associating domains (TADs). This tool provides a convenient visual 
+inspection of SVs, both in a continuous genome view as well as from a 
+rearrangement's breakpoint perspective. Additionally, TADeus2 allows the user to 
+assess the influence of analyzed SVs within flaking coding/non-coding regions 
+based on the Hi-C matrix. Importantly, the SVs pathogenicity is quantified and 
+ranked using TADA, ClassifyCNV tools and sampling-based P-value. TADeus2 is 
+publicly available at https://tadeus2.mimuw.edu.pl.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac318
+PMCID: PMC9252839
+PMID: 35524567
+
+
+27. Nucleic Acids Res. 2022 Jun 14;50(W1):W639-50. doi: 10.1093/nar/gkac508. Online 
+ahead of print.
+
+REVERSE: a user-friendly web server for analyzing next-generation sequencing 
+data from in vitro selection/evolution experiments.
+
+Weiss Z(1), DasGupta S(2)(3)(4).
+
+Author information:
+(1)Department of Chemistry and Chemical Biology, Harvard University, Cambridge, 
+MA 02138, USA.
+(2)Department of Molecular Biology, Center for Computational and Integrative 
+Biology, Massachusetts General Hospital, Boston, MA 02114, USA.
+(3)Howard Hughes Medical Institute, Massachusetts General Hospital, Boston, MA 
+02114, USA.
+(4)Department of Genetics, Harvard Medical School, Boston, MA 02115, USA.
+
+Next-generation sequencing (NGS) enables the identification of functional 
+nucleic acid sequences from in vitro selection/evolution experiments and 
+illuminates the evolutionary process at single-nucleotide resolution. However, 
+analyzing the vast output from NGS can be daunting, especially with limited 
+programming skills. We developed REVERSE (Rapid EValuation of Experimental RNA 
+Selection/Evolution) (https://www.reverseserver.org/), a web server that 
+implements an integrated computational pipeline through a graphical user 
+interface, which performs both pre-processing and detailed sequence level 
+analyses within minutes. Raw FASTQ files are quality-filtered, dereplicated, and 
+trimmed before being analyzed by either of two pipelines. The first pipeline 
+counts, sorts, and tracks enrichment of unique sequences and user-defined 
+sequence motifs. It also identifies mutational intermediates present in the 
+sequence data that connect two input sequences. The second pipeline sorts 
+similar sequences into clusters and tracks enrichment of peak sequences. It also 
+performs nucleotide conservation analysis on the cluster of choice and generates 
+a consensus sequence. Both pipelines generate downloadable spreadsheets and 
+high-resolution figures. Collectively, REVERSE is a one-stop solution for the 
+rapid analysis of NGS data obtained from in vitro selection/evolution 
+experiments that obviates the need for computational expertise.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac508
+PMCID: PMC9252737
+PMID: 35699225
+
+
+28. Nucleic Acids Res. 2022 Apr 19;50(W1):W560-7. doi: 10.1093/nar/gkac252. Online 
+ahead of print.
+
+patcHwork: a user-friendly pH sensitivity analysis web server for protein 
+sequences and structures.
+
+Schmitz M(1)(2), Schultze A(1)(2), Vanags R(3), Voigt K(3), Di Ventura B(1)(2), 
+Öztürk MA(1)(2).
+
+Author information:
+(1)Signaling Research Centres BIOSS and CIBSS, University of Freiburg, 
+Schänzlestr. 18, 79104 Freiburg, Germany.
+(2)Institute of Biology II, University of Freiburg, Schänzlestr. 1, 
+79104 Freiburg, Germany.
+(3)Institute of Biology III, University of Freiburg, Schänzlestr. 1, 
+79104 Freiburg, Germany.
+
+pH regulates protein function and interactions by altering the charge of 
+individual residues causing loss or gain of intramolecular noncovalent bonds, 
+which may lead to structural rearrangements. While tools to analyze 
+residue-specific charge distribution of proteins at a given pH exist, currently 
+no tool is available to investigate noncovalent bond changes at two different pH 
+values. To make protein pH sensitivity analysis more accessible, we developed 
+patcHwork, a web server that combines the identification of amino acids 
+undergoing a charge shift with the determination of affected noncovalent bonds 
+at two user-defined pH values. At the sequence-only level, patcHwork applies the 
+Henderson-Hasselbalch equation to determine pH-sensitive residues. When the 3D 
+protein structure is available, patcHwork can be employed to gain mechanistic 
+understanding of the effect of pH. This is achieved using the PDB2PQR and PROPKA 
+tools and noncovalent bond determination algorithms. A user-friendly interface 
+allows visualizing pH-sensitive residues, affected salt bridges, hydrogen bonds 
+and aromatic (pi-pi and cation-pi) interactions. patcHwork can be used to 
+identify patches, a new concept we propose of pH-sensitive residues in close 
+proximity on the protein, which may have a major impact on function. We 
+demonstrate the attractiveness of patcHwork studying experimentally investigated 
+pH-sensitive proteins (https://patchwork.biologie.uni-freiburg.de/).
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac252
+PMCID: PMC9252814
+PMID: 35438792
+
+
+29. Nucleic Acids Res. 2022 Apr 30;50(W1):W611-5. doi: 10.1093/nar/gkac305. Online 
+ahead of print.
+
+ProteinsPlus: a comprehensive collection of web-based molecular modeling tools.
+
+Schöning-Stierand K(1), Diedrich K(1), Ehrt C(1), Flachsenberg F(1), Graef J(1), 
+Sieg J(1), Penner P(1), Poppinga M(1)(2), Ungethüm A(3), Rarey M(1).
+
+Author information:
+(1)Universität Hamburg, ZBH - Center for Bioinformatics, Bundesstraße 43, 20146 
+Hamburg, Germany.
+(2)Universität Hamburg, Department of Informatics, Vogt-Kölln-Straße 30, 22527 
+Hamburg, Germany.
+(3)Universität Hamburg, Center for Data and Computing in Natural Sciences 
+(CDCS), Notkestraße 11, 22607 Hamburg, Germany.
+
+Upon the ever-increasing number of publicly available experimentally determined 
+and predicted protein and nucleic acid structures, the demand for easy-to-use 
+tools to investigate these structural models is higher than ever before. The 
+ProteinsPlus web server (https://proteins.plus) comprises a growing collection 
+of molecular modeling tools focusing on protein-ligand interactions. It enables 
+quick access to structural investigations ranging from structure analytics and 
+search methods to molecular docking. It is by now well-established in the 
+community and constantly extended. The server gives easy access not only to 
+experts but also to students and occasional users from the field of life 
+sciences. Here, we describe its recently added new features and tools, beyond 
+them a novel method for on-the-fly molecular docking and a search method for 
+single-residue substitutions in local regions of a protein structure throughout 
+the whole Protein Data Bank. Finally, we provide a glimpse into new avenues for 
+the annotation of AlphaFold structures which are directly accessible via a 
+RESTful service on the ProteinsPlus web server.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac305
+PMCID: PMC9252762
+PMID: 35489057
+
+
+30. Nucleic Acids Res. 2022 May 25;50(W1):W66-74. doi: 10.1093/nar/gkac424. Online 
+ahead of print.
+
+Aquaculture Molecular Breeding Platform (AMBP): a comprehensive web server for 
+genotype imputation and genetic analysis in aquaculture.
+
+Zeng Q(1)(2)(3), Zhao B(1), Wang H(1), Wang M(1), Teng M(1), Hu J(1)(2), Bao 
+Z(1)(2)(3), Wang Y(1)(3).
+
+Author information:
+(1)MOE Key Laboratory of Marine Genetics and Breeding, College of Marine Life 
+Sciences, Ocean University of China, Qingdao 266003, China.
+(2)Key Laboratory of Tropical Aquatic Germplasm of Hainan Province, Sanya 
+Oceanog Inst, Ocean Univ China, Sanya 572000, Peoples R China.
+(3)Laboratory for Marine Fisheries Science and Food Production Processes, 
+Qingdao National Laboratory for Marine Science and Technology, Qingdao 266237, 
+China.
+
+It is of vital importance to understand the population structure, dissect the 
+genetic bases of performance traits, and make proper strategies for selection in 
+breeding programs. However, there is no single webserver covering the specific 
+needs in aquaculture. We present Aquaculture Molecular Breeding Platform (AMBP), 
+the first web server for genetic data analysis in aquatic species of farming 
+interest. AMBP integrates the haplotype reference panels of 18 aquaculture 
+species, which greatly improves the accuracy of genotype imputation. It also 
+supports multiple tools to infer genetic structures, dissect the genetic 
+architecture of performance traits, estimate breeding values, and predict 
+optimum contribution. All the tools are coherently linked in a web-interface for 
+users to generate interpretable results and evaluate statistical 
+appropriateness. The webserver supports standard VCF and PLINK (PED, MAP) files, 
+and implements automated pipelines for format transformation and visualization 
+to simplify the process of analysis. As a demonstration, we applied the 
+webserver to Pacific white shrimp and Atlantic salmon datasets. In summary, AMBP 
+constitutes comprehensive resources and analytical tools for exploring genetic 
+data and guiding practical breeding programs. AMBP is available at 
+http://mgb.qnlm.ac.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac424
+PMCID: PMC9252723
+PMID: 35639514
+
+
+31. Nucleic Acids Res. 2022 Mar 29;50(W1):W663-9. doi: 10.1093/nar/gkac218. Online 
+ahead of print.
+
+RNAspider: a webserver to analyze entanglements in RNA 3D structures.
+
+Luwanski K(1), Hlushchenko V(1), Popenda M(2), Zok T(1), Sarzynska J(2), 
+Martsich D(1), Szachniuk M(1)(2), Antczak M(1)(2).
+
+Author information:
+(1)Institute of Computing Science and European Centre for Bioinformatics and 
+Genomics, Poznan University of Technology, Piotrowo 2, 60-965 Poznan, Poland.
+(2)Institute of Bioorganic Chemistry, Polish Academy of Sciences, Noskowskiego 
+12/14, 61-704 Poznan, Poland.
+
+Advances in experimental and computational techniques enable the exploration of 
+large and complex RNA 3D structures. These, in turn, reveal previously unstudied 
+properties and motifs not characteristic for small molecules with simple 
+architectures. Examples include entanglements of structural elements in RNA 
+molecules and knot-like folds discovered, among others, in the genomes of RNA 
+viruses. Recently, we presented the first classification of entanglements, 
+determined by their topology and the type of entangled structural elements. 
+Here, we introduce RNAspider - a web server to automatically identify, classify, 
+and visualize primary and higher-order entanglements in RNA tertiary structures. 
+The program applies to evaluate RNA 3D models obtained experimentally or by 
+computational prediction. It supports the analysis of uncommon topologies in the 
+pseudoknotted RNA structures. RNAspider is implemented as a publicly available 
+tool with a user-friendly interface and can be freely accessed at 
+https://rnaspider.cs.put.poznan.pl/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac218
+PMCID: PMC9252836
+PMID: 35349710
+
+
+32. Nucleic Acids Res. 2022 Jun 7;50(W1):W191-8. doi: 10.1093/nar/gkac466. Online 
+ahead of print.
+
+CRISPRedict: a CRISPR-Cas9 web tool for interpretable efficiency predictions.
+
+Konstantakos V(1), Nentidis A(1)(2), Krithara A(1), Paliouras G(1).
+
+Author information:
+(1)Institute of Informatics and Telecommunications, NCSR Demokritos, Patr. 
+Gregoriou E & 27 Neapoleos Str, 15341 Athens, Greece.
+(2)School of Informatics, Aristotle University of Thessaloniki, 
+54124 Thessaloniki, Greece.
+
+The development of the CRISPR-Cas9 technology has provided a simple yet powerful 
+system for genome editing. Current gRNA design tools serve as an important 
+platform for the efficient application of the CRISPR systems. However, most of 
+the existing tools are black-box models that suffer from limitations, such as 
+variable performance and unclear mechanism of decision making. Here, we 
+introduce CRISPRedict, an interpretable gRNA efficiency prediction model for 
+CRISPR-Cas9 gene editing. Its strength lies in the fact that it can accurately 
+predict efficient guide RNAs-with equivalent performance to state-of-the-art 
+tools-while being a simple linear model. Implemented as a user-friendly web 
+server, CRISPRedict offers (i) quick and accurate predictions across various 
+experimental conditions (e.g. U6/T7 transcription); (ii) regression and 
+classification models for scoring gRNAs and (iii) multiple visualizations to 
+explain the obtained results. Given its performance, interpretability, and 
+versatility, we expect that it will assist researchers in the gRNA design 
+process and facilitate genome editing research. CRISPRedict is available for use 
+at http://www.crispredict.org/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac466
+PMCID: PMC9252759
+PMID: 35670672
+
+
+33. Nucleic Acids Res. 2022 Jun 7;50(W1):W405-11. doi: 10.1093/nar/gkac480. Online 
+ahead of print.
+
+HemI 2.0: an online service for heatmap illustration.
+
+Ning W(1)(2), Wei Y(2), Gao L(2), Han C(2), Gou Y(2), Fu S(2), Liu D(2), Zhang 
+C(2), Huang X(2), Wu S(2), Peng D(2), Wang C(2), Xue Y(2)(3).
+
+Author information:
+(1)Department of Clinical Laboratory, Union Hospital, Tongji Medical College, 
+Huazhong University of Science and Technology, Wuhan, Hubei 430022, China.
+(2)Key Laboratory of Molecular Biophysics of Ministry of Education, Hubei 
+Bioinformatics and Molecular Imaging Key Laboratory, Center for Artificial 
+Intelligence Biology, College of Life Science and Technology, Huazhong 
+University of Science and Technology, Wuhan, Hubei 430074, China.
+(3)Nanjing University Institute of Artificial Intelligence Biomedicine, 
+Nanjing 210031, China.
+
+Recent high-throughput omics techniques have produced a large amount of 
+biological data. Visualization of big omics data is essential to answer a wide 
+range of biological problems. As a concise but comprehensive strategy, a heatmap 
+can analyze and visualize high-dimensional and heterogeneous biomolecular 
+expression data in an attractive artwork. In 2014, we developed a stand-alone 
+software package, Heat map Illustrator (HemI 1.0), which implemented three 
+clustering methods and seven distance metrics for heatmap illustration. Here, we 
+significantly improved 1.0 and released the online service of HemI 2.0, in which 
+7 clustering methods and 22 types of distance metrics were implemented. In HemI 
+2.0, the clustering results and publication-quality heatmaps can be exported 
+directly. For an in-depth analysis of the data, we further added an option of 
+enrichment analysis for 12 model organisms, with 15 types of functional 
+annotations. The enrichment results can be visualized in five idioms, including 
+bubble chart, bar graph, coxcomb chart, pie chart and word cloud. We anticipate 
+that HemI 2.0 can be a helpful web server for visualization of biomolecular 
+expression data, as well as the additional enrichment analysis. HemI 2.0 is 
+freely available for all users at: https://hemi.biocuckoo.org/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac480
+PMCID: PMC9252725
+PMID: 35670661
+
+
+34. Nucleic Acids Res. 2021 Dec 16;49(22):e129. doi: 10.1093/nar/gkab829.
+
+BioSeq-BLM: a platform for analyzing DNA, RNA and protein sequences based on 
+biological language models.
+
+Li HL(1), Pang YH(1), Liu B(1)(2).
+
+Author information:
+(1)School of Computer Science and Technology, Beijing Institute of Technology, 
+Beijing, China.
+(2)Advanced Research Institute of Multidisciplinary Science, Beijing Institute 
+of Technology, Beijing, China.
+
+In order to uncover the meanings of 'book of life', 155 different biological 
+language models (BLMs) for DNA, RNA and protein sequence analysis are discussed 
+in this study, which are able to extract the linguistic properties of 'book of 
+life'. We also extend the BLMs into a system called BioSeq-BLM for automatically 
+representing and analyzing the sequence data. Experimental results show that the 
+predictors generated by BioSeq-BLM achieve comparable or even obviously better 
+performance than the exiting state-of-the-art predictors published in 
+literatures, indicating that BioSeq-BLM will provide new approaches for 
+biological sequence analysis based on natural language processing technologies, 
+and contribute to the development of this very important field. In order to help 
+the readers to use BioSeq-BLM for their own experiments, the corresponding web 
+server and stand-alone package are established and released, which can be freely 
+accessed at http://bliulab.net/BioSeq-BLM/.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkab829
+PMCID: PMC8682797
+PMID: 34581805 [Indexed for MEDLINE]
+
+
+35. Nucleic Acids Res. 2022 May 7;50(W1):W222-7. doi: 10.1093/nar/gkac325. Online 
+ahead of print.
+
+DDGun: an untrained predictor of protein stability changes upon amino acid 
+variants.
+
+Montanucci L(1), Capriotti E(2), Birolo G(3), Benevenuta S(3), Pancotti C(3), 
+Lal D(1), Fariselli P(3).
+
+Author information:
+(1)Genomic Medicine Institute, Lerner Research Institute, Cleveland Clinic, 9500 
+Euclid Avenue, Cleveland, OH 44195, USA.
+(2)BioFolD Unit, Department of Pharmacy and Biotechnology (FaBiT), University of 
+Bologna, Via F. Selmi 3, 40126 Bologna, Italy.
+(3)Department of Medical Sciences, University of Torino, Via Santena 19, 10126, 
+Torino, Italy.
+
+Estimating the functional effect of single amino acid variants in proteins is 
+fundamental for predicting the change in the thermodynamic stability, measured 
+as the difference in the Gibbs free energy of unfolding, between the wild-type 
+and the variant protein (ΔΔG). Here, we present the web-server of the DDGun 
+method, which was previously developed for the ΔΔG prediction upon amino acid 
+variants. DDGun is an untrained method based on basic features derived from 
+evolutionary information. It is antisymmetric, as it predicts opposite ΔΔG 
+values for direct (A → B) and reverse (B → A) single and multiple site variants. 
+DDGun is available in two versions, one based on only sequence information and 
+the other one based on sequence and structure information. Despite being 
+untrained, DDGun reaches prediction performances comparable to those of trained 
+methods. Here we make DDGun available as a web server. For the web server 
+version, we updated the protein sequence database used for the computation of 
+the evolutionary features, and we compiled two new data sets of protein variants 
+to do a blind test of its performances. On these blind data sets of single and 
+multiple site variants, DDGun confirms its prediction performance, reaching an 
+average correlation coefficient between experimental and predicted ΔΔG of 0.45 
+and 0.49 for the sequence-based and structure-based versions, respectively. 
+Besides being used for the prediction of ΔΔG, we suggest that DDGun should be 
+adopted as a benchmark method to assess the predictive capabilities of newly 
+developed methods. Releasing DDGun as a web-server, stand-alone program and 
+docker image will facilitate the necessary process of method comparison to 
+improve ΔΔG prediction.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac325
+PMCID: PMC9252764
+PMID: 35524565
+
+
+36. Nucleic Acids Res. 2022 Jan 7;50(D1):D273-D278. doi: 10.1093/nar/gkab1111.
+
+PLSDB: advancing a comprehensive database of bacterial plasmids.
+
+Schmartz GP(1), Hartung A(1), Hirsch P(1)(2), Kern F(1), Fehlmann T(1), Müller 
+R(2)(3), Keller A(1)(2).
+
+Author information:
+(1)Chair for Clinical Bioinformatics, Saarland University, 66123 Saarbrücken, 
+Germany.
+(2)Department of Microbial Natural Products, Helmholtz-Institute for 
+Pharmaceutical Research Saarland (HIPS), Helmholtz Centre for Infection Research 
+(HZI), Campus E8 1, 66123 Saarbrücken, Germany.
+(3)Department of Pharmacy, Saarland University, 66123 Saarbrücken, Germany.
+
+Plasmids are known to contain genes encoding for virulence factors and 
+antibiotic resistance mechanisms. Their relevance in metagenomic data processing 
+is steadily growing. However, with the increasing popularity and scale of 
+metagenomics experiments, the number of reported plasmids is rapidly growing as 
+well, amassing a considerable number of false positives due to undetected 
+misassembles. Here, our previously published database PLSDB provides a reliable 
+resource for researchers to quickly compare their sequences against selected and 
+annotated previous findings. Within two years, the size of this resource has 
+more than doubled from the initial 13,789 to now 34,513 entries over the course 
+of eight regular data updates. For this update, we aggregated community feedback 
+for major changes to the database featuring new analysis functionality as well 
+as performance, quality, and accessibility improvements. New filtering steps, 
+annotations, and preprocessing of existing records improve the quality of the 
+provided data. Additionally, new features implemented in the web-server ease 
+user interaction and allow for a deeper understanding of custom uploaded 
+sequences, by visualizing similarity information. Lastly, an application 
+programming interface was implemented along with a python library, to allow 
+remote database queries in automated workflows. The latest release of PLSDB is 
+freely accessible under https://www.ccb.uni-saarland.de/plsdb.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkab1111
+PMCID: PMC8728149
+PMID: 34850116 [Indexed for MEDLINE]
+
+
+37. Nucleic Acids Res. 2022 Nov 18:gkac1068. doi: 10.1093/nar/gkac1068. Online ahead 
+of print.
+
+dbCAN-seq update: CAZyme gene clusters and substrates in microbiomes.
+
+Zheng J(1), Hu B(2), Zhang X(1), Ge Q(2), Yan Y(1), Akresi J(1), Piyush V(3), 
+Huang L(4), Yin Y(1).
+
+Author information:
+(1)Nebraska Food for Health Center, Department of Food Science and Technology, 
+University of Nebraska, Lincoln, NE 68588, USA.
+(2)School of Computing, University of Nebraska, Lincoln, NE 68588, USA.
+(3)Department of Statistics, University of Nebraska, Lincoln, NE 68588, USA.
+(4)Curriculum in Bioinformatics and Computational Biology, University of North 
+Carolina at Chapel Hill, NC, USA.
+
+Carbohydrate Active EnZymes (CAZymes) are significantly important for microbial 
+communities to thrive in carbohydrate rich environments such as animal guts, 
+agricultural soils, forest floors, and ocean sediments. Since 2017, microbiome 
+sequencing and assembly have produced numerous metagenome assembled genomes 
+(MAGs). We have updated our dbCAN-seq database (https://bcb.unl.edu/dbCAN_seq) 
+to include the following new data and features: (i) ∼498 000 CAZymes and ∼169 
+000 CAZyme gene clusters (CGCs) from 9421 MAGs of four ecological (human gut, 
+human oral, cow rumen, and marine) environments; (ii) Glycan substrates for 41 
+447 (24.54%) CGCs inferred by two novel approaches (dbCAN-PUL homology search 
+and eCAMI subfamily majority voting) (the two approaches agreed on 4183 CGCs for 
+substrate assignments); (iii) A redesigned CGC page to include the graphical 
+display of CGC gene compositions, the alignment of query CGC and subject PUL 
+(polysaccharide utilization loci) of dbCAN-PUL, and the eCAMI subfamily table to 
+support the predicted substrates; (iv) A statistics page to organize all the 
+data for easy CGC access according to substrates and taxonomic phyla; and (v) A 
+batch download page. In summary, this updated dbCAN-seq database highlights 
+glycan substrates predicted for CGCs from microbiomes. Future work will 
+implement the substrate prediction function in our dbCAN2 web server.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac1068
+PMID: 36399503
+
+
+38. Nucleic Acids Res. 2022 May 7;50(W1):W474-82. doi: 10.1093/nar/gkac307. Online 
+ahead of print.
+
+MAPIYA contact map server for identification and visualization of molecular 
+interactions in proteins and biological complexes.
+
+Badaczewska-Dawid AE(1), Nithin C(2), Wroblewski K(2), Kurcinski M(2), Kmiecik 
+S(2).
+
+Author information:
+(1)Department of Chemistry, Iowa State University, Ames, IA 50011, USA.
+(2)Biological and Chemical Research Center, Faculty of Chemistry, University of 
+Warsaw, Pasteura 1, 02-093 Warsaw, Poland.
+
+Correct identification and effective visualization of interactions in 
+biomolecular structures facilitate understanding of their functions and 
+molecular design. In response to the practical needs of structure-based 
+analysis, we have created a Mapiya web server. The Mapiya integrates four main 
+functionalities: (i) generation of contact maps - intramolecular and 
+intermolecular-for proteins, nucleic acids, and their complexes; (ii) 
+characterization of the interactions physicochemical nature, (iii) interactive 
+visualization of biomolecular conformations with automatic zoom on selected 
+contacts using Molstar and (iv) additional sequence- and structure-based 
+analyses performed with third-party software and in-house algorithms combined 
+into an easy-to-use interface. Thus, Mapiya offers a highly customized analysis 
+of the molecular interactions' in various biological systems. The web server is 
+available at: http://mapiya.lcbio.pl/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac307
+PMCID: PMC9252833
+PMID: 35524560
+
+
+39. Nucleic Acids Res. 2022 May 7;50(W1):W392-7. doi: 10.1093/nar/gkac323. Online 
+ahead of print.
+
+GRaSP-web: a machine learning strategy to predict binding sites based on residue 
+neighborhood graphs.
+
+Santana CA(1)(2), Izidoro SC(3), de Melo-Minardi RC(1)(2), Tyzack JD(4), Ribeiro 
+AJM(4), Pires DEV(5), Thornton JM(4), de A Silveira S(6).
+
+Author information:
+(1)Department of Biochemistry and Immunology, Universidade Federal de Minas 
+Gerais, Belo Horizonte 31270-901, Brazil.
+(2)Department of Computer Science, Universidade Federal de Minas Gerais, Belo 
+Horizonte 31270-901, Brazil.
+(3)Institute of Technological Sciences (ICT), Advanced Campus at Itabira, 
+Universidade Federal de Itajubá, Itabira 35903-087, Brazil.
+(4)European Molecular Biology Laboratory, European Bioinformatics Institute, 
+Wellcome Trust Genome Campus, Hinxton, Cambridge CB10 1SD, UK.
+(5)School of Computing and Information Systems, University of Melbourne, 
+Parkville 3052, Australia.
+(6)Department of Computer Science, Universidade Federal de Viçosa, 
+Viçosa 36570-900, Brazil.
+
+Proteins are essential macromolecules for the maintenance of living systems. 
+Many of them perform their function by interacting with other molecules in 
+regions called binding sites. The identification and characterization of these 
+regions are of fundamental importance to determine protein function, being a 
+fundamental step in processes such as drug design and discovery. However, 
+identifying such binding regions is not trivial due to the drawbacks of 
+experimental methods, which are costly and time-consuming. Here we propose 
+GRaSP-web, a web server that uses GRaSP (Graph-based Residue neighborhood 
+Strategy to Predict binding sites), a residue-centric method based on graphs 
+that uses machine learning to predict putative ligand binding site residues. The 
+method outperformed 6 state-of-the-art residue-centric methods (MCC of 0.61). 
+Also, GRaSP-web is scalable as it takes 10-20 seconds to predict binding sites 
+for a protein complex (the state-of-the-art residue-centric method takes 2-5h on 
+the average). It proved to be consistent in predicting binding sites for 
+bound/unbound structures (MCC 0.61 for both) and for a large dataset of 
+multi-chain proteins (4500 entries, MCC 0.61). GRaSPWeb is freely available at 
+https://grasp.ufv.br.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac323
+PMCID: PMC9252730
+PMID: 35524575
+
+
+40. Nucleic Acids Res. 2022 Jan 7;50(D1):D654-D664. doi: 10.1093/nar/gkab920.
+
+Kincore: a web resource for structural classification of protein kinases and 
+their inhibitors.
+
+Modi V(1), Dunbrack RL(1).
+
+Author information:
+(1)Institute for Cancer Research, Fox Chase Cancer Center, Philadelphia, 
+PA 19148, USA.
+
+The active form of kinases is shared across different family members, as are 
+several commonly observed inactive forms. We previously performed a clustering 
+of the conformation of the activation loop of all protein kinase structures in 
+the Protein Data Bank (PDB) into eight classes based on the dihedral angles that 
+place the Phe side chain of the DFG motif at the N-terminus of the activation 
+loop. Our clusters are strongly associated with the placement of the activation 
+loop, the C-helix, and other structural elements of kinases. We present Kincore, 
+a web resource providing access to our conformational assignments for kinase 
+structures in the PDB. While other available databases provide conformational 
+states or drug type but not both, KinCore includes the conformational state and 
+the inhibitor type (Type 1, 1.5, 2, 3, allosteric) for each kinase chain. The 
+user can query and browse the database using these attributes or determine the 
+conformational labels of a kinase structure using the web server or a standalone 
+program. The database and labeled structure files can be downloaded from the 
+server. Kincore will help in understanding the conformational dynamics of these 
+proteins and guide development of inhibitors targeting specific states. Kincore 
+is available at http://dunbrack.fccc.edu/kincore.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkab920
+PMCID: PMC8728253
+PMID: 34643709 [Indexed for MEDLINE]
+
+
+41. Nucleic Acids Res. 2022 May 26;50(W1):W483-9. doi: 10.1093/nar/gkac398. Online 
+ahead of print.
+
+MDsrv: visual sharing and analysis of molecular dynamics simulations.
+
+Kampfrath M(1), Staritzbichler R(2), Hernández GP(3), Rose AS(4), Tiemann 
+JKS(5), Scheuermann G(1), Wiegreffe D(1), Hildebrand PW(2)(3)(6).
+
+Author information:
+(1)Image and Signal Processing Group, Department of Computer Science, Leipzig 
+University, Augustusplatz 10, 04109 Leipzig, Germany.
+(2)Institute for Medical Physics and Biophysics, Medical Faculty, Leipzig 
+University, Härtelstraße 16-18, 04107 Leipzig, Germany.
+(3)Charité Universitätsmedizin Berlin, corporate member of Freie Universität 
+Berlin and Humboldt-Universität zu Berlin, Institute of Medical Physics and 
+Biophysics, Berlin, Germany.
+(4)Mol* Consortium.
+(5)Linderstrøm-Lang Centre for Protein Science, Department of Biology, 
+University of Copenhagen, Ole Maaløes Vej 5, DK-2200 Copenhagen N., Denmark.
+(6)Berlin Institute of Health, 10178 Berlin, Germany.
+
+Molecular dynamics simulation is a proven technique for computing and 
+visualizing the time-resolved motion of macromolecules at atomic resolution. The 
+MDsrv is a tool that streams MD trajectories and displays them interactively in 
+web browsers without requiring advanced skills, facilitating interactive 
+exploration and collaborative visual analysis. We have now enhanced the MDsrv to 
+further simplify the upload and sharing of MD trajectories and improve their 
+online viewing and analysis. With the new instance, the MDsrv simplifies the 
+creation of sessions, which allows the exchange of MD trajectories with preset 
+representations and perspectives. An important innovation is that the MDsrv can 
+now access and visualize trajectories from remote datasets, which greatly 
+expands its applicability and use, as the data no longer needs to be accessible 
+on a local server. In addition, initial analyses such as sequence or structure 
+alignments, distance measurements, or RMSD calculations have been implemented, 
+which optionally support visual analysis. Finally, based on Mol*, MDsrv now 
+provides faster and more efficient visualization of even large trajectories 
+compared to its predecessor tool NGL.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac398
+PMCID: PMC9252803
+PMID: 35639717
+
+
+42. Nucleic Acids Res. 2022 Apr 19;50(W1):W465-73. doi: 10.1093/nar/gkac249. Online 
+ahead of print.
+
+LoopGrafter: a web tool for transplanting dynamical loops for protein 
+engineering.
+
+Planas-Iglesias J(1)(2), Opaleny F(3), Ulbrich P(3), Stourac J(1)(2), Sanusi 
+Z(1), Pinto GP(1)(2), Schenkmayerova A(1)(2), Byska J(3), Damborsky J(1)(2), 
+Kozlikova B(3), Bednar D(1)(2).
+
+Author information:
+(1)Loschmidt Laboratories, Department of Experimental Biology and RECETOX, 
+Faculty of Science, Masaryk University, 625 00 Brno, Czech Republic.
+(2)International Clinical Research Center, St Anne's University Hospital Brno, 
+656 916 Brno, Czech Republic.
+(3)Department of Visual Computing, Faculty of Informatics, Masaryk University, 
+602 00 Brno, Czech Republic.
+
+The transplantation of loops between structurally related proteins is a 
+compelling method to improve the activity, specificity and stability of enzymes. 
+However, despite the interest of loop regions in protein engineering, the 
+available methods of loop-based rational protein design are scarce. One 
+particular difficulty related to loop engineering is the unique dynamism that 
+enables them to exert allosteric control over the catalytic function of enzymes. 
+Thus, when engaging in a transplantation effort, such dynamics in the context of 
+protein structure need consideration. A second practical challenge is 
+identifying successful excision points for the transplantation or grafting. 
+Here, we present LoopGrafter (https://loschmidt.chemi.muni.cz/loopgrafter/), a 
+web server that specifically guides in the loop grafting process between 
+structurally related proteins. The server provides a step-by-step interactive 
+procedure in which the user can successively identify loops in the two input 
+proteins, calculate their geometries, assess their similarities and dynamics, 
+and select a number of loops to be transplanted. All possible different chimeric 
+proteins derived from any existing recombination point are calculated, and 3D 
+models for each of them are constructed and energetically evaluated. The 
+obtained results can be interactively visualized in a user-friendly graphical 
+interface and downloaded for detailed structural analyses.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac249
+PMCID: PMC9252738
+PMID: 35438789
+
+
+43. Nucleic Acids Res. 2022 Jan 7;50(D1):D1025-D1031. doi: 10.1093/nar/gkab1091.
+
+Genomicus in 2022: comparative tools for thousands of genomes and reconstructed 
+ancestors.
+
+Nguyen NTT(1), Vincens P(1), Dufayard JF(2)(3), Roest Crollius H(1), Louis A(1).
+
+Author information:
+(1)Institut de Biologie de l'ENS (IBENS), Département de biologie, École normale 
+supérieure, CNRS, INSERM, Université PSL, 75005 Paris, France.
+(2)CIRAD, UMR AGAP Institut, F-34398 Montpellier, France - UMR AGAP Institut, 
+Univ Montpellier, CIRAD, INRAE, Institut Agro, F-34398 Montpellier, France.
+(3)French Institute of Bioinformatics (IFB) - South Green Bioinformatics 
+Platform, Bioversity, CIRAD, INRAE, IRD, F-34398 Montpellier, France.
+
+Genomicus is a database and web-server dedicated to comparative genomics in 
+eukaryotes. Its main functionality is to graphically represent the conservation 
+of genomic blocks between multiple genomes, locally around a specific gene of 
+interest or genome-wide through karyotype comparisons. Since 2010 and its first 
+release, Genomicus has synchronized with 60 Ensembl releases and seen the 
+addition of functions that have expanded the type of analyses that users can 
+perform. Today, five public instances of Genomicus are supporting a total number 
+of 1029 extant genomes and 621 ancestral reconstructions from all eukaryotes 
+kingdoms available in Ensembl and Ensembl Genomes databases complemented with 
+four additional instances specific to taxonomic groups of interest. New 
+visualization and query tools are described in this manuscript. Genomicus is 
+freely available at http://www.genomicus.bio.ens.psl.eu/genomicus.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkab1091
+PMCID: PMC8728260
+PMID: 34792170 [Indexed for MEDLINE]
+
+
+44. Nucleic Acids Res. 2022 May 24:gkac389. doi: 10.1093/nar/gkac389. Online ahead 
+of print.
+
+PrankWeb 3: accelerated ligand-binding site predictions for experimental and 
+modelled protein structures.
+
+Jakubec D(1), Skoda P(1), Krivak R(1), Novotny M(2), Hoksza D(1).
+
+Author information:
+(1)Department of Software Engineering, Faculty of Mathematics and Physics, 
+Charles University, Czech Republic.
+(2)Department of Cell Biology, Faculty of Science, Charles University, Czech 
+Republic.
+
+Knowledge of protein-ligand binding sites (LBSs) enables research ranging from 
+protein function annotation to structure-based drug design. To this end, we have 
+previously developed a stand-alone tool, P2Rank, and the web server PrankWeb 
+(https://prankweb.cz/) for fast and accurate LBS prediction. Here, we present 
+significant enhancements to PrankWeb. First, a new, more accurate evolutionary 
+conservation estimation pipeline based on the UniRef50 sequence database and the 
+HMMER3 package is introduced. Second, PrankWeb now allows users to enter UniProt 
+ID to carry out LBS predictions in situations where no experimental structure is 
+available by utilizing the AlphaFold model database. Additionally, a range of 
+minor improvements has been implemented. These include the ability to deploy 
+PrankWeb and P2Rank as Docker containers, support for the mmCIF file format, 
+improved public REST API access, or the ability to batch download the LBS 
+predictions for the whole PDB archive and parts of the AlphaFold database.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac389
+PMID: 35609995
+
+
+45. Nucleic Acids Res. 2022 Apr 21;50(W1):W51-6. doi: 10.1093/nar/gkac262. Online 
+ahead of print.
+
+ANANASTRA: annotation and enrichment analysis of allele-specific transcription 
+factor binding at SNPs.
+
+Boytsov A(1)(2)(3), Abramov S(1)(2)(3), Aiusheeva AZ(4), Kasianova AM(4)(5), 
+Baulin E(2)(6), Kuznetsov IA(7), Aulchenko YS(8)(9), Kolmykov S(10)(11), Yevshin 
+I(10)(11), Kolpakov F(10)(12), Vorontsov IE(1)(4), Makeev VJ(1)(2)(3)(13), 
+Kulakovskiy IV(1)(3)(4).
+
+Author information:
+(1)Vavilov Institute of General Genetics, Russian Academy of Sciences, Moscow, 
+119991, Russia.
+(2)Moscow Institute of Physics and Technology, Dolgoprudny, 141701, Russia.
+(3)Laboratory of Regulatory Genomics, Institute of Fundamental Medicine and 
+Biology, Kazan Federal University, Kazan, 420008, Russia.
+(4)Institute of Protein Research, Russian Academy of Sciences, Pushchino, 
+142290, Russia.
+(5)Southern Federal University, Rostov-on-Don, 344006, Russia.
+(6)Institute of Mathematical Problems of Biology RAS - the Branch of Keldysh 
+Institute of Applied Mathematics of Russian Academy of Sciences, Pushchino, 
+142290, Russia.
+(7)Skolkovo Institute of Science and Technology, Moscow, 121205, Russia.
+(8)Institute of Cytology and Genetics SB RAS, Novosibirsk, 630090, Russia.
+(9)PolyKnomics BV, 's-Hertogenbosch, 5237 PA, Netherlands.
+(10)Sirius University of Science and Technology, Sochi, 354340, Russia.
+(11)Biosoft.Ru LLC, Novosibirsk, 630090, Russia.
+(12)Federal Research Center for Information and Computational Technologies, 
+Novosibirsk, 630090, Russia.
+(13)Engelhardt Institute of Molecular Biology, Russian Academy of Sciences, 
+Moscow, 119991, Russia.
+
+We present ANANASTRA, https://ananastra.autosome.org, a web server for the 
+identification and annotation of regulatory single-nucleotide polymorphisms 
+(SNPs) with allele-specific binding events. ANANASTRA accepts a list of dbSNP 
+IDs or a VCF file and reports allele-specific binding (ASB) sites of particular 
+transcription factors or in specific cell types, highlighting those with ASBs 
+significantly enriched at SNPs in the query list. ANANASTRA is built on top of a 
+systematic analysis of allelic imbalance in ChIP-Seq experiments and performs 
+the ASB enrichment test against background sets of SNPs found in the same source 
+experiments as ASB sites but not displaying significant allelic imbalance. We 
+illustrate ANANASTRA usage with selected case studies and expect that ANANASTRA 
+will help to conduct the follow-up of GWAS in terms of establishing functional 
+hypotheses and designing experimental verification.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac262
+PMCID: PMC9252736
+PMID: 35446421
+
+
+46. Nucleic Acids Res. 2022 May 17;50(W1):W657-62. doi: 10.1093/nar/gkac372. Online 
+ahead of print.
+
+rna-tools.online: a Swiss army knife for RNA 3D structure modeling workflow.
+
+Magnus M(1).
+
+Author information:
+(1)ReMedy International Research Agenda Unit, IMol Polish Academy of Sciences, 
+Warsaw, Poland.
+
+Significant improvements have been made in the efficiency and accuracy of RNA 3D 
+structure prediction methods in recent years; however, many tools developed in 
+the field stay exclusive to only a few bioinformatic groups. To perform a 
+complete RNA 3D structure modeling analysis as proposed by the RNA-Puzzles 
+community, researchers must familiarize themselves with a quite complex set of 
+tools. In order to facilitate the processing of RNA sequences and structures, we 
+previously developed the rna-tools package. However, using rna-tools requires 
+the installation of a mixture of libraries and tools, basic knowledge of the 
+command line and the Python programming language. To provide an opportunity for 
+the broader community of biologists to take advantage of the new developments in 
+RNA structural biology, we developed rna-tools.online. The web server provides a 
+user-friendly platform to perform many standard analyses required for the 
+typical modeling workflow: 3D structure manipulation and editing, structure 
+minimization, structure analysis, quality assessment, and comparison. 
+rna-tools.online supports biologists to start benefiting from the maturing field 
+of RNA 3D structural bioinformatics and can be used for educational purposes. 
+The web server is available at https://rna-tools.online.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac372
+PMCID: PMC9252763
+PMID: 35580057
+
+
+47. Nucleic Acids Res. 2022 Jan 7;50(D1):D678-D686. doi: 10.1093/nar/gkab763.
+
+OlfactionBase: a repository to explore odors, odorants, olfactory receptors and 
+odorant-receptor interactions.
+
+Sharma A(1), Saha BK(2), Kumar R(3), Varadwaj PK(1).
+
+Author information:
+(1)Department of Applied Science, Indian Institute of Information Technology, 
+Allahabad, Uttar Pradesh 211015, India.
+(2)Gentryx Technologies, West Bengal, Kolkata, India.
+(3)Amity Institute of Biotechnology, Amity University Uttar Pradesh, Lucknow 
+Campus, Uttar Pradesh 226028, India.
+
+Olfaction is a multi-stage process that initiates with the odorants entering the 
+nose and terminates with the brain recognizing the odor associated with the 
+odorant. In a very intricate way, the process incorporates various components 
+functioning together and in synchronization. OlfactionBase is a free, 
+open-access web server that aims to bring together knowledge about many aspects 
+of the olfaction mechanism in one place. OlfactionBase contains detailed 
+information of components like odors, odorants, and odorless compounds with 
+physicochemical and ADMET properties, olfactory receptors (ORs), odorant- and 
+pheromone binding proteins, OR-odorant interactions in Human and Mus musculus. 
+The dynamic, user-friendly interface of the resource facilitates exploration of 
+different entities: finding chemical compounds having desired odor, finding 
+odorants associated with OR, associating chemical features with odor and OR, 
+finding sequence information of ORs and related proteins. Finally, the data in 
+OlfactionBase on odors, odorants, olfactory receptors, human and mouse 
+OR-odorant pairs, and other associated proteins could aid in the inference and 
+improved understanding of odor perception, which might provide new insights into 
+the mechanism underlying olfaction. The OlfactionBase is available at 
+https://bioserver.iiita.ac.in/olfactionbase/.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkab763
+PMCID: PMC8728123
+PMID: 34469532 [Indexed for MEDLINE]
+
+
+48. Nucleic Acids Res. 2022 May 24;50(W1):W159-64. doi: 10.1093/nar/gkac394. Online 
+ahead of print.
+
+CB-Dock2: improved protein-ligand blind docking by integrating cavity detection, 
+docking and homologous template fitting.
+
+Liu Y(1), Yang X(1), Gan J(1), Chen S(2), Xiao ZX(1), Cao Y(1)(3).
+
+Author information:
+(1)Center of Growth, Metabolism and Aging, Key Laboratory of Bio-Resource and 
+Eco-Environment of Ministry of Education, College of Life Sciences, Sichuan 
+University, Chengdu, China.
+(2)Chengdu Institute of Biology, Chinese Academy of Sciences, Chengdu, China.
+(3)Animal Disease Prevention and Food Safety Key Laboratory of Sichuan Province, 
+Microbiology and Metabolic Engineering Key Laboratory of Sichuan Province, 
+Chengdu, China.
+
+Protein-ligand blind docking is a powerful method for exploring the binding 
+sites of receptors and the corresponding binding poses of ligands. It has seen 
+wide applications in pharmaceutical and biological researches. Previously, we 
+proposed a blind docking server, CB-Dock, which has been under heavy use (over 
+200 submissions per day) by researchers worldwide since 2019. Here, we 
+substantially improved the docking method by combining CB-Dock with our 
+template-based docking engine to enhance the accuracy in binding site 
+identification and binding pose prediction. In the benchmark tests, it yielded 
+the success rate of ∼85% for binding pose prediction (RMSD < 2.0 Å), which 
+outperformed original CB-Dock and most popular blind docking tools. This updated 
+docking server, named CB-Dock2, reconfigured the input and output web 
+interfaces, together with a highly automatic docking pipeline, making it a 
+particularly efficient and easy-to-use tool for the bioinformatics and 
+cheminformatics communities. The web server is freely available at 
+https://cadd.labshare.cn/cb-dock2/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac394
+PMCID: PMC9252749
+PMID: 35609983
+
+
+49. Nucleic Acids Res. 2022 May 12;50(W1):W651-6. doi: 10.1093/nar/gkac365. Online 
+ahead of print.
+
+RING 3.0: fast generation of probabilistic residue interaction networks from 
+structural ensembles.
+
+Clementel D(1), Del Conte A(1), Monzon AM(1), Camagni GF(1), Minervini G(1), 
+Piovesan D(1), Tosatto SCE(1).
+
+Author information:
+(1)Department of Biomedical Sciences, University of Padova, Padova 35131, Italy.
+
+Residue interaction networks (RINs) are used to represent residue contacts in 
+protein structures. Thanks to the advances in network theory, RINs have been 
+proved effective as an alternative to coordinate data in the analysis of complex 
+systems. The RING server calculates high quality and reliable non-covalent 
+molecular interactions based on geometrical parameters. Here, we present the new 
+RING 3.0 version extending the previous functionality in several ways. The 
+underlying software library has been re-engineered to improve speed by an order 
+of magnitude. RING now also supports the mmCIF format and provides typed 
+interactions for the entire PDB chemical component dictionary, including nucleic 
+acids. Moreover, RING now employs probabilistic graphs, where multiple 
+conformations (e.g. NMR or molecular dynamics ensembles) are mapped as weighted 
+edges, opening up new ways to analyze structural data. The web interface has 
+been expanded to include a simultaneous view of the RIN alongside a structure 
+viewer, with both synchronized and clickable. Contact evolution across models 
+(or time) is displayed as a heatmap and can help in the discovery of correlating 
+interaction patterns. The web server, together with an extensive help and 
+tutorial, is available from URL: https://ring.biocomputingup.it/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac365
+PMCID: PMC9252747
+PMID: 35554554
+
+
+50. Nucleic Acids Res. 2022 Feb 22;50(3):e14. doi: 10.1093/nar/gkab1074.
+
+UFold: fast and accurate RNA secondary structure prediction with deep learning.
+
+Fu L(1)(2), Cao Y(2)(3)(4), Wu J(5), Peng Q(1), Nie Q(6)(3)(4), Xie X(2).
+
+Author information:
+(1)Systems Engineering Institute, School of Electronic and Information 
+Engineering, Xi'an Jiaotong University, Xi'an, Shaanxi 710049, China.
+(2)Department of Computer Science, University of California, Irvine, CA 92697, 
+USA.
+(3)Center for Complex Biological Systems, University of California, Irvine, 
+CA 92697, USA.
+(4)NSF-Simons Center for Multiscale Cell Fate Research, University of 
+California, Irvine, CA 92697, USA.
+(5)Department of Biological Chemistry, University of California, Irvine, 
+CA 92697, USA.
+(6)Department of Mathematics, University of California, Irvine, CA 92697, USA.
+
+For many RNA molecules, the secondary structure is essential for the correct 
+function of the RNA. Predicting RNA secondary structure from nucleotide 
+sequences is a long-standing problem in genomics, but the prediction performance 
+has reached a plateau over time. Traditional RNA secondary structure prediction 
+algorithms are primarily based on thermodynamic models through free energy 
+minimization, which imposes strong prior assumptions and is slow to run. Here, 
+we propose a deep learning-based method, called UFold, for RNA secondary 
+structure prediction, trained directly on annotated data and base-pairing rules. 
+UFold proposes a novel image-like representation of RNA sequences, which can be 
+efficiently processed by Fully Convolutional Networks (FCNs). We benchmark the 
+performance of UFold on both within- and cross-family RNA datasets. It 
+significantly outperforms previous methods on within-family datasets, while 
+achieving a similar performance as the traditional methods when trained and 
+tested on distinct RNA families. UFold is also able to predict pseudoknots 
+accurately. Its prediction is fast with an inference time of about 160 ms per 
+sequence up to 1500 bp in length. An online web server running UFold is 
+available at https://ufold.ics.uci.edu. Code is available at 
+https://github.com/uci-cbcl/UFold.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkab1074
+PMCID: PMC8860580
+PMID: 34792173 [Indexed for MEDLINE]
+
+
+51. Nucleic Acids Res. 2022 May 10;50(W1):W246-53. doi: 10.1093/nar/gkac349. Online 
+ahead of print.
+
+DEPCOD: a tool to detect and visualize co-evolution of protein domains.
+
+Ji F(1)(2), Bonilla G(1)(2), Krykbaev R(1), Ruvkun G(1)(2), Tabach Y(3), 
+Sadreyev RI(1)(4).
+
+Author information:
+(1)Department of Molecular Biology, Massachusetts General Hospital, Boston, MA, 
+USA.
+(2)Department of Genetics, Harvard Medical School, Boston, MA, USA.
+(3)Department of Developmental Biology and Cancer Research, Faculty of Medicine, 
+The Hebrew University of Jerusalem, Ein Kerem 9112102, Israel.
+(4)Department of Pathology, Massachusetts General Hospital and Harvard Medical 
+School, Boston, MA, USA.
+
+Proteins with similar phylogenetic patterns of conservation or loss across 
+evolutionary taxa are strong candidates to work in the same cellular pathways or 
+engage in physical or functional interactions. Our previously published tools 
+implemented our method of normalized phylogenetic sequence profiling to detect 
+functional associations between non-homologous proteins. However, many proteins 
+consist of multiple protein domains subjected to different selective pressures, 
+so using protein domain as the unit of analysis improves the detection of 
+similar phylogenetic patterns. Here we analyze sequence conservation patterns 
+across the whole tree of life for every protein domain from a set of widely 
+studied organisms. The resulting new interactive webserver, DEPCOD (DEtection of 
+Phylogenetically COrrelated Domains), performs searches with either a selected 
+pre-defined protein domain or a user-supplied sequence as a query to detect 
+other domains from the same organism that have similar conservation patterns. 
+Top similarities on two evolutionary scales (the whole tree of life or 
+eukaryotic genomes) are displayed along with known protein interactions and 
+shared complexes, pathway enrichment among the hits, and detailed visualization 
+of sources of detected similarities. DEPCOD reveals functional relationships 
+between often non-homologous domains that could not be detected using 
+whole-protein sequences. The web server is accessible at 
+http://genetics.mgh.harvard.edu/DEPCOD.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac349
+PMCID: PMC9252791
+PMID: 35536332
+
+
+52. Nucleic Acids Res. 2022 Jan 7;50(D1):D1123-D1130. doi: 10.1093/nar/gkab957.
+
+webTWAS: a resource for disease candidate susceptibility genes identified by 
+transcriptome-wide association study.
+
+Cao C(1)(2)(3), Wang J(4), Kwok D(5), Cui F(1)(2), Zhang Z(1)(2), Zhao D(1)(2), 
+Li MJ(4), Zou Q(1)(2).
+
+Author information:
+(1)Yangtze Delta Region Institute (Quzhou), University of Electronic Science and 
+Technology of China, Quzhou, China.
+(2)Institute of Fundamental and Frontier Sciences, University of Electronic 
+Science and Technology of China, Chengdu, China.
+(3)Department of Biochemistry & Molecular Biology, Alberta Children's Hospital 
+Research Institute, University of Calgary, Calgary, Canada.
+(4)Department of Pharmacology, School of Basic Medical Sciences, Tianjin Medical 
+University, Tianjin, China.
+(5)School of Computer Science, McGill University, Montreal, Canada.
+
+The development of transcriptome-wide association studies (TWAS) has enabled 
+researchers to better identify and interpret causal genes in many diseases. 
+However, there are currently no resources providing a comprehensive listing of 
+gene-disease associations discovered by TWAS from published GWAS summary 
+statistics. TWAS analyses are also difficult to conduct due to the complexity of 
+TWAS software pipelines. To address these issues, we introduce a new resource 
+called webTWAS, which integrates a database of the most comprehensive disease 
+GWAS datasets currently available with credible sets of potential causal genes 
+identified by multiple TWAS software packages. Specifically, a total of 235 064 
+gene-diseases associations for a wide range of human diseases are prioritized 
+from 1298 high-quality downloadable European GWAS summary statistics. 
+Associations are calculated with seven different statistical models based on 
+three popular and representative TWAS software packages. Users can explore 
+associations at the gene or disease level, and easily search for related studies 
+or diseases using the MeSH disease tree. Since the effects of diseases are 
+highly tissue-specific, webTWAS applies tissue-specific enrichment analysis to 
+identify significant tissues. A user-friendly web server is also available to 
+run custom TWAS analyses on user-provided GWAS summary statistics data. webTWAS 
+is freely available at http://www.webtwas.net.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkab957
+PMCID: PMC8728162
+PMID: 34669946 [Indexed for MEDLINE]
+
+
+53. Nucleic Acids Res. 2022 May 26;50(W1):W99-W107. doi: 10.1093/nar/gkac380. Online 
+ahead of print.
+
+BioExcel Building Blocks Workflows (BioBB-Wfs), an integrated web-based platform 
+for biomolecular simulations.
+
+Bayarri G(1), Andrio P(2), Hospital A(1), Orozco M(1)(3), Gelpí JL(2)(3).
+
+Author information:
+(1)Institute for Research in Biomedicine (IRB Barcelona). The Barcelona 
+Institute of Science and Technology. Baldiri Reixac 10-12, 08028 Barcelona, 
+Spain.
+(2)Barcelona Supercomputing Center (BSC), Jordi Girona 29, 08034, Barcelona, 
+Spain.
+(3)Department of Biochemistry and Molecular Biology, University of Barcelona, 
+08028 Barcelona, Spain.
+
+We present BioExcel Building Blocks Workflows, a web-based graphical user 
+interface (GUI) offering access to a collection of transversal pre-configured 
+biomolecular simulation workflows assembled with the BioExcel Building Blocks 
+library. Available workflows include Molecular Dynamics setup, protein-ligand 
+docking, trajectory analyses and small molecule parameterization. Workflows can 
+be launched in the platform or downloaded to be run in the users' own premises. 
+Remote launching of long executions to user's available High-Performance 
+computers is possible, only requiring configuration of the appropriate access 
+credentials. The web-based graphical user interface offers a high level of 
+interactivity, with integration with the NGL viewer to visualize and check 3D 
+structures, MDsrv to visualize trajectories, and Plotly to explore 2D plots. The 
+server requires no login but is recommended to store the users' projects and 
+manage sensitive information such as remote credentials. Private projects can be 
+made public and shared with colleagues with a simple URL. The tool will help 
+biomolecular simulation users with the most common and repetitive processes by 
+means of a very intuitive and interactive graphical user interface. The server 
+is accessible at https://mmb.irbbarcelona.org/biobb-wfs.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac380
+PMCID: PMC9252775
+PMID: 35639735
+
+
+54. Nucleic Acids Res. 2022 May 24;50(W1):W551-9. doi: 10.1093/nar/gkac352. Online 
+ahead of print.
+
+PaintOmics 4: new tools for the integrative analysis of multi-omics datasets 
+supported by multiple pathway databases.
+
+Liu T(1), Salguero P(2), Petek M(3), Martinez-Mira C(4), Balzano-Nogueira L(5), 
+Ramšak Ž(3), McIntyre L(6), Gruden K(3), Tarazona S(2), Conesa A(7)(8).
+
+Author information:
+(1)Department of Mechanical Engineering, School of Engineering, Cardiff 
+University, Cardiff, UK.
+(2)Department of Applied Statistics, Operations Research and Quality, 
+Universitat Politècnica de València, Valencia, Spain.
+(3)Department of Biotechnology and Systems Biology, National Institute of 
+Biology, Ljubljana, Slovenia.
+(4)Biobam Bioinformatics, Valencia, Spain.
+(5)Diabetes Institute, University of Florida, Gainesville, USA.
+(6)Department of Molecular Genetics and Microbiology, Genetics Institute, 
+University of Florida, Gainesville, USA.
+(7)Institute for Integrative Systems Biology, Spanish National Research Council 
+(CSIC), Paterna, Spain.
+(8)Department of Microbiology and Cell Science, University of Florida, 
+Gainesville, FL, USA.
+
+PaintOmics is a web server for the integrative analysis and visualisation of 
+multi-omics datasets using biological pathway maps. PaintOmics 4 has several 
+notable updates that improve and extend analyses. Three pathway databases are 
+now supported: KEGG, Reactome and MapMan, providing more comprehensive pathway 
+knowledge for animals and plants. New metabolite analysis methods fill gaps in 
+traditional pathway-based enrichment methods. The metabolite hub analysis 
+selects compounds with a high number of significant genes in their neighbouring 
+network, suggesting regulation by gene expression changes. The metabolite class 
+activity analysis tests the hypothesis that a metabolic class has a 
+higher-than-expected proportion of significant elements, indicating that these 
+compounds are regulated in the experiment. Finally, PaintOmics 4 includes a 
+regulatory omics module to analyse the contribution of trans-regulatory layers 
+(microRNA and transcription factors, RNA-binding proteins) to regulate pathways. 
+We show the performance of PaintOmics 4 on both mouse and plant data to 
+highlight how these new analysis features provide novel insights into regulatory 
+biology. PaintOmics 4 is available at https://paintomics.org/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac352
+PMCID: PMC9252773
+PMID: 35609982
+
+
+55. Nucleic Acids Res. 2022 May 24;50(W1):W204-9. doi: 10.1093/nar/gkac381. Online 
+ahead of print.
+
+CSM-Potential: mapping protein interactions and biological ligands in 3D space 
+using geometric deep learning.
+
+Rodrigues CHM(1)(2), Ascher DB(1)(2).
+
+Author information:
+(1)Computational Biology and Clinical Informatics, Baker Heart and Diabetes 
+Institute, Melbourne, Victoria, Australia.
+(2)School of Chemistry and Molecular Biosciences, University of Queensland, 
+Brisbane, Queensland, Australia.
+
+Recent advances in protein structural modelling have enabled the accurate 
+prediction of the holo 3D structures of almost any protein, however protein 
+function is intrinsically linked to the interactions it makes. While a number of 
+computational approaches have been proposed to explore potential biological 
+interactions, they have been limited to specific interactions, and have not been 
+readily accessible for non-experts or use in bioinformatics pipelines. Here we 
+present CSM-Potential, a geometric deep learning approach to identify regions of 
+a protein surface that are likely to mediate protein-protein and protein-ligand 
+interactions in order to provide a link between 3D structure and biological 
+function. Our method has shown robust performance, outperforming existing 
+methods for both predictive tasks. By assessing the performance of CSM-Potential 
+on independent blind tests, we show that our method was able to achieve ROC AUC 
+values of up to 0.81 for the identification of potential protein-protein binding 
+sites, and up to 0.96 accuracy on biological ligand classification. Our method 
+is freely available as a user-friendly and easy-to-use web server and API at 
+http://biosig.unimelb.edu.au/csm_potential.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac381
+PMCID: PMC9252741
+PMID: 35609999
+
+
+56. Nucleic Acids Res. 2022 Jun 1;50(W1):W510-5. doi: 10.1093/nar/gkac439. Online 
+ahead of print.
+
+NetSurfP-3.0: accurate and fast prediction of protein structural features by 
+protein language models and deep learning.
+
+Høie MH(1), Kiehl EN(1), Petersen B(2)(3), Nielsen M(1), Winther O(4)(5)(6), 
+Nielsen H(1), Hallgren J(7), Marcatili P(1).
+
+Author information:
+(1)Department of Health Technology, Technical University of Denmark, DK Lyngby, 
+Denmark.
+(2)Center for Evolutionary Hologenomics, GLOBE Institute, University of 
+Copenhagen, Denmark.
+(3)Centre of Excellence for Omics-Driven Computational Biodiscovery (COMBio), 
+Faculty of Applied Sciences, AIMST University, Kedah, Malaysia.
+(4)Section for Cognitive Systems, DTU Compute, Technical University of Denmark 
+(DTU), Denmark.
+(5)Center for Genomic Medicine, Rigshospitalet (Copenhagen University Hospital), 
+Copenhagen, Denmark.
+(6)Department of Biology, Bioinformatics Centre, University of Copenhagen, 
+Copenhagen, Denmark.
+(7)BioLib Technologies, Copenhagen, Denmark.
+
+Recent advances in machine learning and natural language processing have made it 
+possible to profoundly advance our ability to accurately predict protein 
+structures and their functions. While such improvements are significantly 
+impacting the fields of biology and biotechnology at large, such methods have 
+the downside of high demands in terms of computing power and runtime, hampering 
+their applicability to large datasets. Here, we present NetSurfP-3.0, a tool for 
+predicting solvent accessibility, secondary structure, structural disorder and 
+backbone dihedral angles for each residue of an amino acid sequence. This 
+NetSurfP update exploits recent advances in pre-trained protein language models 
+to drastically improve the runtime of its predecessor by two orders of 
+magnitude, while displaying similar prediction performance. We assessed the 
+accuracy of NetSurfP-3.0 on several independent test datasets and found it to 
+consistently produce state-of-the-art predictions for each of its output 
+features, with a runtime that is up to to 600 times faster than the most 
+commonly available methods performing the same tasks. The tool is freely 
+available as a web server with a user-friendly interface to navigate the 
+results, as well as a standalone downloadable package.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac439
+PMCID: PMC9252760
+PMID: 35648435
+
+
+57. Nucleic Acids Res. 2022 May 17;50(W1):W682-9. doi: 10.1093/nar/gkac371. Online 
+ahead of print.
+
+Secondary Metabolite Transcriptomic Pipeline (SeMa-Trap), an expression-based 
+exploration tool for increased secondary metabolite production in bacteria.
+
+Mungan MD(1)(2)(3), Harbig TA(2), Perez NH(1), Edenhart S(1), Stegmann E(1)(3), 
+Nieselt K(2), Ziemert N(1)(2)(3).
+
+Author information:
+(1)Interfaculty Institute of Microbiology and Infection Medicine Tübingen 
+(IMIT), University of Tübingen, Auf der Morgenstelle 28, 72076 Tübingen, 
+Germany.
+(2)Interfaculty Institute for Bioinformatics and Medical Informatics (IBMI), 
+University of Tübingen, 72076 Tübingen, Germany.
+(3)German Center for Infection Research (DZIF), Partnersite Tübingen, 72076 
+Tübingen, Germany.
+
+For decades, natural products have been used as a primary resource in drug 
+discovery pipelines to find new antibiotics, which are mainly produced as 
+secondary metabolites by bacteria. The biosynthesis of these compounds is 
+encoded in co-localized genes termed biosynthetic gene clusters (BGCs). However, 
+BGCs are often not expressed under laboratory conditions. Several genetic 
+manipulation strategies have been developed in order to activate or overexpress 
+silent BGCs. Significant increases in production levels of secondary metabolites 
+were indeed achieved by modifying the expression of genes encoding regulators 
+and transporters, as well as genes involved in resistance or precursor 
+biosynthesis. However, the abundance of genes encoding such functions within 
+bacterial genomes requires prioritization of the most promising ones for genetic 
+manipulation strategies. Here, we introduce the 'Secondary Metabolite 
+Transcriptomic Pipeline' (SeMa-Trap), a user-friendly web-server, available at 
+https://sema-trap.ziemertlab.com. SeMa-Trap facilitates RNA-Seq based 
+transcriptome analyses, finds co-expression patterns between certain genes and 
+BGCs of interest, and helps optimize the design of comparative transcriptomic 
+analyses. Finally, SeMa-Trap provides interactive result pages for each BGC, 
+allowing the easy exploration and comparison of expression patterns. In summary, 
+SeMa-Trap allows a straightforward prioritization of genes that could be 
+targeted via genetic engineering approaches to (over)express BGCs of interest.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic Acids Research.
+
+DOI: 10.1093/nar/gkac371
+PMCID: PMC9252823
+PMID: 35580059

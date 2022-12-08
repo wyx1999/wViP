@@ -1,0 +1,97 @@
+Sci Rep
+BMC Genomics
+PLoS One
+BMC Bioinformatics
+Nat Biotechnol
+J Med Genet
+Mitochondrion
+Nat Methods
+Neurol Genet
+Nucleic Acids Res
+Clin Genet
+Matrix Biol
+PLoS Genet
+J Clin Invest
+Database (Oxford)
+Nat Genet
+Genome Res
+Eur J Med Genet
+Circulation
+Mol Cell Probes
+Am J Hum Genet
+Hum Genet
+Bioinformatics
+regulatory DNA element
+human genome
+disease-driven
+DNA variant
+transcription factor
+web interface
+disease-mutation
+gene expression
+literature-mining
+web-based
+De novo mutation
+Bayes classifier
+Next Generation Sequencing
+single nucleotide variant
+copy number variation
+user-friendly
+liquid-liquid phase separation
+phase separation
+Seelow D
+lethal multiple pterygium syndrome
+Cohen syndrome
+Escobar syndrome
+nephrotic syndrome
+Carpenter syndrome
+long-QT syndrome
+recessive disorder
+recessive mutation
+novel recessive
+web server
+Nucleic Acids Research
+Oxford University Press
+Immune checkpoint blockade
+immune checkpoint blockade
+Triple-negative breast cancer
+triple-negative breast cancer
+tumor immunity
+tumor microenvironment
+myeloid-derived suppressor cells
+tumor-associated macrophages
+macrophage infiltration
+CCL2 signaling pathway
+E3 ubiquitin ligase
+RNA sequencing
+scaffolding protein
+cancer immunotherapy
+TNBC cell line
+cancer cell implantation
+signaling pathway
+cellular immune response
+Cop1 KO
+4T1 TNBC
+CRISPR screen
+in vivo
+Rosa26 KO
+MusCK library
+IFN γ
+IFN- γ
+biomolecular condensate formation
+stoichiometric interaction
+droplet state
+intrinsic disorder
+structural disorder
+nuclear envelope
+stress granule
+granule formation
+stress granule formation
+water-based deep eutectic solvent
+liquid-liquid extraction
+domain region
+nucleic acid
+amino acid
+structure factor
+transcription factor
+in vitro

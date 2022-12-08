@@ -1,0 +1,2123 @@
+1. Nucleic Acids Res. 2021 Jul 2;49(W1):W446-W451. doi: 10.1093/nar/gkab266.
+
+MutationTaster2021.
+
+Steinhaus R(1)(2), Proft S(1)(2), Schuelke M(3)(4), Cooper DN(5), Schwarz JM(3), 
+Seelow D(1)(2).
+
+Author information:
+(1)Berliner Institut für Gesundheitsforschung in der Charité - 
+Universitätsmedizin Berlin, 10117 Berlin, Germany.
+(2)Institut für Medizinische Genetik und Humangenetik, Charité - 
+Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and 
+Humboldt-Universität zu Berlin, 13353 Berlin, Germany.
+(3)Klinik für Pädiatrie m.S. Neurologie, Charité - Universitätsmedizin Berlin, 
+corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, 
+13353 Berlin, Germany.
+(4)NeuroCure Clinical Research Center, Charité - Universitätsmedizin Berlin, 
+corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, 
+10117 Berlin, Germany.
+(5)Institute of Medical Genetics, School of Medicine, Cardiff University, 
+Cardiff, CF14 4XW, UK.
+
+Here we present an update to MutationTaster, our DNA variant effect prediction 
+tool. The new version uses a different prediction model and attains higher 
+accuracy than its predecessor, especially for rare benign variants. In addition, 
+we have integrated many sources of data that only became available after the 
+last release (such as gnomAD and ExAC pLI scores) and changed the splice site 
+prediction model. To more easily assess the relevance of detected known disease 
+mutations to the clinical phenotype of the patient, MutationTaster now provides 
+information on the diseases they cause. Further changes represent a major 
+overhaul of the interfaces to increase user-friendliness whilst many changes 
+under the hood have been designed to accelerate the processing of uploaded VCF 
+files. We also offer an API for the rapid automated query of smaller numbers of 
+variants from within other software. MutationTaster2021 integrates our disease 
+mutation search engine, MutationDistiller, to prioritise variants from VCF files 
+using the patient's clinical phenotype. The novel version is available at 
+https://www.genecascade.org/MutationTaster2021/. This website is free and open 
+to all users and there is no login requirement.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkab266
+PMCID: PMC8262698
+PMID: 33893808 [Indexed for MEDLINE]
+
+
+2. Clin Genet. 2019 Feb;95(2):287-292. doi: 10.1111/cge.13471. Epub 2018 Dec 7.
+
+Phenotero: Annotate as you write.
+
+Hombach D(1)(2), Schwarz JM(1), Knierim E(1), Schuelke M(1), Seelow D(1)(2)(3), 
+Köhler S(1)(2)(3)(4).
+
+Author information:
+(1)NeuroCure Clinical Research Center, Charité Universitätsmedizin, Berlin, 
+Germany.
+(2)Charité-BIH Centrum für Therapieforschung, Charité Universitätsklinikum, 
+Berlin, Germany.
+(3)Berlin Institute of Health (BIH), Berlin, Germany.
+(4)Einstein Center Digital Future, Berlin, Germany.
+
+In clinical genetics, the Human Phenotype Ontology as well as disease ontologies 
+are often used for deep phenotyping of patients and coding of clinical 
+diagnoses. However, assigning ontology classes to patient descriptions is often 
+disconnected from writing patient reports or manuscripts in word processing 
+software. This additional workload and the requirement to install dedicated 
+software may discourage usage of ontologies for parts of the target audience. 
+Here we present Phenotero, a freely available and simple solution to annotate 
+patient phenotypes and diseases at the time of writing clinical reports or 
+manuscripts. We adopt Zotero, a citation management software to create a tool 
+which allows to reference classes from ontologies within text at the time of 
+writing. We expect this approach to decrease the additional workload to a 
+minimum while ensuring high quality associations with ontology classes. 
+Standardized collection of phenotypic information at the time of describing the 
+patient allows for streamlining the clinic workflow and efficient data entry. It 
+will subsequently promote clinical and molecular diagnosis with the ultimate 
+goal of better understanding genetic diseases. Thus, we believe that Phenotero 
+eases the usage of ontologies and controlled vocabularies in the field of 
+clinical genetics.
+
+© 2018 The Authors. Clinical Genetics published by John Wiley & Sons A/S. 
+Published by John Wiley & Sons Ltd.
+
+DOI: 10.1111/cge.13471
+PMID: 30417324 [Indexed for MEDLINE]
+
+
+3. Nucleic Acids Res. 2022 Apr 30;50(W1):W83-9. doi: 10.1093/nar/gkac280. Online 
+ahead of print.
+
+AutozygosityMapper: Identification of disease-mutations in consanguineous 
+families.
+
+Steinhaus R(1)(2), Boschann F(2), Vogel M(1)(3), Fischer-Zirnsak B(2), Seelow 
+D(1)(2).
+
+Author information:
+(1)Exploratory Diagnostic Sciences, Berliner Institut für Gesundheitsforschung, 
+Berlin 10117, Germany.
+(2)Institut für Medizinische Genetik und Humangenetik, Charité - 
+Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and 
+Humboldt-Universität zu Berlin, Berlin 13353, Germany.
+(3)FB Mathematik und Informatik, Freie Universität Berlin, Berlin 14195, 
+Germany.
+
+With the shift from SNP arrays to high-throughput sequencing, most researchers 
+studying diseases in consanguineous families do not rely on linkage analysis any 
+longer, but simply search for deleterious variants which are homozygous in all 
+patients. AutozygosityMapper allows the fast and convenient identification of 
+disease mutations in patients from consanguineous pedigrees by focussing on 
+homozygous segments shared by all patients. Users can upload multi-sample VCF 
+files, including WGS data, without any pre-processing. Genome-wide runs of 
+homozygosity and the underlying genotypes are presented in graphical interfaces. 
+AutozygosityMapper extends the functions of its predecessor, HomozygosityMapper, 
+to the search for autozygous regions, in which all patients share the same 
+homozygous genotype. We provide export of VCF files containing only the variants 
+found in homozygous regions, this usually reduces the number of variants by two 
+orders of magnitude. These regions can also directly be analysed with our 
+disease mutation identification tool MutationDistiller. The application comes 
+with simple and intuitive graphical interfaces for data upload, analysis, and 
+results. We kept the structure of HomozygosityMapper so that previous users will 
+find it easy to switch. With AutozygosityMapper, we provide a fast web-based way 
+to identify disease mutations in consanguineous families. AutozygosityMapper is 
+freely available at https://www.genecascade.org/AutozygosityMapper/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkac280
+PMCID: PMC9252840
+PMID: 35489060
+
+
+4. Nucleic Acids Res. 2020 Jun 4;48(10):5306-5317. doi: 10.1093/nar/gkaa223.
+
+Pervasive and CpG-dependent promoter-like characteristics of transcribed 
+enhancers.
+
+Steinhaus R(1)(2), Gonzalez T(3)(4), Seelow D(1)(2), Robinson PN(3)(5).
+
+Author information:
+(1)Berlin Institute of Health, Charitéplatz 1, 10117 Berlin, Germany.
+(2)Institute of Medical Genetics and Human Genetics, Charité - 
+Universitätsmedizin Berlin, Augustenburger Platz 1, 13353 Berlin, Germany.
+(3)The Jackson Laboratory for Genomic Medicine, 10 Discovery Drive, Farmington, 
+CT 06032, USA.
+(4)Harvey Mudd College, 301 Platt Boulevard, Claremont, CA 91711, USA.
+(5)Institute for Systems Genomics, University of Connecticut, 263 Farmington 
+Avenue, Farmington, CT 06030, USA.
+
+The temporal and spatial expression of genes is controlled by promoters and 
+enhancers. Findings obtained over the last decade that not only promoters but 
+also enhancers are characterized by bidirectional, divergent transcription have 
+challenged the traditional notion that promoters and enhancers represent 
+distinct classes of regulatory elements. Over half of human promoters are 
+associated with CpG islands (CGIs), relatively CpG-rich stretches of generally 
+several hundred nucleotides that are often associated with housekeeping genes. 
+Only about 6% of transcribed enhancers defined by CAGE-tag analysis are 
+associated with CGIs. Here, we present an analysis of enhancer and promoter 
+characteristics and relate them to the presence or absence of CGIs. We show that 
+transcribed enhancers share a number of CGI-dependent characteristics with 
+promoters, including statistically significant local overrepresentation of core 
+promoter elements. CGI-associated enhancers are longer, display higher 
+directionality of transcription, greater expression, a lesser degree of tissue 
+specificity, and a higher frequency of transcription-factor binding events than 
+non-CGI-associated enhancers. Genes putatively regulated by CGI-associated 
+enhancers are enriched for transcription regulator activity. Our findings show 
+that CGI-associated transcribed enhancers display a series of characteristics 
+related to sequence, expression and function that distinguish them from 
+enhancers not associated with CGIs.
+
+© The Author(s) 2020. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkaa223
+PMCID: PMC7261191
+PMID: 32338759 [Indexed for MEDLINE]
+
+
+5. Nucleic Acids Res. 2019 Jul 2;47(W1):W114-W120. doi: 10.1093/nar/gkz330.
+
+MutationDistiller: user-driven identification of pathogenic DNA variants.
+
+Hombach D(1)(2)(3), Schuelke M(3)(4), Knierim E(3)(4), Ehmke N(5), Schwarz 
+JM(2)(3)(4), Fischer-Zirnsak B(5)(6), Seelow D(1)(2).
+
+Author information:
+(1)Berliner Institut für Gesundheitsforschung (BIH), Berlin, Germany 
+Charité-Universitätsmedizin Berlin, corporate member of Freie Universität Berlin 
+and Humboldt-Universität Berlin, and Berlin Institute of Health, Berlin, 
+Germany.
+(2)Charité-Universitätsmedizin Berlin, Charité-BIH Centrum for Therapy and 
+Research, Berlin, Germany.
+(3)NeuroCure Cluster of Excellence, Berlin, Germany.
+(4)Department of Neuropaediatrics, Berlin, Germany.
+(5)Institute of Medical Genetics and Human Genetics, Berlin, Germany.
+(6)Max-Planck-Institute for Molecular Genetics, RG Development & Disease, 
+Berlin, Germany.
+
+MutationDistiller is a freely available online tool for user-driven analyses of 
+Whole Exome Sequencing data. It offers a user-friendly interface aimed at 
+clinicians and researchers, who are not necessarily bioinformaticians. 
+MutationDistiller combines MutationTaster's pathogenicity predictions with a 
+phenotype-based approach. Phenotypic information is not limited to symptoms 
+included in the Human Phenotype Ontology (HPO), but may also comprise clinical 
+diagnoses and the suspected mode of inheritance. The search can be restricted to 
+lists of candidate genes (e.g. virtual gene panels) and by tissue-specific gene 
+expression. The inclusion of GeneOntology (GO) and metabolic pathways 
+facilitates the discovery of hitherto unknown disease genes. In a novel 
+approach, we trained MutationDistiller's HPO-based prioritization on authentic 
+genotype-phenotype sets obtained from ClinVar and found it to match or 
+outcompete current prioritization tools in terms of accuracy. In the output, the 
+program provides a list of potential disease mutations ordered by the likelihood 
+of the affected genes to cause the phenotype. MutationDistiller provides links 
+to gene-related information from various resources. It has been extensively 
+tested by clinicians and their suggestions have been valued in many iterative 
+cycles of revisions. The tool, a comprehensive documentation and examples are 
+freely available at https://www.mutationdistiller.org/.
+
+© The Author(s) 2019. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkz330
+PMCID: PMC6602447
+PMID: 31106342 [Indexed for MEDLINE]
+
+
+6. Eur J Med Genet. 2018 Nov;61(11):706-714. doi: 10.1016/j.ejmg.2018.01.013. Epub 
+2018 Feb 7.
+
+Harmonising phenomics information for a better interoperability in the rare 
+disease field.
+
+Maiella S(1), Olry A(1), Hanauer M(1), Lanneau V(1), Lourghi H(1), Donadille 
+B(1), Rodwell C(1), Köhler S(2), Seelow D(2), Jupp S(3), Parkinson H(3), Groza 
+T(4), Brudno M(5), Robinson PN(6), Rath A(7).
+
+Author information:
+(1)INSERM, US14 - Orphanet, Plateforme Maladies Rares, 75014 Paris, France.
+(2)NeuroCure Cluster of Excellence, Charité Universitätsklinikum, Charitéplatz 
+1, 10117 Berlin, Germany.
+(3)European Bioinformatics Institute, European Molecular Biology Laboratory, 
+Wellcome Genome Campus, Hinxton, Cambridge, United Kingdom.
+(4)Kinghorn Centre for Clinical Genomics, Garvan Institute for Medical Research, 
+Darlinghurst, NSW, Australia.
+(5)Department of Computer Science, University of Toronto, Toronto M5S 1A1, 
+Canada.
+(6)Jackson Laboratory for Genomic Medicine, Farmington, CT 06032, USA.
+(7)INSERM, US14 - Orphanet, Plateforme Maladies Rares, 75014 Paris, France. 
+Electronic address: ana.rath@inserm.fr.
+
+HIPBI-RD (Harmonising phenomics information for a better interoperability in the 
+rare disease field) is a three-year project which started in 2016 funded via the 
+E-Rare 3 ERA-NET program. This project builds on three resources largely adopted 
+by the rare disease (RD) community: Orphanet, its ontology ORDO (the Orphanet 
+Rare Disease Ontology), HPO (the Human Phenotype Ontology) as well as PhenoTips 
+software for the capture and sharing of structured phenotypic data for RD 
+patients. Our project is further supported by resources developed by the 
+European Bioinformatics Institute and the Garvan Institute. HIPBI-RD aims to 
+provide the community with an integrated, RD-specific bioinformatics ecosystem 
+that will harmonise the way phenomics information is stored in databases and 
+patient files worldwide, and thereby contribute to interoperability. This 
+ecosystem will consist of a suite of tools and ontologies, optimized to work 
+together, and made available through commonly used software repositories. The 
+project workplan follows three main objectives: The HIPBI-RD ecosystem will 
+contribute to the interpretation of variants identified through exome and full 
+genome sequencing by harmonising the way phenotypic information is collected, 
+thus improving diagnostics and delineation of RD. The ultimate goal of HIPBI-RD 
+is to provide a resource that will contribute to bridging genome-scale biology 
+and a disease-centered view on human pathobiology. Achievements in Year 1.
+
+Copyright © 2018. Published by Elsevier Masson SAS.
+
+DOI: 10.1016/j.ejmg.2018.01.013
+PMID: 29425702 [Indexed for MEDLINE]
+
+
+7. Nucleic Acids Res. 2021 Jul 2;49(W1):W46-W51. doi: 10.1093/nar/gkab396.
+
+Aviator: a web service for monitoring the availability of web services.
+
+Fehlmann T(1), Kern F(1), Hirsch P(1), Steinhaus R(2)(3), Seelow D(2)(3), Keller 
+A(1)(4)(5).
+
+Author information:
+(1)Chair for Clinical Bioinformatics, Saarland University, 66123 Saarbrücken, 
+Germany.
+(2)Berlin Institute of Health at Charité - Universitätsmedizin Berlin, 10117 
+Berlin, Germany.
+(3)Institute of Medical Genetics and Human Genetics, Charité - 
+Universitätsmedizin Berlin, 13353 Berlin, Germany.
+(4)Center for Bioinformatics, Saarland Informatics Campus, Saarland University, 
+66123 Saarbrücken, Germany.
+(5)Department of Neurology and Neurological Sciences, Stanford University School 
+of Medicine, Stanford, CA, USA.
+
+With Aviator, we present a web service and repository that facilitates 
+surveillance of online tools. Aviator consists of a user-friendly website and 
+two modules, a literature-mining based general and a manually curated module. 
+The general module currently checks 9417 websites twice a day with respect to 
+their availability and stores many features (frontend and backend response time, 
+required RAM and size of the web page, security certificates, analytic tools and 
+trackers embedded in the webpage and others) in a data warehouse. Aviator is 
+also equipped with an analysis functionality, for example authors can check and 
+evaluate the availability of their own tools or those of their peers. Likewise, 
+users can check the availability of a certain tool they intend to use in 
+research or teaching to avoid including unstable tools. The curated section of 
+Aviator offers additional services. We provide API snippets for common 
+programming languages (Perl, PHP, Python, JavaScript) as well as an OpenAPI 
+documentation for embedding in the backend of own web services for an automatic 
+test of their function. We query the respective APIs twice a day and send 
+automated notifications in case of an unexpected result. Naturally, the same 
+analysis functionality as for the literature-based module is available for the 
+curated section. Aviator can freely be used at 
+https://www.ccb.uni-saarland.de/aviator.
+
+© The Author(s) 2021. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkab396
+PMCID: PMC8262725
+PMID: 34038559 [Indexed for MEDLINE]
+
+
+8. Nucleic Acids Res. 2022 May 7;50(W1):W677-81. doi: 10.1093/nar/gkac329. Online 
+ahead of print.
+
+Deep phenotyping: symptom annotation made simple with SAMS.
+
+Steinhaus R(1)(2), Proft S(1)(2), Seelow E(3), Schalau T(1)(4), Robinson 
+PN(5)(6), Seelow D(1)(2).
+
+Author information:
+(1)Exploratory Diagnostic Sciences, Berliner Institut für Gesundheitsforschung, 
+Berlin 10117, Germany.
+(2)Institut für Medizinische Genetik und Humangenetik, Charité - 
+Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and 
+Humboldt-Universität zu Berlin, Berlin 13353, Germany.
+(3)Medizinische Klinik mit Schwerpunkt Nephrologie und Internistische 
+Intensivmedizin, Charité - Universitätsmedizin Berlin, corporate member of Freie 
+Universität Berlin and Humboldt-Universität zu Berlin, Berlin 10117, Germany.
+(4)FB Mathematik und Informatik, Freie Universität Berlin, Berlin 14195, 
+Germany.
+(5)The Jackson Laboratory for Genomic Medicine, Farmington, CT 06030, USA.
+(6)Institute for Systems Genomics, University of Connecticut, Farmington, CT 
+06030, USA.
+
+Precision medicine needs precise phenotypes. The Human Phenotype Ontology (HPO) 
+uses clinical signs instead of diagnoses and has become the standard annotation 
+for patients' phenotypes when describing single gene disorders. Use of the HPO 
+beyond human genetics is however still limited. With SAMS (Symptom Annotation 
+Made Simple), we want to bring sign-based phenotyping to routine clinical care, 
+to hospital patients as well as to outpatients. Our web-based application 
+provides access to three widely used annotation systems: HPO, OMIM, Orphanet. 
+Whilst data can be stored in our database, phenotypes can also be imported and 
+exported as Global Alliance for Genomics and Health (GA4GH) Phenopackets without 
+using the database. The web interface can easily be integrated into local 
+databases, e.g. clinical information systems. SAMS offers users to share their 
+data with others, empowering patients to record their own signs and symptoms (or 
+those of their children) and thus provide their doctors with additional 
+information. We think that our approach will lead to better characterised 
+patients which is not only helpful for finding disease mutations but also to 
+better understand the pathophysiology of diseases and to recruit patients for 
+studies and clinical trials. SAMS is freely available at 
+https://www.genecascade.org/SAMS/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkac329
+PMCID: PMC9252818
+PMID: 35524573
+
+
+9. Nucleic Acids Res. 2020 Jul 2;48(W1):W162-W169. doi: 10.1093/nar/gkaa241.
+
+VarFish: comprehensive DNA variant analysis for diagnostics and research.
+
+Holtgrewe M(1)(2), Stolpe O(1)(2), Nieminen M(1)(3), Mundlos S(4)(5), Knaus 
+A(6), Kornak U(4)(5), Seelow D(4)(7), Segebrecht L(4), Spielmann M(5)(8), 
+Fischer-Zirnsak B(4)(5), Boschann F(4), Scholl U(7)(9), Ehmke N(4), Beule 
+D(1)(3).
+
+Author information:
+(1)CUBI - Core Unit Bioinformatics, Berlin Institute of Health, Berlin 10117, 
+Germany.
+(2)Charité - Universitätsmedizin Berlin, corporate member of Freie Universität 
+Berlin, Humboldt-Universität zu Berlin, and Berlin Institute of Health, 
+Berlin 10117, Germany.
+(3)Max Delbrück Center for Molecular Medicine, Berlin 13125, Germany.
+(4)Institute of Medical Genetics and Human Genetics, Charité - 
+Universitätsmedizin Berlin, corporate member of Freie Universität Berlin, 
+Humboldt-Universität zu Berlin, and Berlin Institute of Health, Berlin 13353, 
+Germany.
+(5)Development and Disease Group, Max Planck Institute for Medical Genetics, 
+Berlin 14195, Germany.
+(6)Institute for Genomic Statistics and Bioinformatics, University Hospital 
+Bonn, Bonn 53127, Germany.
+(7)Berlin Institute of Health (BIH), Anna-Louisa-Karsch-Str. 2, 10178 Berlin, 
+Germany.
+(8)Institut für Humangenetik Lübeck, Universität zu Lübeck, 23538 Lübeck, 
+Germany.
+(9)Charité - Universitätsmedizin Berlin, corporate member of Freie Universität 
+Berlin, Humboldt-Universität zu Berlin, and Berlin Institute of Health, 
+Department of Nephrology and Medical Intensive Care, BCRT - Berlin Institute of 
+Health Center for Regenerative Therapies, 13353 Berlin, Germany.
+
+VarFish is a user-friendly web application for the quality control, filtering, 
+prioritization, analysis, and user-based annotation of DNA variant data with a 
+focus on rare disease genetics. It is capable of processing variant call files 
+with single or multiple samples. The variants are automatically annotated with 
+population frequencies, molecular impact, and presence in databases such as 
+ClinVar. Further, it provides support for pathogenicity scores including CADD, 
+MutationTaster, and phenotypic similarity scores. Users can filter variants 
+based on these annotations and presumed inheritance pattern and sort the results 
+by these scores. Variants passing the filter are listed with their annotations 
+and many useful link-outs to genome browsers, other gene/variant data portals, 
+and external tools for variant assessment. VarFish allows users to create their 
+own annotations including support for variant assessment following ACMG-AMP 
+guidelines. In close collaboration with medical practitioners, VarFish was 
+designed for variant analysis and prioritization in diagnostic and research 
+settings as described in the software's extensive manual. The user interface has 
+been optimized for supporting these protocols. Users can install VarFish on 
+their own in-house servers where it provides additional lab notebook features 
+for collaborative analysis and allows re-analysis of cases, e.g. after update of 
+genotype or phenotype databases.
+
+© The Author(s) 2020. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkaa241
+PMCID: PMC7319464
+PMID: 32338743 [Indexed for MEDLINE]
+
+
+10. Nucleic Acids Res. 2019 Jul 2;47(W1):W106-W113. doi: 10.1093/nar/gkz327.
+
+RegulationSpotter: annotation and interpretation of extratranscriptic DNA 
+variants.
+
+Schwarz JM(1)(2)(3), Hombach D(2)(3), Köhler S(2)(4)(5), Cooper DN(6), Schuelke 
+M(1)(3), Seelow D(2)(4).
+
+Author information:
+(1)Department of Neuropediatrics, Charité - Universitätsmedizin Berlin, 
+corporate member of Freie Universität Berlin, Humboldt-Universität zu Berlin, 
+and Berlin Institute of Health (BIH), Berlin, Germany.
+(2)Centrum für Therapieforschung, Charité - Universitätsmedizin Berlin, 
+corporate member of Freie Universität Berlin, Humboldt-Universität zu Berlin, 
+and Berlin Institute of Health (BIH), Berlin, Germany.
+(3)NeuroCure Cluster of Excellence and NeuroCure Clinical Research Center, 
+Charité - Universitätsmedizin Berlin, corporate member of Freie Universität 
+Berlin, Humboldt-Universität zu Berlin, and Berlin Institute of Health (BIH), 
+Berlin, Germany.
+(4)Berlin Institute of Health (BIH), Berlin, Germany.
+(5)Einstein Center for Digital Future, Berlin, Germany.
+(6)Institute of Medical Genetics, Cardiff University, Cardiff, UK.
+
+RegulationSpotter is a web-based tool for the user-friendly annotation and 
+interpretation of DNA variants located outside of protein-coding transcripts 
+(extratranscriptic variants). It is designed for clinicians and researchers who 
+wish to assess the potential impact of the considerable number of non-coding 
+variants found in Whole Genome Sequencing runs. It annotates individual variants 
+with underlying regulatory features in an intuitive way by assessing over 100 
+genome-wide annotations. Additionally, it calculates a score, which reflects the 
+regulatory potential of the variant region. Its dichotomous classifications, 
+'functional' or 'non-functional', and a human-readable presentation of the 
+underlying evidence allow a biologically meaningful interpretation of the score. 
+The output shows key aspects of every variant and allows rapid access to more 
+detailed information about its possible role in gene regulation. 
+RegulationSpotter can either analyse single variants or complete VCF files. 
+Variants located within protein-coding transcripts are automatically assessed by 
+MutationTaster as well as by RegulationSpotter to account for possible 
+intragenic regulatory effects. RegulationSpotter offers the possibility of using 
+phenotypic data to focus on known disease genes or genomic elements interacting 
+with them. RegulationSpotter is freely available at 
+https://www.regulationspotter.org.
+
+© The Author(s) 2019. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkz327
+PMCID: PMC6602480
+PMID: 31106382 [Indexed for MEDLINE]
+
+
+11. Database (Oxford). 2022 Jun 27;2022:baac043. doi: 10.1093/database/baac043.
+
+RegEl corpus: identifying DNA regulatory elements in the scientific literature.
+
+Garda S(1), Lenihan-Geels F(2), Proft S(3)(4), Hochmuth S(2), Schülke M(2), 
+Seelow D(3), Leser U(1).
+
+Author information:
+(1)Computer Science, Humboldt-Universitält zu Berlin, Rudower Chaussee 25, 
+12489, Berlin, Germany.
+(2)Klinik für Pädiatrie m.S. Neurologie, Charité-Universitätsmedizin Berlin, 
+Augustenburger Platz 1, 13353, Berlin, Germany.
+(3)Bioinformatics and Translational Genetics, Berlin Institute of Health at 
+Charité-Universitätsmedizin Berlin, Anna-Louisa-Karsch-Straße 2, 10178, Berlin, 
+Germany.
+(4)Institut für Medizinische Genetik und Humangenetik, 
+Charité-Universitätsmedizin Berlin, Augustenburger Platz 1, 13353, Berlin, 
+Germany.
+
+High-throughput technologies led to the generation of a wealth of data on 
+regulatory DNA elements in the human genome. However, results from 
+disease-driven studies are primarily shared in textual form as scientific 
+articles. Information extraction (IE) algorithms allow this information to be 
+(semi-)automatically accessed. Their development, however, is dependent on the 
+availability of annotated corpora. Therefore, we introduce RegEl (Regulatory 
+Elements), the first freely available corpus annotated with regulatory DNA 
+elements comprising 305 PubMed abstracts for a total of 2690 sentences. We focus 
+on enhancers, promoters and transcription factor binding sites. Three annotators 
+worked in two stages, achieving an overall 0.73 F1 inter-annotator agreement and 
+0.46 for regulatory elements. Depending on the entity type, IE baselines reach 
+F1-scores of 0.48-0.91 for entity detection and 0.71-0.88 for entity 
+normalization. Next, we apply our entity detection models to the entire PubMed 
+collection and extract co-occurrences of genes or diseases with regulatory 
+elements. This generates large collections of regulatory elements associated 
+with 137 870 unique genes and 7420 diseases, which we make openly available. 
+Database URL: https://zenodo.org/record/6418451#.YqcLHvexVqg.
+
+© The Author(s) 2022. Published by Oxford University Press.
+
+DOI: 10.1093/database/baac043
+PMCID: PMC9235371
+PMID: 35758881 [Indexed for MEDLINE]
+
+
+12. Bioinformatics. 2007 Oct 1;23(19):2643-4. doi: 10.1093/bioinformatics/btm376. 
+Epub 2007 Jul 27.
+
+AssociationDB: web-based exploration of genomic association.
+
+Seelow D(1), Hoffmann K, Lindner TH.
+
+Author information:
+(1)Institute for Medical Genetics, Charité - Universitätsmedizin Berlin, 
+Augustenburger Platz 1, D-13353 Berlin, Germany. dominik.seelow@charite.de
+
+Genome-wide association studies use hundreds of thousands of markers making it 
+challenging to present and finally interpret the results. We developed a 
+graphical, web-based solution for an interactive exploration of the results of 
+case-control studies, with a tight integration of related gene information and 
+tissue-specific expression data. Association results are presented as physical 
+position-based vertical bars with known genes included as horizontal bars at 
+their respective physical positions. The interface allows the specification of 
+filtering criteria for the association data and highlights potentially 
+interesting genes with user-specified terms occurring in their reports or with 
+relevant expression patterns. Pop-up windows and hyperlinks provide drill-down 
+capabilities and quick access to relevant data AssociationDB can either be used 
+as a stand-alone solution or as a front-end joining association results obtained 
+by other software with genomic information.
+
+DOI: 10.1093/bioinformatics/btm376
+PMID: 17660207 [Indexed for MEDLINE]
+
+
+13. Sci Rep. 2021 May 13;11(1):10299. doi: 10.1038/s41598-021-89786-0.
+
+SIGLEC1 (CD169): a marker of active neuroinflammation in the brain but not in 
+the blood of multiple sclerosis patients.
+
+Ostendorf L(1), Dittert P(2)(3)(4), Biesen R(3), Duchow A(5)(6), Stiglbauer 
+V(2), Ruprecht K(6)(7), Bellmann-Strobl J(5)(6)(8)(7), Seelow D(9)(10), Stenzel 
+W(2), Niesner RA(4)(11), Hauser AE(3)(4), Paul F(5)(6)(8)(7), Radbruch H(12).
+
+Author information:
+(1)Deutsches Rheuma-Forschungszentrum Berlin, A Leibniz Institute, Berlin, 
+Germany. lennard.ostendorf@charite.de.
+(2)Department of Neuropathology, Charité-Universitätsmedizin Berlin, Corporate 
+Member of Freie Universität Berlin, Humboldt-Universität zu Berlin, Berlin 
+Institute of Health, Berlin, Germany.
+(3)Rheumatology and Clinical Immunology, Charité-Universitätsmedizin Berlin, 
+Corporate Member of Freie Universität Berlin, Humboldt-Universität zu Berlin, 
+Berlin Institute of Health, Berlin, Germany.
+(4)Deutsches Rheuma-Forschungszentrum Berlin, A Leibniz Institute, Berlin, 
+Germany.
+(5)NeuroCure Clinical Research Center, Charité-Universitätsmedizin Berlin, 
+Corporate Member of Freie Universität Berlin, Humboldt-Universität zu Berlin, 
+Berlin Institute of Health, Berlin, Germany.
+(6)Department of Neurology, Charité-Universitätsmedizin Berlin, Corporate Member 
+of Freie Universität Berlin, Humboldt-Universität zu Berlin, Berlin Institute of 
+Health, Berlin, Germany.
+(7)Experimental and Clinical Research Center, Max Delbrück Center for Molecular 
+Medicine & Charité-Universitätsmedizin Berlin, Corporate Member of Freie 
+Universität Berlin, Humboldt - Universität zu Berlin, Berlin Institute of 
+Health, Berlin, Germany.
+(8)Clinical and Experimental Multiple Sclerosis Research Center, 
+Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität 
+Berlin, Humboldt-Universität zu Berlin, Berlin Institute of Health, Berlin, 
+Germany.
+(9)RG Bioinformatics and Translational Genetics, Berlin Institute of Health 
+(BIH), Berlin, Germany.
+(10)Institute of Medical Genetics and Human Genetics, 
+Charité-Universitätsmedizin Berlin, Corporate Member of Freie Universität 
+Berlin, Humboldt-Universität zu Berlin, Berlin Institute of Health, Berlin, 
+Germany.
+(11)Fachbereich Veterinärmedizin, Institute of Veterinary Physiology, Freie 
+Universität Berlin, Berlin, Germany.
+(12)Department of Neuropathology, Charité-Universitätsmedizin Berlin, Corporate 
+Member of Freie Universität Berlin, Humboldt-Universität zu Berlin, Berlin 
+Institute of Health, Berlin, Germany. helena.radbruch@charite.de.
+
+We aimed to evaluate SIGLEC1 (CD169) as a biomarker in multiple sclerosis (MS) 
+and Neuromyelitis optica spectrum disorder (NMOSD) and to evaluate the presence 
+of SIGLEC1+ myeloid cells in demyelinating diseases. We performed flow 
+cytometry-based measurements of SIGLEC1 expression on monocytes in 86 MS 
+patients, 41 NMOSD patients and 31 healthy controls. Additionally, we 
+histologically evaluated the presence of SIGLEC1+ myeloid cells in acute and 
+chronic MS brain lesions as well as other neurological diseases. We found 
+elevated SIGLEC1 expression in 16/86 (18.6%) MS patients and 4/41 (9.8%) NMOSD 
+patients. Almost all MS patients with high SIGLEC1 levels received exogenous 
+interferon beta as an immunomodulatory treatment and only a small fraction of MS 
+patients without interferon treatment had increased SIGLEC1 expression. In our 
+cohort, SIGLEC1 expression on monocytes was-apart from those patients receiving 
+interferon treatment-not significantly increased in patients with MS and NMOSD, 
+nor were levels associated with more severe disease. SIGLEC1+ myeloid cells were 
+abundantly present in active MS lesions as well as in a range of acute 
+infectious and malignant diseases of the central nervous system, but not chronic 
+MS lesions. The presence of SIGLEC1+ myeloid cells in brain lesions could be 
+used to investigate the activity in an inflammatory CNS lesion.
+
+DOI: 10.1038/s41598-021-89786-0
+PMCID: PMC8119413
+PMID: 33986412 [Indexed for MEDLINE]
+
+Conflict of interest statement: The authors declare no competing interests.
+
+
+14. Nat Methods. 2014 Apr;11(4):361-2. doi: 10.1038/nmeth.2890.
+
+MutationTaster2: mutation prediction for the deep-sequencing age.
+
+Schwarz JM(1), Cooper DN(2), Schuelke M(1), Seelow D(1).
+
+Author information:
+(1)1] Department of Neuropediatrics, Charité - Universitätsmedizin Berlin, 
+Berlin, Germany. [2] NeuroCure Clinical Research Center, Charité - 
+Universitätsmedizin Berlin, Berlin, Germany.
+(2)Institute of Medical Genetics, Cardiff University, Cardiff, UK.
+
+DOI: 10.1038/nmeth.2890
+PMID: 24681721 [Indexed for MEDLINE]
+
+
+15. Nucleic Acids Res. 2009 Jul;37(Web Server issue):W593-9. doi: 
+10.1093/nar/gkp369. Epub 2009 May 21.
+
+HomozygosityMapper--an interactive approach to homozygosity mapping.
+
+Seelow D(1), Schuelke M, Hildebrandt F, Nürnberg P.
+
+Author information:
+(1)Department of Neuropaediatrics, Charité - Universitätsmedizin Berlin, 
+Augustenburger Platz 1, D-13353 Berlin, Germany. dominik.seelow@charite.de
+
+Homozygosity mapping is a common method for mapping recessive traits in 
+consanguineous families. In most studies, applications for multipoint linkage 
+analyses are applied to determine the genomic region linked to the disease. 
+Unfortunately, these are neither suited for very large families nor for the 
+inclusion of tens of thousands of SNPs. Even if less than 10,000 markers are 
+employed, such an analysis may easily last hours if not days. Here we present a 
+web-based approach to homozygosity mapping. Our application stores marker data 
+in a database into which users can directly upload their own SNP genotype files. 
+Within a few minutes, the database analyses the data, detects homozygous 
+stretches and provides an intuitive graphical interface to the results. The 
+homozygosity in affected individuals is visualized genome-wide with the ability 
+to zoom into single chromosomes and user-defined chromosomal regions. The 
+software also displays the underlying genotypes in all samples. It is integrated 
+with our candidate gene search engine, GeneDistiller, so that users can 
+interactively determine the most promising gene. They can at any point restrict 
+access to their data or make it public, allowing HomozygosityMapper to be used 
+as a data repository for homozygosity-mapping studies. HomozygosityMapper is 
+available at http://www.homozygositymapper.org/.
+
+DOI: 10.1093/nar/gkp369
+PMCID: PMC2703915
+PMID: 19465395 [Indexed for MEDLINE]
+
+
+16. PLoS One. 2008;3(12):e3874. doi: 10.1371/journal.pone.0003874. Epub 2008 Dec 5.
+
+GeneDistiller--distilling candidate genes from linkage intervals.
+
+Seelow D(1), Schwarz JM, Schuelke M.
+
+Author information:
+(1)Department of Neuropaediatrics, Charité University Medical School, Berlin, 
+Germany.
+
+BACKGROUND: Linkage studies often yield intervals containing several hundred 
+positional candidate genes. Different manual or automatic approaches exist for 
+the determination of the gene most likely to cause the disease. While the manual 
+search is very flexible and takes advantage of the researchers' background 
+knowledge and intuition, it may be very cumbersome to collect and study the 
+relevant data. Automatic solutions on the other hand usually focus on certain 
+models, remain "black boxes" and do not offer the same degree of flexibility.
+METHODOLOGY: We have developed a web-based application that combines the 
+advantages of both approaches. Information from various data sources such as 
+gene-phenotype associations, gene expression patterns and protein-protein 
+interactions was integrated into a central database. Researchers can select 
+which information for the genes within a candidate interval or for single genes 
+shall be displayed. Genes can also interactively be filtered, sorted and 
+prioritised according to criteria derived from the background knowledge and 
+preconception of the disease under scrutiny.
+CONCLUSIONS: GeneDistiller provides knowledge-driven, fully interactive and 
+intuitive access to multiple data sources. It displays maximum relevant 
+information, while saving the user from drowning in the flood of data. A typical 
+query takes less than two seconds, thus allowing an interactive and explorative 
+approach to the hunt for the candidate gene.
+ACCESS: GeneDistiller can be freely accessed at http://www.genedistiller.org.
+
+DOI: 10.1371/journal.pone.0003874
+PMCID: PMC2587712
+PMID: 19057649 [Indexed for MEDLINE]
+
+Conflict of interest statement: Competing Interests: The authors have declared 
+that no competing interests exist.
+
+
+17. Nat Biotechnol. 2022 Jun;40(6):817-820. doi: 10.1038/s41587-022-01357-4.
+
+The GA4GH Phenopacket schema defines a computable representation of clinical 
+data.
+
+Jacobsen JOB(1), Baudis M(2)(3), Baynam GS(4)(5)(6), Beckmann JS(7), Beltran 
+S(8)(9)(10), Buske OJ(11), Callahan TJ(12), Chute CG(13), Courtot M(14)(15), 
+Danis D(16), Elemento O(17), Essenwanger A(18), Freimuth RR(19), Gargano MA(16), 
+Groza T(20), Hamosh A(21), Harris NL(22), Kaliyaperumal R(23), Lloyd 
+KCK(24)(25), Khalifa A(19), Krawitz PM(26), Köhler S(27), Laraway BJ(12), 
+Lehväslaiho H(28), Matalonga L(8), McMurry JA(12), Metke-Jimenez A(29), Mungall 
+CJ(22), Munoz-Torres MC(12), Ogishima S(30), Papakonstantinou A(8), Piscia D(8), 
+Pontikos N(31)(32), Queralt-Rosinach N(23), Roos M(23), Sass J(18), Schofield 
+PN(33)(34)(35), Seelow D(36)(37), Siapos A(38), Smedley D(39), Smith LD(15)(40), 
+Steinhaus R(36)(37), Sundaramurthi JC(16), Swietlik EM(41)(42)(43), Thun S(18), 
+Vasilevsky NA(12), Wagner AH(44)(45), Warner JL(46), Weiland C(47); GAGH 
+Phenopacket Modeling Consortium, Haendel MA(48), Robinson PN(49)(50).
+
+Collaborators: Axton M, Babb L, Boerkoel CF, Chaudhari BP, Chin HL, Dumontier M, 
+Gazzaz N, Hansen DP, Hochheiser H, Kinsler VA, Lochmüller H, Mankovich AR, 
+Saunders GI, Sergouniotis PI, Thompson R, Zankl A.
+
+Author information:
+(1)William Harvey Research Institute, Queen Mary University of London, London, 
+UK. j.jacobsen@qmul.ac.uk.
+(2)Department of Molecular Life Sciences, University of Zurich, Zürich, 
+Switzerland.
+(3)Computational Oncogenomics Group, Swiss Institute of Bioinformatics, Zürich, 
+Switzerland.
+(4)Western Australian Register of Developmental Anomalies and Genetic Services 
+of WA, King Edward Memorial Hospital, Perth, Western Australia, Australia.
+(5)Faculty of Health and Medical Sciences, Division of Paediatrics, University 
+of Western Australia, Perth, Western Australia, Australia.
+(6)Genetic and Rare Diseases, Telethon Kids Institute, Perth, Western Australia, 
+Australia.
+(7)Faculty of Biology and Medicine, University of Lausanne, Lausanne, 
+Switzerland.
+(8)CNAG-CRG, Centre for Genomic Regulation (CRG), Bioinformatics Unit, The 
+Barcelona Institute of Science and Technology, Barcelona, Spain.
+(9)Universitat Pompeu Fabra (UPF), Barcelona, Spain.
+(10)Departament de Genètica, Microbiologia i Estadística, Facultat de Biologia, 
+Universitat de Barcelona (UB), Barcelona, Spain.
+(11)PhenoTips, Toronto, Ontario, Canada.
+(12)Center for Health AI, University of Colorado Anschutz Medical Campus, 
+Aurora, CO, USA.
+(13)Schools of Medicine, Public Health, and Nursing, Baltimore, Johns Hopkins 
+University, Baltimore, MD, USA.
+(14)European Bioinformatics Institute, European Molecular Biology Laboratory 
+(EMBL-EBI), Hinxton, UK.
+(15)Genome Informatics, Ontario Institute for Cancer Research, Toronto, Ontario, 
+Canada.
+(16)Genomic Medicine, The Jackson Laboratory, Farmington, CT, USA.
+(17)Caryl and Israel Englander Institute for Precision Medicine, Weill Cornell 
+Medicine, New York, NY, USA.
+(18)Core Facility Digital Medicine and Interoperability, Berlin Institute of 
+Health at Charité-Universitätsmedizin Berlin, Berlin, Germany.
+(19)Department of Artificial Intelligence and Informatics, Mayo Clinic, 
+Rochester, MN, USA.
+(20)EMBL-EBI, Cambridge, UK.
+(21)Department of Genetic Medicine, Johns Hopkins University, Baltimore, MD, 
+USA.
+(22)Environmental Genomics and Systems Biology, Lawrence Berkeley National 
+Laboratory, Berkeley, CA, USA.
+(23)Human Genetics, Leiden University Medical Center, Leiden, the Netherlands.
+(24)Mouse Biology Program, University of California Davis, Davis, CA, USA.
+(25)Department of Surgery, University of California Davis School of Medicine, 
+Sacramento, CA, USA.
+(26)University Hospital Bonn, Bonn, Germany, and Institute for Genomic 
+Statistics and Bioinformatics, Bonn, Germany.
+(27)Ada Health GmbH, Berlin, Germany.
+(28)Sensitive Data Services, CSC-IT Center for Science, Espoo, Finland.
+(29)The Australian e-Health Research Centre, CSIRO, Herston, Queensland, 
+Australia.
+(30)Tohoku University, INGEM, Sendai, Japan.
+(31)Institute of Ophthalmology, University College London, London, UK.
+(32)Genetics Service, Moorfields Eye Hospital, London, UK.
+(33)Department of Physiology, Development and Neuroscience, University of 
+Cambridge, Cambridge, UK.
+(34)Mammalian Genetics, The Jackson Laboratory, Bar Harbor, ME, USA.
+(35)The Alan Turing Institute, London, UK.
+(36)Bioinformatics and Translational Genetics, Berlin Institute of Health at 
+Charité-Universitätsmedizin Berlin, Berlin, Germany.
+(37)Institute of Medical Genetics and Human Genetics, 
+Charité-Universitätsmedizin Berlin, corporate member of Freie Universität Berlin 
+and Humboldt-Universität zu Berlin, Berlin, Germany.
+(38)Lifebit Biotech Ltd., London, UK.
+(39)William Harvey Research Institute, Queen Mary University of London, London, 
+UK.
+(40)Global Alliance for Genomics and Health, N/A, Toronto, Ontario, Canada.
+(41)40Medicine Department, University of Cambridge, Cambridge, UK.
+(42)Respiratory Medicine Department, Addenbrooke's Hospital, Cambridge, UK.
+(43)Cambridge Centre for Lung Infection, Royal Papworth Hospital, Cambridge, UK.
+(44)The Steve and Cindy Rasmussen Institute for Genomic Medicine, Nationwide 
+Children's Hospital, Columbus, OH, USA.
+(45)Department of Pediatrics, The Ohio State University College of Medicine, 
+Columbus, OH, USA.
+(46)Departments of Medicine and Biomedical Informatics, Vanderbilt University, 
+Nashville, TN, USA.
+(47)Senckenberg-Leibniz Institution for Biodiversity and Earth System Research, 
+Data and Modelling Centre, Frankfurt/Main, Germany.
+(48)Center for Health AI, University of Colorado Anschutz Medical Campus, 
+Aurora, CO, USA. melissa@tislab.org.
+(49)Genomic Medicine, The Jackson Laboratory, Farmington, CT, USA. 
+peter.robinson@jax.org.
+(50)Institute for Systems Genomics, University of Connecticut, Farmington, CT, 
+USA. peter.robinson@jax.org.
+
+DOI: 10.1038/s41587-022-01357-4
+PMCID: PMC9363006
+PMID: 35705716
+
+
+18. Nat Methods. 2010 Aug;7(8):575-6. doi: 10.1038/nmeth0810-575.
+
+MutationTaster evaluates disease-causing potential of sequence alterations.
+
+Schwarz JM, Rödelsperger C, Schuelke M, Seelow D.
+
+DOI: 10.1038/nmeth0810-575
+PMID: 20676075 [Indexed for MEDLINE]
+
+
+19. Nucleic Acids Res. 2022 May 26;50(W1):W322-9. doi: 10.1093/nar/gkac393. Online 
+ahead of print.
+
+FABIAN-variant: predicting the effects of DNA variants on transcription factor 
+binding.
+
+Steinhaus R(1)(2), Robinson PN(3)(4), Seelow D(1)(2).
+
+Author information:
+(1)Exploratory Diagnostic Sciences, Berlin Institute of Health, 10117 Berlin, 
+Germany.
+(2)Institute of Medical Genetics and Human Genetics, Charité - 
+Universitätsmedizin Berlin, corporate member of Freie Universität Berlin and 
+Humboldt-Universität zu Berlin, 13353 Berlin, Germany.
+(3)The Jackson Laboratory for Genomic Medicine, Farmington, CT 06030, USA.
+(4)Institute for Systems Genomics, University of Connecticut, Farmington, CT 
+06030, USA.
+
+While great advances in predicting the effects of coding variants have been 
+made, the assessment of non-coding variants remains challenging. This is 
+especially problematic for variants within promoter regions which can lead to 
+over-expression of a gene or reduce or even abolish its expression. The binding 
+of transcription factors to the DNA can be predicted using position weight 
+matrices (PWMs). More recently, transcription factor flexible models (TFFMs) 
+have been introduced and shown to be more accurate than PWMs. TFFMs are based on 
+hidden Markov models and can account for complex positional dependencies. Our 
+new web-based application FABIAN-variant uses 1224 TFFMs and 3790 PWMs to 
+predict whether and to which degree DNA variants affect the binding of 1387 
+different human transcription factors. For each variant and transcription 
+factor, the software combines the results of different models for a final 
+prediction of the resulting binding-affinity change. The software is written in 
+C++ for speed but variants can be entered through a web interface. 
+Alternatively, a VCF file can be uploaded to assess variants identified by 
+high-throughput sequencing. The search can be restricted to variants in the 
+vicinity of candidate genes. FABIAN-variant is available freely at 
+https://www.genecascade.org/fabian/.
+
+© The Author(s) 2022. Published by Oxford University Press on behalf of Nucleic 
+Acids Research.
+
+DOI: 10.1093/nar/gkac393
+PMCID: PMC9252790
+PMID: 35639768
+
+
+20. Nucleic Acids Res. 2012 Jul;40(Web Server issue):W516-20. doi: 
+10.1093/nar/gks487. Epub 2012 Jun 4.
+
+HomozygosityMapper2012--bridging the gap between homozygosity mapping and deep 
+sequencing.
+
+Seelow D(1), Schuelke M.
+
+Author information:
+(1)NeuroCure Clinical Research Centre, Charité - Universitätsmedizin Berlin, 
+Charitéplatz 1, D-10117 Berlin, Germany. dominik.seelow@charite.de
+
+Homozygosity mapping is a common method to map recessive traits in 
+consanguineous families. To facilitate these analyses, we have developed 
+HomozygosityMapper, a web-based approach to homozygosity mapping. 
+HomozygosityMapper allows researchers to directly upload the genotype files 
+produced by the major genotyping platforms as well as deep sequencing data. It 
+detects stretches of homozygosity shared by the affected individuals and 
+displays them graphically. Users can interactively inspect the underlying 
+genotypes, manually refine these regions and eventually submit them to our 
+candidate gene search engine GeneDistiller to identify the most promising 
+candidate genes. Here, we present the new version of HomozygosityMapper. The 
+most striking new feature is the support of Next Generation Sequencing *.vcf 
+files as input. Upon users' requests, we have implemented the analysis of common 
+experimental rodents as well as of important farm animals. Furthermore, we have 
+extended the options for single families and loss of heterozygosity studies. 
+Another new feature is the export of *.bed files for targeted enrichment of the 
+potential disease regions for deep sequencing strategies. HomozygosityMapper 
+also generates files for conventional linkage analyses which are already 
+restricted to the possible disease regions, hence superseding CPU-intensive 
+genome-wide analyses. HomozygosityMapper is freely available at 
+http://www.homozygositymapper.org/.
+
+DOI: 10.1093/nar/gks487
+PMCID: PMC3394249
+PMID: 22669902 [Indexed for MEDLINE]
+
+
+21. BMC Genomics. 2016 May 21;17:388. doi: 10.1186/s12864-016-2729-8.
+
+A systematic, large-scale comparison of transcription factor binding site 
+models.
+
+Hombach D(1)(2), Schwarz JM(1)(2), Robinson PN(3), Schuelke M(1)(2), Seelow 
+D(4)(5)(6).
+
+Author information:
+(1)Department of Neuropaediatrics, Charité-Universitätsmedizin Berlin, Berlin, 
+Germany.
+(2)NeuroCure Clinical Research Center, Charité - Universitätsmedizin Berlin, 
+Berlin, Germany.
+(3)Institute for Medical Genetics and Human Genetics, 
+Charité-Universitätsmedizin Berlin, Berlin, Germany.
+(4)Department of Neuropaediatrics, Charité-Universitätsmedizin Berlin, Berlin, 
+Germany. dominik.seelow@charite.de.
+(5)NeuroCure Clinical Research Center, Charité - Universitätsmedizin Berlin, 
+Berlin, Germany. dominik.seelow@charite.de.
+(6)Berliner Institut für Gesundheitsforschung / Berlin Institute of Health, 
+Berlin, Germany. dominik.seelow@charite.de.
+
+Erratum in
+    BMC Genomics. 2016 Jul 20;17(1):502.
+
+BACKGROUND: The modelling of gene regulation is a major challenge in biomedical 
+research. This process is dominated by transcription factors (TFs) and mutations 
+in their binding sites (TFBSs) may cause the misregulation of genes, eventually 
+leading to disease. The consequences of DNA variants on TF binding are modelled 
+in silico using binding matrices, but it remains unclear whether these are 
+capable of accurately representing in vivo binding. In this study, we present a 
+systematic comparison of binding models for 82 human TFs from three freely 
+available sources: JASPAR matrices, HT-SELEX-generated models and matrices 
+derived from protein binding microarrays (PBMs). We determined their ability to 
+detect experimentally verified "real" in vivo TFBSs derived from ENCODE ChIP-seq 
+data. As negative controls we chose random downstream exonic sequences, which 
+are unlikely to harbour TFBS. All models were assessed by receiver operating 
+characteristics (ROC) analysis.
+RESULTS: While the area-under-curve was low for most of the tested models with 
+only 47 % reaching a score of 0.7 or higher, we noticed strong differences 
+between the various position-specific scoring matrices with JASPAR and HT-SELEX 
+models showing higher success rates than PBM-derived models. In addition, we 
+found that while TFBS sequences showed a higher degree of conservation than 
+randomly chosen sequences, there was a high variability between individual 
+TFBSs.
+CONCLUSIONS: Our results show that only few of the matrix-based models used to 
+predict potential TFBS are able to reliably detect experimentally confirmed 
+TFBS. We compiled our findings in a freely accessible web application called 
+ePOSSUM ( http:/mutationtaster.charite.de/ePOSSUM/ ) which uses a Bayes 
+classifier to assess the impact of genetic alterations on TF binding in 
+user-defined sequences. Additionally, ePOSSUM provides information on the 
+reliability of the prediction using our test set of experimentally confirmed 
+binding sites.
+
+DOI: 10.1186/s12864-016-2729-8
+PMCID: PMC4875604
+PMID: 27209209 [Indexed for MEDLINE]
+
+
+22. J Med Genet. 2022 Jul;59(7):662-668. doi: 10.1136/jmedgenet-2021-107843. Epub 
+2021 Jun 18.
+
+Biallelic truncating variants in ATP9A cause a novel neurodevelopmental disorder 
+involving postnatal microcephaly and failure to thrive.
+
+Vogt G(1), Verheyen S(2), Schwartzmann S(1), Ehmke N(1), Potratz C(3), 
+Schwerin-Nagel A(4), Plecko B(4), Holtgrewe M(5), Seelow D(1)(6), Blatterer 
+J(2), Speicher MR(2), Kornak U(1)(7), Horn D(1), Mundlos S(1)(8), 
+Fischer-Zirnsak B(1)(8), Boschann F(9).
+
+Author information:
+(1)Institute of Medical Genetics and Human Genetics, Charité Universitätsmedizin 
+Berlin, corporate member of Freie Universität Berlin and Humboldt-Universität zu 
+Berlin, Berlin, Germany.
+(2)Institute of Human Genetics, Diagnostic and Research Center for Molecular 
+BioMedicine, Medical University of Graz, Graz, Austria.
+(3)Department of Pediatric Neurology, Charité Universitätsmedizin Berlin, 
+corporate member of Freie Universität Berlin and Humboldt-Universität zu Berlin, 
+Berlin, Germany.
+(4)Department of Pediatrics and Adolescent Medicine, Division of General 
+Pediatrics, Medical University of Graz, Graz, Austria.
+(5)Core Unit Bioinformatics (CUBI), Berlin Institute of Health, Berlin, Germany.
+(6)Bioinformatics and Translational Genetics, Berlin Institute of Health, 
+Berlin, Germany.
+(7)Institute of Human Genetics, University Medical Center Göttingen, Gottingen, 
+Germany.
+(8)RG Development and Disease, Max-Planck-Institute for Molecular Genetics, 
+Berlin, Germany.
+(9)Institute of Medical Genetics and Human Genetics, Charité Universitätsmedizin 
+Berlin, corporate member of Freie Universität Berlin and Humboldt-Universität zu 
+Berlin, Berlin, Germany felix.boschann@charite.de.
+
+BACKGROUND: Genes implicated in the Golgi and endosomal trafficking machinery 
+are crucial for brain development, and mutations in them are particularly 
+associated with postnatal microcephaly (POM).
+METHODS: Exome sequencing was performed in three affected individuals from two 
+unrelated consanguineous families presenting with delayed neurodevelopment, 
+intellectual disability of variable degree, POM and failure to thrive. 
+Patient-derived fibroblasts were tested for functional effects of the variants.
+RESULTS: We detected homozygous truncating variants in ATP9A. While the variant 
+in family A is predicted to result in an early premature termination codon, the 
+variant in family B affects a canonical splice site. Both variants lead to a 
+substantial reduction of ATP9A mRNA expression. It has been shown previously 
+that ATP9A localises to early and recycling endosomes, whereas its depletion 
+leads to altered gene expression of components from this compartment. Consistent 
+with previous findings, we also observed overexpression of ARPC3 and SNX3, genes 
+strongly interacting with ATP9A.
+CONCLUSION: In aggregate, our findings show that pathogenic variants in ATP9A 
+cause a novel autosomal recessive neurodevelopmental disorder with POM. While 
+the physiological function of endogenous ATP9A is still largely elusive, our 
+results underline a crucial role of this gene in endosomal transport in brain 
+tissue.
+
+© Author(s) (or their employer(s)) 2022. Re-use permitted under CC BY-NC. No 
+commercial re-use. See rights and permissions. Published by BMJ.
+
+DOI: 10.1136/jmedgenet-2021-107843
+PMCID: PMC9252857
+PMID: 34379057 [Indexed for MEDLINE]
+
+Conflict of interest statement: Competing interests: None declared.
+
+
+23. BMC Genomics. 2009 Mar 2;10:95. doi: 10.1186/1471-2164-10-95.
+
+FragIdent--automatic identification and characterisation of cDNA-fragments.
+
+Seelow D(1), Goehler H, Hoffmann K.
+
+Author information:
+(1)Institut für Medizinische Genetik, Charité - Universitätsmedizin Berlin, 
+Augustenburger Platz, 13353 Berlin, Germany. dominik.seelow@charite.de
+
+BACKGROUND: Many genetic studies and functional assays are based on cDNA 
+fragments. After the generation of cDNA fragments from an mRNA sample, their 
+content is at first unknown and must be assigned by sequencing reactions or 
+hybridisation experiments. Even in characterised libraries, a considerable 
+number of clones are wrongly annotated. Furthermore, mix-ups can happen in the 
+laboratory. It is therefore essential to the relevance of experimental results 
+to confirm or determine the identity of the employed cDNA fragments. However, 
+the manual approach for the characterisation of these fragments using BLAST web 
+interfaces is not suited for larger number of sequences and so far, no 
+user-friendly software is publicly available.
+RESULTS: Here we present the development of FragIdent, an application for the 
+automatic identification of open reading frames (ORFs) within cDNA-fragments. 
+The software performs BLAST analyses to identify the genes represented by the 
+sequences and suggests primers to complete the sequencing of the whole insert. 
+Gene-specific information as well as the protein domains encoded by the cDNA 
+fragment are retrieved from Internet-based databases and included in the output. 
+The application features an intuitive graphical interface and is designed for 
+researchers without any bioinformatics skills. It is suited for projects 
+comprising up to several hundred different clones.
+CONCLUSION: We used FragIdent to identify 84 cDNA clones from a yeast two-hybrid 
+experiment. Furthermore, we identified 131 protein domains within our analysed 
+clones. The source code is freely available from our homepage at 
+http://compbio.charite.de/genetik/FragIdent/.
+
+DOI: 10.1186/1471-2164-10-95
+PMCID: PMC2672089
+PMID: 19254371 [Indexed for MEDLINE]
+
+
+24. Genome Res. 2014 Feb;24(2):340-8. doi: 10.1101/gr.160325.113. Epub 2013 Oct 25.
+
+Improved exome prioritization of disease genes through cross-species phenotype 
+comparison.
+
+Robinson PN(1), Köhler S, Oellrich A; Sanger Mouse Genetics Project, Wang K, 
+Mungall CJ, Lewis SE, Washington N, Bauer S, Seelow D, Krawitz P, Gilissen C, 
+Haendel M, Smedley D.
+
+Author information:
+(1)Institute for Medical and Human Genetics, Charité-Universitätsmedizin Berlin, 
+Augustenburger Platz 1, 13353 Berlin, Germany;
+
+Numerous new disease-gene associations have been identified by whole-exome 
+sequencing studies in the last few years. However, many cases remain unsolved 
+due to the sheer number of candidate variants remaining after common filtering 
+strategies such as removing low quality and common variants and those deemed 
+unlikely to be pathogenic. The observation that each of our genomes contains 
+about 100 genuine loss-of-function variants makes identification of the 
+causative mutation problematic when using these strategies alone. We propose 
+using the wealth of genotype to phenotype data that already exists from model 
+organism studies to assess the potential impact of these exome variants. Here, 
+we introduce PHenotypic Interpretation of Variants in Exomes (PHIVE), an 
+algorithm that integrates the calculation of phenotype similarity between human 
+diseases and genetically modified mouse models with evaluation of the variants 
+according to allele frequency, pathogenicity, and mode of inheritance approaches 
+in our Exomiser tool. Large-scale validation of PHIVE analysis using 100,000 
+exomes containing known mutations demonstrated a substantial improvement (up to 
+54.1-fold) over purely variant-based (frequency and pathogenicity) methods with 
+the correct gene recalled as the top hit in up to 83% of samples, corresponding 
+to an area under the ROC curve of >95%. We conclude that incorporation of 
+phenotype data can play a vital role in translational bioinformatics and propose 
+that exome sequencing projects should systematically capture clinical phenotypes 
+to take advantage of the strategy presented here.
+
+DOI: 10.1101/gr.160325.113
+PMCID: PMC3912424
+PMID: 24162188 [Indexed for MEDLINE]
+
+
+25. J Med Genet. 2019 Mar;56(3):164-175. doi: 10.1136/jmedgenet-2018-105711. Epub 
+2018 Nov 28.
+
+De novo mutation in ELOVL1 causes ichthyosis, acanthosis nigricans, 
+hypomyelination, spastic paraplegia, high frequency deafness and optic atrophy.
+
+Mueller N(1)(2), Sassa T(3), Morales-Gonzalez S(1), Schneider J(2)(4), Salchow 
+DJ(5), Seelow D(1)(4), Knierim E(1)(2), Stenzel W(6), Kihara A(3), Schuelke 
+M(1)(2).
+
+Author information:
+(1)NeuroCure Clinical Research Center, Charité-Universitätsmedizin Berlin, 
+Berlin, Germany.
+(2)Department of Neuropediatrics, Charité-Universitätsmedizin Berlin, Berlin, 
+Germany.
+(3)Faculty of Pharmaceutical Sciences, Laboratory of Biochemistry, Hokkaido 
+University, Sapporo, Japan.
+(4)Berlin Institute of Health, Berlin, Germany.
+(5)Department of Ophthalmology, Charité-Universitätsmedizin Berlin, Berlin, 
+Germany.
+(6)Institute of Neuropathology, Charité-Universitätsmedizin Berlin, Berlin, 
+Germany.
+
+BACKGROUND: Very long-chain fatty acids (VLCFAs) are essential for functioning 
+of biological membranes. ELOVL fatty acid elongase 1 catalyses elongation of 
+saturated and monounsaturated C22-C26-VLCFAs. We studied two patients with a 
+dominant ELOVL1 mutation. Independently, Kutkowska-Kaźmierczak et al. had 
+investigated the same patients and found the same mutation. We extended our 
+study towards additional biochemical, functional, and therapeutic aspects.
+METHODS: We did mutation screening by whole exome sequencing. RNA-sequencing was 
+performed in patient and control fibroblasts. Ceramide and sphingomyelin levels 
+were measured by LC-MS/MS. ELOVL1 activity was determined by a stable 
+isotope-labelled [13C]malonyl-CoA elongation assay. ELOVL1 expression patterns 
+were investigated by immunofluorescence, in situ hybridisation and RT-qPCR. As 
+treatment option, we investigated VLCFA loading of fibroblasts.
+RESULTS: Both patients carried an identical heterozygous de novo ELOVL1 mutation 
+(c.494C>T, NM_001256399; p.S165F) not deriving from a founder allele. Patients 
+suffered from epidermal hyperproliferation and increased keratinisation 
+(ichthyosis). Hypomyelination of the central white matter explained spastic 
+paraplegia and central nystagmus, while optic atrophy was causative for 
+reduction of peripheral vision and visual acuity. The mutation abrogated ELOVL1 
+enzymatic activity and reduced ≥C24 ceramides and sphingomyelins in patient 
+cells. Fibroblast loading with C22:0-VLCFAs increased C24:0-ceramides and 
+sphingomyelins. We found competitive inhibition for ceramide and sphingomyelin 
+synthesis between saturated and monounsaturated VLCFAs. Transcriptome analysis 
+revealed upregulation of modules involved in epidermal development and 
+keratinisation, and downregulation of genes for neurodevelopment, myelination, 
+and synaptogenesis. Many regulated genes carried consensus 
+proliferator-activated receptor (PPAR)α and PPARγ binding motifs in their 
+5'-regions.
+CONCLUSION: A dominant ELOVL1 mutation causes a neuro-ichthyotic disorder 
+possibly amenable to treatment with PPAR-modulating drugs.
+
+© Author(s) (or their employer(s)) 2019. No commercial re-use. See rights and 
+permissions. Published by BMJ.
+
+DOI: 10.1136/jmedgenet-2018-105711
+PMID: 30487246 [Indexed for MEDLINE]
+
+Conflict of interest statement: Competing interests: None declared.
+
+
+26. Eur J Med Genet. 2020 Sep;63(9):103973. doi: 10.1016/j.ejmg.2020.103973. Epub 
+2020 Jun 4.
+
+An intronic splice site alteration in combination with a large deletion 
+affecting VPS13B (COH1) causes Cohen syndrome.
+
+Boschann F(1), Fischer-Zirnsak B(2), Wienker TF(3), Holtgrewe M(4), Seelow D(5), 
+Eichhorn B(6), Döhnert S(6), Fahsold R(6), Horn D(7), Graul-Neumann LM(8).
+
+Author information:
+(1)Charité - Universitätsmedizin Berlin, Institut für Medizinische Genetik und 
+Humangenetik, Augustenburger Platz 1, 13353, Berlin, Germany; 
+Max-Planck-Institut für Molekulare Genetik, RG Development & Disease, Ihnestr. 
+63-73, 14195, Berlin, Germany. Electronic address: felix.boschann@charite.de.
+(2)Charité - Universitätsmedizin Berlin, Institut für Medizinische Genetik und 
+Humangenetik, Augustenburger Platz 1, 13353, Berlin, Germany; 
+Max-Planck-Institut für Molekulare Genetik, RG Development & Disease, Ihnestr. 
+63-73, 14195, Berlin, Germany.
+(3)Max-Planck-Institut für Molekulare Genetik, Dept. Human Molecular Genetics, 
+Ihnestr. 63-73, 14195, Berlin, Germany.
+(4)Berliner Institut für Gesundheitsforschung, Core Unit Bioinformatics, 
+Charitéplatz 1, 10117, Berlin, Germany; Charité - Universitätsmedizin Berlin, 
+Charité - Zentrum für Therapieforschung, Charitéplatz 1, 10117, Berlin, Germany.
+(5)Charité - Universitätsmedizin Berlin, Institut für Medizinische Genetik und 
+Humangenetik, Augustenburger Platz 1, 13353, Berlin, Germany; Berliner Institut 
+für Gesundheitsforschung (BIH), RG Bioinformatics and Translational Genetics, 
+Charitéplatz 1, 10117, Berlin, Germany.
+(6)MVZ Mitteldeutscher Praxisverbund Humangenetik GmbH, Friedrichstrasse 38-40, 
+01067, Dresden, Germany.
+(7)Charité - Universitätsmedizin Berlin, Institut für Medizinische Genetik und 
+Humangenetik, Augustenburger Platz 1, 13353, Berlin, Germany.
+(8)Charité - Universitätsmedizin Berlin, Institut für Medizinische Genetik und 
+Humangenetik, Augustenburger Platz 1, 13353, Berlin, Germany. Electronic 
+address: luitgard.graul-neumann@charite.de.
+
+Cohen syndrome (CS) is a rare, autosomal recessive disorder characterized by 
+intellectual disability, postnatal microcephaly, facial abnormalities, abnormal 
+truncal fat distribution, myopia, and pigmentary retinopathy. It is often 
+considered an underdiagnosed condition, especially in children with 
+developmental delay and intellectual disability. Here we report on four 
+individuals from a large Jordanian family clinically diagnosed with CS. Using 
+Trio Exome Sequencing (Trio-WES) and MLPA analyses we identified a maternally 
+inherited novel intronic nucleotide substitution c.3446-23T>G leading to the 
+activation of a cryptic splice site and a paternally inherited multi-exon 
+deletion in VPS13B (previously termed COH1) in the index patient. Expression 
+analysis showed a strong decrease of VPS13B mRNA levels and direct sequencing of 
+cDNA confirmed splicing at a cryptic upstream splice acceptor site, resulting in 
+the inclusion of 22 intronic bases. This extension results in a frameshift and a 
+premature stop of translation (p.Gly1149Valfs*9). Segregation analysis revealed 
+that three affected maternal cousins were homozygous for the intronic splice 
+site variant. Our data show causality of both alterations and strongly suggest 
+the expansion of the diagnostic strategy to search for intronic splice variants 
+in molecularly unconfirmed patients affected by CS.
+
+Copyright © 2020 Elsevier Masson SAS. All rights reserved.
+
+DOI: 10.1016/j.ejmg.2020.103973
+PMID: 32505691 [Indexed for MEDLINE]
+
+
+27. Am J Hum Genet. 2008 Nov;83(5):610-5. doi: 10.1016/j.ajhg.2008.09.017. Epub 2008 
+Oct 23.
+
+The Human Phenotype Ontology: a tool for annotating and analyzing human 
+hereditary disease.
+
+Robinson PN(1), Köhler S, Bauer S, Seelow D, Horn D, Mundlos S.
+
+Author information:
+(1)Institute for Medical Genetics, Charité-Universitätsmedizin Berlin, 13353 
+Berlin, Germany. peter.robinson@charite.de
+
+There are many thousands of hereditary diseases in humans, each of which has a 
+specific combination of phenotypic features, but computational analysis of 
+phenotypic data has been hampered by lack of adequate computational data 
+structures. Therefore, we have developed a Human Phenotype Ontology (HPO) with 
+over 8000 terms representing individual phenotypic anomalies and have annotated 
+all clinical entries in Online Mendelian Inheritance in Man with the terms of 
+the HPO. We show that the HPO is able to capture phenotypic similarities between 
+diseases in a useful and highly significant fashion.
+
+DOI: 10.1016/j.ajhg.2008.09.017
+PMCID: PMC2668030
+PMID: 18950739 [Indexed for MEDLINE]
+
+
+28. Nat Genet. 2007 Aug;39(8):1018-24. doi: 10.1038/ng2072. Epub 2007 Jul 8.
+
+Loss of GLIS2 causes nephronophthisis in humans and mice by increased apoptosis 
+and fibrosis.
+
+Attanasio M(1), Uhlenhaut NH, Sousa VH, O'Toole JF, Otto E, Anlag K, Klugmann C, 
+Treier AC, Helou J, Sayer JA, Seelow D, Nürnberg G, Becker C, Chudley AE, 
+Nürnberg P, Hildebrandt F, Treier M.
+
+Author information:
+(1)Department of Pediatrics, University of Michigan, Ann Arbor, Michigan 48109, 
+USA.
+
+Nephronophthisis (NPHP), an autosomal recessive kidney disease, is the most 
+frequent genetic cause of end-stage renal failure in the first three decades of 
+life. Positional cloning of the six known NPHP genes has linked its pathogenesis 
+to primary cilia function. Here we identify mutation of GLIS2 as causing an 
+NPHP-like phenotype in humans and mice, using positional cloning and mouse 
+transgenics, respectively. Kidneys of Glis2 mutant mice show severe renal 
+atrophy and fibrosis starting at 8 weeks of age. Differential gene expression 
+studies on Glis2 mutant kidneys demonstrate that genes promoting 
+epithelial-to-mesenchymal transition and fibrosis are upregulated in the absence 
+of Glis2. Thus, we identify Glis2 as a transcription factor mutated in NPHP and 
+demonstrate its essential role for the maintenance of renal tissue architecture 
+through prevention of apoptosis and fibrosis.
+
+DOI: 10.1038/ng2072
+PMID: 17618285 [Indexed for MEDLINE]
+
+
+29. PLoS One. 2011;6(11):e28240. doi: 10.1371/journal.pone.0028240. Epub 2011 Nov 
+30.
+
+Systematic comparison of three methods for fragmentation of long-range PCR 
+products for next generation sequencing.
+
+Knierim E(1), Lucke B, Schwarz JM, Schuelke M, Seelow D.
+
+Author information:
+(1)NeuroCure Clinical Research Center (NCRC), Charité--Universitätsmedizin 
+Berlin, Berlin, Germany.
+
+Next Generation Sequencing (NGS) technologies are gaining importance in the 
+routine clinical diagnostic setting. It is thus desirable to simplify the 
+workflow for high-throughput diagnostics. Fragmentation of DNA is a crucial step 
+for preparation of template libraries and various methods are currently known. 
+Here we evaluated the performance of nebulization, sonication and random 
+enzymatic digestion of long-range PCR products on the results of NGS. All three 
+methods produced high-quality sequencing libraries for the 454 platform. 
+However, if long-range PCR products of different length were pooled equimolarly, 
+sequence coverage drastically dropped for fragments below 3,000 bp. All three 
+methods performed equally well with regard to overall sequence quality (PHRED) 
+and read length. Enzymatic fragmentation showed highest consistency between 
+three library preparations but performed slightly worse than sonication and 
+nebulization with regard to insertions/deletions in the raw sequence reads. 
+After filtering for homopolymer errors, enzymatic fragmentation performed best 
+if compared to the results of classic Sanger sequencing. As the overall 
+performance of all three methods was equal with only minor differences, a 
+fragmentation method can be chosen solely according to lab facilities, 
+feasibility and experimental design.
+
+DOI: 10.1371/journal.pone.0028240
+PMCID: PMC3227650
+PMID: 22140562 [Indexed for MEDLINE]
+
+Conflict of interest statement: Competing Interests: The authors have declared 
+that no competing interests exist.
+
+
+30. Neurol Genet. 2015 Oct 22;1(4):e32. doi: 10.1212/NXG.0000000000000032. 
+eCollection 2015 Dec.
+
+Recessive REEP1 mutation is associated with congenital axonal neuropathy and 
+diaphragmatic palsy.
+
+Schottmann G(1), Seelow D(1), Seifert F(1), Morales-Gonzalez S(1), Gill E(1), 
+von Au K(1), von Moers A(1), Stenzel W(1), Schuelke M(1).
+
+Author information:
+(1)Departments of Neuropediatrics (G.S., D.S., F.S., S.M.-G., E.G., M.S.) and 
+Neuropediatrics/SPZ (K.v.A.), NeuroCure Clinical Research Center, 
+Charité-Universitätsmedizin, Berlin, Germany; the Department of Neuropathology 
+(W.S.), Charité-Universitätsmedizin Berlin, Germany; and the DRK Children's 
+Hospital Berlin (A.v.M.), Germany.
+
+OBJECTIVE: To identify the underlying genetic cause of a congenital neuropathy 
+in a 5-year-old boy as part of a cohort of 32 patients from 23 families with 
+genetically unresolved neuropathies.
+METHODS: We used autozygosity mapping coupled with next-generation sequencing to 
+investigate a consanguineous family from Lebanon with 1 affected and 2 healthy 
+children. Variants were investigated for segregation in the family by Sanger 
+sequencing. A splice site mutation was further evaluated on the messenger RNA 
+level by quantitative reverse transcription PCR. Subsequently, a larger cohort 
+was specifically screened for receptor expression-enhancing protein 1 (REEP1) 
+gene mutations.
+RESULTS: We detected a homozygous splice donor mutation in REEP1 
+(c.303+1-7GTAATAT>AC, p.F62Kfs23*; NM_022912) that cosegregated with the 
+phenotype in the family, leading to complete skipping of exon 4 and a premature 
+stop codon. The phenotype of the patient is similar to spinal muscular atrophy 
+with respiratory distress type 1 (SMARD1) with additional distal arthrogryposis 
+and involvement of the upper motor neuron manifested by pronounced 
+hyperreflexia.
+CONCLUSION: To date, only dominant REEP1 mutations have been reported to be 
+associated with a slowly progressive hereditary spastic paraplegia. The findings 
+from our patient expand the phenotypical spectrum and the mode of inheritance of 
+REEP1-associated disorders. Recessive mutations in REEP1 should be considered in 
+the molecular genetic workup of patients with a neuromuscular disorder 
+resembling SMARD1, especially if additional signs of upper motor neuron 
+involvement and distal arthrogryposis are present.
+
+DOI: 10.1212/NXG.0000000000000032
+PMCID: PMC4811389
+PMID: 27066569
+
+
+31. PLoS Genet. 2009 Jan;5(1):e1000353. doi: 10.1371/journal.pgen.1000353. Epub 2009 
+Jan 23.
+
+A systematic approach to mapping recessive disease genes in individuals from 
+outbred populations.
+
+Hildebrandt F(1), Heeringa SF, Rüschendorf F, Attanasio M, Nürnberg G, Becker C, 
+Seelow D, Huebner N, Chernin G, Vlangos CN, Zhou W, O'Toole JF, Hoskins BE, Wolf 
+MT, Hinkes BG, Chaib H, Ashraf S, Schoeb DS, Ovunc B, Allen SJ, Vega-Warner V, 
+Wise E, Harville HM, Lyons RH, Washburn J, Macdonald J, Nürnberg P, Otto EA.
+
+Author information:
+(1)Department of Pediatrics, University of Michigan School of Medicine, Ann 
+Arbor, Michigan, United States of America.
+
+The identification of recessive disease-causing genes by homozygosity mapping is 
+often restricted by lack of suitable consanguineous families. To overcome these 
+limitations, we apply homozygosity mapping to single affected individuals from 
+outbred populations. In 72 individuals of 54 kindred ascertained worldwide with 
+known homozygous mutations in 13 different recessive disease genes, we performed 
+total genome homozygosity mapping using 250,000 SNP arrays. Likelihood ratio 
+Z-scores (ZLR) were plotted across the genome to detect ZLR peaks that reflect 
+segments of homozygosity by descent, which may harbor the mutated gene. In 93% 
+of cases, the causative gene was positioned within a consistent ZLR peak of 
+homozygosity. The number of peaks reflected the degree of inbreeding. We 
+demonstrate that disease-causing homozygous mutations can be detected in single 
+cases from outbred populations within a single ZLR peak of homozygosity as short 
+as 2 Mb, containing an average of only 16 candidate genes. As many specialty 
+clinics have access to cohorts of individuals from outbred populations, and as 
+our approach will result in smaller genetic candidate regions, the new strategy 
+of homozygosity mapping in single outbred individuals will strongly accelerate 
+the discovery of novel recessive disease genes.
+
+DOI: 10.1371/journal.pgen.1000353
+PMCID: PMC2621355
+PMID: 19165332 [Indexed for MEDLINE]
+
+Conflict of interest statement: The authors have declared that no competing 
+interests exist.
+
+
+32. Am J Hum Genet. 2008 Feb;82(2):464-76. doi: 10.1016/j.ajhg.2007.11.006.
+
+Acetylcholine receptor pathway mutations explain various fetal akinesia 
+deformation sequence disorders.
+
+Michalk A(1), Stricker S, Becker J, Rupps R, Pantzar T, Miertus J, Botta G, 
+Naretto VG, Janetzki C, Yaqoob N, Ott CE, Seelow D, Wieczorek D, Fiebig B, Wirth 
+B, Hoopmann M, Walther M, Körber F, Blankenburg M, Mundlos S, Heller R, Hoffmann 
+K.
+
+Author information:
+(1)Institute for Medical Genetics, Charité University Medicine, Augustenburger 
+Platz 1, D-13353 Berlin, Germany.
+
+Impaired fetal movement causes malformations, summarized as fetal akinesia 
+deformation sequence (FADS), and is triggered by environmental and genetic 
+factors. Acetylcholine receptor (AChR) components are suspects because mutations 
+in the fetally expressed gamma subunit (CHRNG) of AChR were found in two FADS 
+disorders, lethal multiple pterygium syndrome (LMPS) and Escobar syndrome. Other 
+AChR subunits alpha1, beta1, and delta (CHRNA1, CHRNB1, CHRND) as well as 
+receptor-associated protein of the synapse (RAPSN) previously revealed missense 
+or compound nonsense-missense mutations in viable congenital myasthenic 
+syndrome; lethality of homozygous null mutations was predicted but never shown. 
+We provide the first report to our knowledge of homozygous nonsense mutations in 
+CHRNA1 and CHRND and show that they were lethal, whereas novel recessive 
+missense mutations in RAPSN caused a severe but not necessarily lethal 
+phenotype. To elucidate disease-associated malformations such as frequent 
+abortions, fetal edema, cystic hygroma, or cardiac defects, we studied Chrna1, 
+Chrnb1, Chrnd, Chrng, and Rapsn in mouse embryos and found expression in 
+skeletal muscles but also in early somite development. This indicates that early 
+developmental defects might be due to somite expression in addition to solely 
+muscle-specific effects. We conclude that complete or severe functional 
+disruption of fetal AChR causes lethal multiple pterygium syndrome whereas 
+milder alterations result in fetal hypokinesia with inborn contractures or a 
+myasthenic syndrome later in life.
+
+DOI: 10.1016/j.ajhg.2007.11.006
+PMCID: PMC2427255
+PMID: 18252226 [Indexed for MEDLINE]
+
+
+33. J Clin Invest. 2010 Mar;120(3):791-802. doi: 10.1172/JCI40076. Epub 2010 Feb 22.
+
+Individuals with mutations in XPNPEP3, which encodes a mitochondrial protein, 
+develop a nephronophthisis-like nephropathy.
+
+O'Toole JF(1), Liu Y, Davis EE, Westlake CJ, Attanasio M, Otto EA, Seelow D, 
+Nurnberg G, Becker C, Nuutinen M, Kärppä M, Ignatius J, Uusimaa J, Pakanen S, 
+Jaakkola E, van den Heuvel LP, Fehrenbach H, Wiggins R, Goyal M, Zhou W, Wolf 
+MT, Wise E, Helou J, Allen SJ, Murga-Zamalloa CA, Ashraf S, Chaki M, Heeringa S, 
+Chernin G, Hoskins BE, Chaib H, Gleeson J, Kusakabe T, Suzuki T, Isaac RE, 
+Quarmby LM, Tennant B, Fujioka H, Tuominen H, Hassinen I, Lohi H, van Houten JL, 
+Rotig A, Sayer JA, Rolinski B, Freisinger P, Madhavan SM, Herzer M, Madignier F, 
+Prokisch H, Nurnberg P, Jackson PK, Khanna H, Katsanis N, Hildebrandt F.
+
+Author information:
+(1)Department of Pediatrics, University of Michigan, Ann Arbor, 48109-5646, USA.
+
+Erratum in
+    J Clin Invest. 2010 Apr;120(4):1362. Jackson, Peter [corrected to Jackson, 
+Peter K].
+
+Comment in
+    J Clin Invest. 2010 Mar;120(3):660-3.
+
+The autosomal recessive kidney disease nephronophthisis (NPHP) constitutes the 
+most frequent genetic cause of terminal renal failure in the first 3 decades of 
+life. Ten causative genes (NPHP1-NPHP9 and NPHP11), whose products localize to 
+the primary cilia-centrosome complex, support the unifying concept that cystic 
+kidney diseases are "ciliopathies". Using genome-wide homozygosity mapping, we 
+report here what we believe to be a new locus (NPHP-like 1 [NPHPL1]) for an 
+NPHP-like nephropathy. In 2 families with an NPHP-like phenotype, we detected 
+homozygous frameshift and splice-site mutations, respectively, in the X-prolyl 
+aminopeptidase 3 (XPNPEP3) gene. In contrast to all known NPHP proteins, XPNPEP3 
+localizes to mitochondria of renal cells. However, in vivo analyses also 
+revealed a likely cilia-related function; suppression of zebrafish xpnpep3 
+phenocopied the developmental phenotypes of ciliopathy morphants, and this 
+effect was rescued by human XPNPEP3 that was devoid of a mitochondrial 
+localization signal. Consistent with a role for XPNPEP3 in ciliary function, 
+several ciliary cystogenic proteins were found to be XPNPEP3 substrates, for 
+which resistance to N-terminal proline cleavage resulted in attenuated protein 
+function in vivo in zebrafish. Our data highlight an emerging link between 
+mitochondria and ciliary dysfunction, and suggest that further understanding the 
+enzymatic activity and substrates of XPNPEP3 will illuminate novel cystogenic 
+pathways.
+
+DOI: 10.1172/JCI40076
+PMCID: PMC2827951
+PMID: 20179356 [Indexed for MEDLINE]
+
+
+34. Nat Genet. 2006 Dec;38(12):1397-405. doi: 10.1038/ng1918. Epub 2006 Nov 5.
+
+Positional cloning uncovers mutations in PLCE1 responsible for a nephrotic 
+syndrome variant that may be reversible.
+
+Hinkes B(1), Wiggins RC, Gbadegesin R, Vlangos CN, Seelow D, Nürnberg G, Garg P, 
+Verma R, Chaib H, Hoskins BE, Ashraf S, Becker C, Hennies HC, Goyal M, Wharram 
+BL, Schachter AD, Mudumana S, Drummond I, Kerjaschki D, Waldherr R, Dietrich A, 
+Ozaltin F, Bakkaloglu A, Cleper R, Basel-Vanagaite L, Pohl M, Griebel M, Tsygin 
+AN, Soylu A, Müller D, Sorli CS, Bunney TD, Katan M, Liu J, Attanasio M, O'toole 
+JF, Hasselbacher K, Mucha B, Otto EA, Airik R, Kispert A, Kelley GG, Smrcka AV, 
+Gudermann T, Holzman LB, Nürnberg P, Hildebrandt F.
+
+Author information:
+(1)Department of Pediatrics, University of Michigan, Ann Arbor, Michigan 48109, 
+USA.
+
+Comment in
+    Nat Genet. 2006 Dec;38(12):1360-1.
+
+Nephrotic syndrome, a malfunction of the kidney glomerular filter, leads to 
+proteinuria, edema and, in steroid-resistant nephrotic syndrome, end-stage 
+kidney disease. Using positional cloning, we identified mutations in the 
+phospholipase C epsilon gene (PLCE1) as causing early-onset nephrotic syndrome 
+with end-stage kidney disease. Kidney histology of affected individuals showed 
+diffuse mesangial sclerosis (DMS). Using immunofluorescence, we found 
+PLCepsilon1 expression in developing and mature glomerular podocytes and showed 
+that DMS represents an arrest of normal glomerular development. We identified IQ 
+motif-containing GTPase-activating protein 1 as a new interaction partner of 
+PLCepsilon1. Two siblings with a missense mutation in an exon encoding the 
+PLCepsilon1 catalytic domain showed histology characteristic of focal segmental 
+glomerulosclerosis. Notably, two other affected individuals responded to 
+therapy, making this the first report of a molecular cause of nephrotic syndrome 
+that may resolve after therapy. These findings, together with the zebrafish 
+model of human nephrotic syndrome generated by plce1 knockdown, open new inroads 
+into pathophysiology and treatment mechanisms of nephrotic syndrome.
+
+DOI: 10.1038/ng1918
+PMID: 17086182 [Indexed for MEDLINE]
+
+
+35. Am J Hum Genet. 2011 Jul 15;89(1):15-27. doi: 10.1016/j.ajhg.2011.05.021.
+
+Faulty initiation of proteoglycan synthesis causes cardiac and joint defects.
+
+Baasanjav S(1), Al-Gazali L, Hashiguchi T, Mizumoto S, Fischer B, Horn D, Seelow 
+D, Ali BR, Aziz SA, Langer R, Saleh AA, Becker C, Nürnberg G, Cantagrel V, 
+Gleeson JG, Gomez D, Michel JB, Stricker S, Lindner TH, Nürnberg P, Sugahara K, 
+Mundlos S, Hoffmann K.
+
+Author information:
+(1)Institute of Medical Genetics, Charité University Medicine, Berlin, Germany.
+
+Proteoglycans are a major component of extracellular matrix and contribute to 
+normal embryonic and postnatal development by ensuring tissue stability and 
+signaling functions. We studied five patients with recessive joint dislocations 
+and congenital heart defects, including bicuspid aortic valve (BAV) and aortic 
+root dilatation. We identified linkage to chromosome 11 and detected a mutation 
+(c.830G>A, p.Arg277Gln) in B3GAT3, the gene coding for glucuronosyltransferase-I 
+(GlcAT-I). The enzyme catalyzes an initial step in the synthesis of 
+glycosaminoglycan side chains of proteoglycans. Patients' cells as well as 
+recombinant mutant protein showed reduced glucuronyltransferase activity. 
+Patient fibroblasts demonstrated decreased levels of dermatan sulfate, 
+chondroitin sulfate, and heparan sulfate proteoglycans, indicating that the 
+defect in linker synthesis affected all three lines of O-glycanated 
+proteoglycans. Further studies demonstrated that GlcAT-I resides in the cis and 
+cis-medial Golgi apparatus and is expressed in the affected tissues, i.e., 
+heart, aorta, and bone. The study shows that reduced GlcAT-I activity impairs 
+skeletal as well as heart development and results in variable combinations of 
+heart malformations, including mitral valve prolapse, ventricular septal defect, 
+and bicuspid aortic valve. The described family constitutes a syndrome 
+characterized by heart defects and joint dislocations resulting from altered 
+initiation of proteoglycan synthesis (Larsen-like syndrome, B3GAT3 type).
+
+Copyright © 2011 The American Society of Human Genetics. Published by Elsevier 
+Inc. All rights reserved.
+
+DOI: 10.1016/j.ajhg.2011.05.021
+PMCID: PMC3135799
+PMID: 21763480 [Indexed for MEDLINE]
+
+
+36. Circulation. 2003 May 20;107(19):2467-74. doi: 
+10.1161/01.CIR.0000066694.21510.E2. Epub 2003 May 12.
+
+Genome-wide array analysis of normal and malformed human hearts.
+
+Kaynak B(1), von Heydebreck A, Mebus S, Seelow D, Hennig S, Vogel J, Sperling 
+HP, Pregla R, Alexi-Meskishvili V, Hetzer R, Lange PE, Vingron M, Lehrach H, 
+Sperling S.
+
+Author information:
+(1)Department of Vertebrate Genetics, Max-Planck-Institute for Molecular 
+Genetics, Berlin, Germany.
+
+BACKGROUND: We present the first genome-wide cDNA array analysis of human 
+congenitally malformed hearts and attempted to partially elucidate these complex 
+phenotypes. Most congenital heart defects, which account for the largest number 
+of birth defects in humans, represent complex genetic disorders. As a 
+consequence of the malformation, abnormal hemodynamic features occur and cause 
+an adaptation process of the heart.
+METHODS AND RESULTS: The statistical analysis of our data suggests distinct gene 
+expression profiles associated with tetralogy of Fallot, ventricular septal 
+defect, and right ventricular hypertrophy. Applying correspondence analysis, we 
+could associate specific gene functions to specific phenotypes. Furthermore, our 
+study design allows the suggestion that alterations associated with primary 
+genetic abnormalities can be distinguished from those associated with the 
+adaptive response of the heart to the malformation (right ventricular pressure 
+overload hypertrophy). We provide evidence for the molecular transition of the 
+hypertrophic right ventricle to normal left ventricular characteristics. 
+Furthermore, we present data on chamber-specific gene expression.
+CONCLUSIONS: Our findings propose that array analysis of malformed human hearts 
+opens a new window to understand the complex genetic network of cardiac 
+development and adaptation. For detailed access, see the online-only Data 
+Supplement.
+
+DOI: 10.1161/01.CIR.0000066694.21510.E2
+PMID: 12742993 [Indexed for MEDLINE]
+
+
+37. Am J Hum Genet. 2007 Jun;80(6):1162-70. doi: 10.1086/518047. Epub 2007 Apr 18.
+
+RAB23 mutations in Carpenter syndrome imply an unexpected role for hedgehog 
+signaling in cranial-suture development and obesity.
+
+Jenkins D(1), Seelow D, Jehee FS, Perlyn CA, Alonso LG, Bueno DF, Donnai D, 
+Josifova D, Mathijssen IM, Morton JE, Orstavik KH, Sweeney E, Wall SA, Marsh JL, 
+Nurnberg P, Passos-Bueno MR, Wilkie AO.
+
+Author information:
+(1)Weatherall Institute of Molecular Medicine, University of Oxford, John 
+Radcliffe Hospital, Oxford, UK.
+
+Erratum in
+    Am J Hum Genet. 2007 Nov;81(5):1114. Josifiova, Dragana [corrected to 
+Josifova, Dragana].
+
+Carpenter syndrome is a pleiotropic disorder with autosomal recessive 
+inheritance, the cardinal features of which include craniosynostosis, 
+polysyndactyly, obesity, and cardiac defects. Using homozygosity mapping, we 
+found linkage to chromosome 6p12.1-q12 and, in 15 independent families, 
+identified five different mutations (four truncating and one missense) in RAB23, 
+which encodes a member of the RAB guanosine triphosphatase (GTPase) family of 
+vesicle transport proteins and acts as a negative regulator of hedgehog (HH) 
+signaling. In 10 patients, the disease was caused by homozygosity for the same 
+nonsense mutation, L145X, that resides on a common haplotype, indicative of a 
+founder effect in patients of northern European descent. Surprisingly, nonsense 
+mutations of Rab23 in open brain mice cause recessive embryonic lethality with 
+neural-tube defects, suggesting a species difference in the requirement for 
+RAB23 during early development. The discovery of RAB23 mutations in patients 
+with Carpenter syndrome implicates HH signaling in cranial-suture biogenesis--an 
+unexpected finding, given that craniosynostosis is not usually associated with 
+mutations of other HH-pathway components--and provides a new molecular target 
+for studies of obesity.
+
+DOI: 10.1086/518047
+PMCID: PMC1867103
+PMID: 17503333 [Indexed for MEDLINE]
+
+
+38. J Med Genet. 2013 Aug;50(8):529-33. doi: 10.1136/jmedgenet-2012-101497. Epub 
+2013 May 31.
+
+CNVinspector: a web-based tool for the interactive evaluation of copy number 
+variations in single patients and in cohorts.
+
+Knierim E(1), Schwarz JM, Schuelke M, Seelow D.
+
+Author information:
+(1)NeuroCure Clinical Research Center, Berlin, Germany.
+
+OBJECTIVES: Many genetic disorders are caused by copy number variations (CNVs) 
+in the human genome. However, the large number of benign CNV polymorphisms makes 
+it difficult to delineate causative variants for a certain disease phenotype. 
+Hence, we set out to create software that accumulates and visualises 
+locus-specific knowledge and enables clinicians to study their own CNVs in the 
+context of known polymorphisms and disease variants.
+METHODS: CNV data from healthy cohorts (Database of Genomic Variants) and from 
+disease-related databases (DECIPHER) were integrated into a joint resource. Data 
+are presented in an interactive web-based application that allows inspection, 
+evaluation and filtering of CNVs in single individuals or in entire cohorts.
+RESULTS: CNVinspector provides simple interfaces to upload CNV data, compare 
+them with own or published control data and visualise the results in graphical 
+interfaces. Beyond choosing control data from different public studies, 
+platforms and methods, dedicated filter options allow the detection of CNVs that 
+are either enriched in patients or depleted in controls. Alternatively, a search 
+can be restricted to those CNVs that appear in individuals of similar clinical 
+phenotype. For each gene of interest within a CNV, we provide a link to NCBI, 
+ENSEMBL and the GeneDistiller search engine to browse for potential 
+disease-associated genes.
+CONCLUSIONS: With its user-friendly handling, the integration of control data 
+and the filtering options, CNVinspector will facilitate the daily work of 
+clinical geneticists and accelerate the delineation of new syndromes and gene 
+functions. CNVinspector is freely accessible under http://www.cnvinspector.org.
+
+DOI: 10.1136/jmedgenet-2012-101497
+PMID: 23729504 [Indexed for MEDLINE]
+
+
+39. Matrix Biol. 2013 Oct-Nov;32(7-8):387-92. doi: 10.1016/j.matbio.2013.05.001. 
+Epub 2013 May 9.
+
+Identification of a Ninein (NIN) mutation in a family with 
+spondyloepimetaphyseal dysplasia with joint laxity (leptodactylic type)-like 
+phenotype.
+
+Grosch M(1), Grüner B, Spranger S, Stütz AM, Rausch T, Korbel JO, Seelow D, 
+Nürnberg P, Sticht H, Lausch E, Zabel B, Winterpacht A, Tagariello A.
+
+Author information:
+(1)Institute of Human Genetics, University Hospital Erlangen, 
+Friedrich-Alexander University Erlangen-Nürnberg, Erlangen, Germany.
+
+Spondyloepimetaphyseal dysplasia with joint laxity-leptodactylic type (SEMDJL2) 
+is an autosomal dominant skeletal dysplasia which is characterized by midface 
+hypoplasia, short stature, joint laxity with dislocations, genua valga, 
+progressive scoliosis, and slender fingers. Recently, heterozygous missense 
+mutations in KIF22, a gene which encodes a member of the kinesin-like protein 
+family, have been identified in sporadic as well as familial cases of SEMDJL2. 
+In the present study homozygosity mapping and whole-exome sequencing were 
+combined to analyze a consanguineous family with a phenotype resembling SEMDJL2. 
+We identified homozygous missense mutations in the two nearby genes NIN (Ninein) 
+and POLE2 (DNA polymerase epsilon subunit B) which segregate with the disease in 
+the family and were not present in 500 healthy control individuals and in the 
+1094 control individuals contained within the 1000-genomes database. We present 
+several lines of evidence that mutant Ninein is most likely causative for the 
+SEMDJL2-like phenotype. The centrosomal protein NIN shows a functional 
+relationship with KIF22 and other proteins associated with chromosome 
+congression/movement, centrosomal function, and ciliogenesis, which have been 
+associated with skeletal dysplasias. Moreover, compound heterozygous missense 
+mutations at more N-terminal positions of Ninein have very recently been 
+identified in a family with microcephalic primordial dwarfism. Together with the 
+present report this strongly supports a fundamental role of Ninein in skeletal 
+development.
+
+Copyright © 2013 International Society of Matrix Biology. Published by Elsevier 
+B.V. All rights reserved.
+
+DOI: 10.1016/j.matbio.2013.05.001
+PMID: 23665482 [Indexed for MEDLINE]
+
+
+40. BMC Genomics. 2014;15 Suppl 4(Suppl 4):S8. doi: 10.1186/1471-2164-15-S4-S8. Epub 
+2014 May 20.
+
+GrabBlur--a framework to facilitate the secure exchange of whole-exome and 
+-genome SNV data using VCF files.
+
+Stade B, Seelow D, Thomsen I, Krawczak M, Franke A.
+
+BACKGROUND: Next Generation Sequencing (NGS) of whole exomes or genomes is 
+increasingly being used in human genetic research and diagnostics. Sharing NGS 
+data with third parties can help physicians and researchers to identify 
+causative or predisposing mutations for a specific sample of interest more 
+efficiently. In many cases, however, the exchange of such data may collide with 
+data privacy regulations. GrabBlur is a newly developed tool to aggregate and 
+share NGS-derived single nucleotide variant (SNV) data in a public database, 
+keeping individual samples unidentifiable. In contrast to other currently 
+existing SNV databases, GrabBlur includes phenotypic information and contact 
+details of the submitter of a given database entry. By means of GrabBlur human 
+geneticists can securely and easily share SNV data from resequencing projects. 
+GrabBlur can ease the interpretation of SNV data by offering basic annotations, 
+genotype frequencies and in particular phenotypic information - given that this 
+information was shared - for the SNV of interest.
+TOOL DESCRIPTION: GrabBlur facilitates the combination of phenotypic and NGS 
+data (VCF files) via a local interface or command line operations. Data 
+submissions may include HPO (Human Phenotype Ontology) terms, other trait 
+descriptions, NGS technology information and the identity of the submitter. Most 
+of this information is optional and its provision at the discretion of the 
+submitter. Upon initial intake, GrabBlur merges and aggregates all 
+sample-specific data. If a certain SNV is rare, the sample-specific information 
+is replaced with the submitter identity. Generally, all data in GrabBlur are 
+highly aggregated so that they can be shared with others while ensuring maximum 
+privacy. Thus, it is impossible to reconstruct complete exomes or genomes from 
+the database or to re-identify single individuals. After the individual 
+information has been sufficiently "blurred", the data can be uploaded into a 
+publicly accessible domain where aggregated genotypes are provided alongside 
+phenotypic information. A web interface allows querying the database and the 
+extraction of gene-wise SNV information. If an interesting SNV is found, the 
+interrogator can get in contact with the submitter to exchange further 
+information on the carrier and clarify, for example, whether the latter's 
+phenotype matches with phenotype of their own patient.
+
+DOI: 10.1186/1471-2164-15-S4-S8
+PMCID: PMC4083413
+PMID: 25055742 [Indexed for MEDLINE]
+
+
+41. Am J Hum Genet. 2006 Nov;79(5):949-57. doi: 10.1086/508617. Epub 2006 Sep 19.
+
+Mutations in the tight-junction gene claudin 19 (CLDN19) are associated with 
+renal magnesium wasting, renal failure, and severe ocular involvement.
+
+Konrad M(1), Schaller A, Seelow D, Pandey AV, Waldegger S, Lesslauer A, Vitzthum 
+H, Suzuki Y, Luk JM, Becker C, Schlingmann KP, Schmid M, Rodriguez-Soriano J, 
+Ariceta G, Cano F, Enriquez R, Juppner H, Bakkaloglu SA, Hediger MA, Gallati S, 
+Neuhauss SC, Nurnberg P, Weber S.
+
+Author information:
+(1)University Children's Hospital, Inselspital, Bern, Switzerland. 
+martin.konrad@insel.ch
+
+Claudins are major components of tight junctions and contribute to the 
+epithelial-barrier function by restricting free diffusion of solutes through the 
+paracellular pathway. We have mapped a new locus for recessive renal magnesium 
+loss on chromosome 1p34.2 and have identified mutations in CLDN19, a member of 
+the claudin multigene family, in patients affected by hypomagnesemia, renal 
+failure, and severe ocular abnormalities. CLDN19 encodes the tight-junction 
+protein claudin-19, and we demonstrate high expression of CLDN19 in renal 
+tubules and the retina. The identified mutations interfere severely with either 
+cell-membrane trafficking or the assembly of the claudin-19 protein. The 
+identification of CLDN19 mutations in patients with chronic renal failure and 
+severe visual impairment supports the fundamental role of claudin-19 for normal 
+renal tubular function and undisturbed organization and development of the 
+retina.
+
+DOI: 10.1086/508617
+PMCID: PMC1698561
+PMID: 17033971 [Indexed for MEDLINE]
+
+
+42. Am J Hum Genet. 2013 May 2;92(5):681-95. doi: 10.1016/j.ajhg.2013.03.021. Epub 
+2013 Apr 25.
+
+ZC4H2 mutations are associated with arthrogryposis multiplex congenita and 
+intellectual disability through impairment of central and peripheral synaptic 
+plasticity.
+
+Hirata H(1), Nanda I, van Riesen A, McMichael G, Hu H, Hambrock M, Papon MA, 
+Fischer U, Marouillat S, Ding C, Alirol S, Bienek M, Preisler-Adams S, Grimme A, 
+Seelow D, Webster R, Haan E, MacLennan A, Stenzel W, Yap TY, Gardner A, Nguyen 
+LS, Shaw M, Lebrun N, Haas SA, Kress W, Haaf T, Schellenberger E, Chelly J, Viot 
+G, Shaffer LG, Rosenfeld JA, Kramer N, Falk R, El-Khechen D, Escobar LF, 
+Hennekam R, Wieacker P, Hübner C, Ropers HH, Gecz J, Schuelke M, Laumonnier F, 
+Kalscheuer VM.
+
+Author information:
+(1)Center for Frontier Research, National Institute of Genetics, Precursory 
+Research for Embryonic Science and Technology, Japan Science and Technology 
+Agency, Mishima 411-8540, Japan.
+
+Arthrogryposis multiplex congenita (AMC) is caused by heterogeneous pathologies 
+leading to multiple antenatal joint contractures through fetal akinesia. 
+Understanding the pathophysiology of this disorder is important for clinical 
+care of the affected individuals and genetic counseling of the families. We thus 
+aimed to establish the genetic basis of an AMC subtype that is associated with 
+multiple dysmorphic features and intellectual disability (ID). We used haplotype 
+analysis, next-generation sequencing, array comparative genomic hybridization, 
+and chromosome breakpoint mapping to identify the pathogenic mutations in 
+families and simplex cases. Suspected disease variants were verified by 
+cosegregation analysis. We identified disease-causing mutations in the 
+zinc-finger gene ZC4H2 in four families affected by X-linked AMC plus ID and one 
+family affected by cerebral palsy. Several heterozygous females were also 
+affected, but to a lesser degree. Furthermore, we found two ZC4H2 deletions and 
+one rearrangement in two female and one male unrelated simplex cases, 
+respectively. In mouse primary hippocampal neurons, transiently produced ZC4H2 
+localized to the postsynaptic compartment of excitatory synapses, and the 
+altered protein influenced dendritic spine density. In zebrafish, 
+antisense-morpholino-mediated zc4h2 knockdown caused abnormal swimming and 
+impaired α-motoneuron development. All missense mutations identified herein 
+failed to rescue the swimming defect of zebrafish morphants. We conclude that 
+ZC4H2 point mutations, rearrangements, and small deletions cause a clinically 
+variable broad-spectrum neurodevelopmental disorder of the central and 
+peripheral nervous systems in both familial and simplex cases of both sexes. Our 
+results highlight the importance of ZC4H2 for genetic testing of individuals 
+presenting with ID plus muscle weakness and minor or major forms of AMC.
+
+Copyright © 2013 The American Society of Human Genetics. Published by Elsevier 
+Inc. All rights reserved.
+
+DOI: 10.1016/j.ajhg.2013.03.021
+PMCID: PMC3644645
+PMID: 23623388 [Indexed for MEDLINE]
+
+
+43. Hum Genet. 2002 Oct;111(4-5):323-30. doi: 10.1007/s00439-002-0805-4. Epub 2002 
+Aug 29.
+
+Periodic catatonia: confirmation of linkage to chromosome 15 and further 
+evidence for genetic heterogeneity.
+
+Stöber G(1), Seelow D, Rüschendorf F, Ekici A, Beckmann H, Reis A.
+
+Author information:
+(1)Department of Psychiatry and Psychotherapy, University of Würzburg, 
+Füchsleinstrasse 15, 97080 Würzburg, Germany. stoeber_g@klinik.uni-wuerzburg.de
+
+We earlier reported significant evidence for linkage on chromosome 15q15 in 
+periodic catatonia, a sub-phenotype of schizophrenic psychoses. The disorder is 
+characterized by qualitative hyperkinetic and akinetic psychomotor disturbances 
+through acute psychotic episodes and debilitating symptoms in the long term, 
+with psychomotor weakness, grimacing facial movements and apathy. Here, we 
+confirm mapping of a major gene locus on chromosome 15q15 in a second genome 
+scan in a new set of four multiplex families. Non-parametric multipoint linkage 
+analyses identified a broad region with a maximum peak of Z(all) =3.91 ( 
+P=0.006) and Z(lr) =3.04 at D15S1234 ( P=0.001), satisfying conventional 
+criteria for confirmed linkage. Parametric affected-only analyses under an 
+autosomal dominant model gave a maximum HLOD score of 1.65 (D15S1234) with an 
+estimated 47% of families being linked. Analysis of individual families showed 
+that one large family showed linkage, whereas two others could be clearly 
+excluded, confirming genetic heterogeneity. No other locus reached suggestive 
+levels of significance. Haplotype analysis on chromosome 15 in this and 
+previously linked families placed the susceptibility region to a 11-cM interval 
+between marker D15S1042 and D15S659. Periodic catatonia is the first 
+sub-phenotype of schizophrenic psychoses with confirmed linkage despite the 
+existence of considerable genetic heterogeneity.
+
+DOI: 10.1007/s00439-002-0805-4
+PMID: 12384773 [Indexed for MEDLINE]
+
+
+44. Mol Cell Probes. 2010 Dec;24(6):357-63. doi: 10.1016/j.mcp.2010.07.007. Epub 
+2010 Aug 4.
+
+Generalized progressive retinal atrophy in the Irish Glen of Imaal Terrier is 
+associated with a deletion in the ADAM9 gene.
+
+Kropatsch R(1), Petrasch-Parwez E, Seelow D, Schlichting A, Gerding WM, Akkad 
+DA, Epplen JT, Dekomien G.
+
+Author information:
+(1)Department of Human Genetics, Ruhr University, Universitätsstrasse 150, 44801 
+Bochum, Germany. regina.kropatsch@rub.de
+
+Generalized progressive retinal atrophy (gPRA) belongs to a group of inherited 
+retinal diseases which are associated with gradual vision loss in various dog 
+breeds, including the Irish Glen of Imaal Terrier (GIT). By genome-wide 
+homozygosity mapping using SNP arrays and fine mapping of candidate regions, we 
+assigned the gPRA candidate locus in this breed to canine chromosome 16. The 
+respective region is syntenic with human chromosome 8 comprising the ADAM 
+metallopeptidase domain 9 (ADAM9) gene. ADAM9 represents a strong candidate gene 
+for canine retinal disease because mutations have previously been shown to cause 
+autosomal recessively inherited human cone-rod dystrophy, a retinal disorder 
+affecting photoreceptor function. Sequence analysis of ADAM9 in affected and 
+carrier GITs revealed a deletion of exons 15 and 16 which alters the reading 
+frame leading to a premature stop codon. This mutation was absent from 34 other 
+dog breeds. A variable and, at times, very late onset of gPRA was confirmed in 
+GITs by a relatively mild retinal degeneration at an advanced age. Hence, the 
+identification of the genetic defect underlying gPRA in the GIT represents a 
+suitable model for cone-rod dystrophy of humans, with superior potential to 
+elucidate functional consequences of the recently described null mutations in 
+the human ADAM9 gene.
+
+Copyright © 2010 Elsevier Ltd. All rights reserved.
+
+DOI: 10.1016/j.mcp.2010.07.007
+PMID: 20691256 [Indexed for MEDLINE]
+
+
+45. Mitochondrion. 2015 Jan;20:1-6. doi: 10.1016/j.mito.2014.10.007. Epub 2014 Nov 
+4.
+
+Clinical application of whole exome sequencing reveals a novel compound 
+heterozygous TK2-mutation in two brothers with rapidly progressive combined 
+muscle-brain atrophy, axonal neuropathy, and status epilepticus.
+
+Knierim E(1), Seelow D(1), Gill E(2), von Moers A(3), Schuelke M(4).
+
+Author information:
+(1)NeuroCure Clinical Research Center (NCRC), Charité-Universitätsmedizin 
+Berlin, Germany; Department of Neuropediatrics, Charité-Universitätsmedizin 
+Berlin, Germany.
+(2)NeuroCure Clinical Research Center (NCRC), Charité-Universitätsmedizin 
+Berlin, Germany.
+(3)Children's Hospital, DRK-Kliniken Westend, Berlin, Germany.
+(4)NeuroCure Clinical Research Center (NCRC), Charité-Universitätsmedizin 
+Berlin, Germany; Department of Neuropediatrics, Charité-Universitätsmedizin 
+Berlin, Germany. Electronic address: markus.schuelke@charite.de.
+
+Mutations in several genes cause mtDNA depletion associated with 
+encephalomyopathy. Due to phenotypic overlap, it is difficult to conclude from 
+clinical phenotype to genetic defect. Here we report on two brothers who 
+presented with rapid fatty muscle degeneration, axonal neuropathy, rapid loss of 
+supratentorial white and gray matter, and status epilepticus. Whole exome 
+sequencing coupled with 'identity-by-state' (IBS) analysis revealed a compound 
+heterozygous missense mutation (p.M117V, p.A139V) in the thymidine kinase 2 
+(TK2) gene that segregated with the phenotype. Both mutations were located in 
+the thymidine binding pouch of the enzyme. Residual mtDNA copy numbers in muscle 
+were 8.5%, but normal in blood and fibroblasts. Our results broaden the clinical 
+phenotype spectrum of TK2 mutations and promote WES as a useful method in the 
+clinical setting for mutation detection, even in untypical cases. If two or more 
+affected siblings from a non-consanguineous family can be investigated, 
+IBS-analysis provides a powerful tool to narrow the number of disease 
+candidates, similarly to autozygosity mapping in consanguineous families.
+
+Copyright © 2014 Mitochondria Research Society. Published by Elsevier B.V. All 
+rights reserved.
+
+DOI: 10.1016/j.mito.2014.10.007
+PMID: 25446393 [Indexed for MEDLINE]
+
+
+46. PLoS Genet. 2010 Mar 12;6(3):e1000874. doi: 10.1371/journal.pgen.1000874.
+
+Fatal cardiac arrhythmia and long-QT syndrome in a new form of congenital 
+generalized lipodystrophy with muscle rippling (CGL4) due to PTRF-CAVIN 
+mutations.
+
+Rajab A(1), Straub V, McCann LJ, Seelow D, Varon R, Barresi R, Schulze A, Lucke 
+B, Lützkendorf S, Karbasiyan M, Bachmann S, Spuler S, Schuelke M.
+
+Author information:
+(1)Genetics Unit, Ministry of Health, Directorate General of Health Affairs, 
+Royal Hospital, Muscat, Oman.
+
+We investigated eight families with a novel subtype of congenital generalized 
+lipodystrophy (CGL4) of whom five members had died from sudden cardiac death 
+during their teenage years. ECG studies revealed features of long-QT syndrome, 
+bradycardia, as well as supraventricular and ventricular tachycardias. Further 
+symptoms comprised myopathy with muscle rippling, skeletal as well as 
+smooth-muscle hypertrophy, leading to impaired gastrointestinal motility and 
+hypertrophic pyloric stenosis in some children. Additionally, we found impaired 
+bone formation with osteopenia, osteoporosis, and atlanto-axial instability. 
+Homozygosity mapping located the gene within 2 Mbp on chromosome 17. 
+Prioritization of 74 candidate genes with GeneDistiller for high expression in 
+muscle and adipocytes suggested PTRF-CAVIN (Polymerase I and transcript release 
+factor/Cavin) as the most probable candidate leading to the detection of 
+homozygous mutations (c.160delG, c.362dupT). PTRF-CAVIN is essential for 
+caveolae biogenesis. These cholesterol-rich plasmalemmal vesicles are involved 
+in signal-transduction and vesicular trafficking and reside primarily on 
+adipocytes, myocytes, and osteoblasts. Absence of PTRF-CAVIN did not influence 
+abundance of its binding partner caveolin-1 and caveolin-3. In patient 
+fibroblasts, however, caveolin-1 failed to localize toward the cell surface and 
+electron microscopy revealed reduction of caveolae to less than 3%. Transfection 
+of full-length PTRF-CAVIN reestablished the presence of caveolae. The loss of 
+caveolae was confirmed by Atomic Force Microscopy (AFM) in combination with 
+fluorescent imaging. PTRF-CAVIN deficiency thus presents the phenotypic spectrum 
+caused by a quintessential lack of functional caveolae.
+
+DOI: 10.1371/journal.pgen.1000874
+PMCID: PMC2837386
+PMID: 20300641 [Indexed for MEDLINE]
+
+Conflict of interest statement: The authors have declared that no competing 
+interests exist.
+
+
+47. BMC Bioinformatics. 2004 Oct 28;5:168. doi: 10.1186/1471-2105-5-168.
+
+d-matrix - database exploration, visualization and analysis.
+
+Seelow D(1), Galli R, Mebus S, Sperling HP, Lehrach H, Sperling S.
+
+Author information:
+(1)Vertebrate Genomics, Max-Planck-Institute for Molecular Genetics, Ihnestr, 
+73, 14195 Berlin, Germany. dominik.seelow@web.de <dominik.seelow@web.de>
+
+BACKGROUND: Motivated by a biomedical database set up by our group, we aimed to 
+develop a generic database front-end with embedded knowledge discovery and 
+analysis features. A major focus was the human-oriented representation of the 
+data and the enabling of a closed circle of data query, exploration, 
+visualization and analysis.
+RESULTS: We introduce a non-task-specific database front-end with a new 
+visualization strategy and built-in analysis features, so called d-matrix. 
+d-matrix is web-based and compatible with a broad range of database management 
+systems. The graphical outcome consists of boxes whose colors show the quality 
+of the underlying information and, as the name suggests, they are arranged in 
+matrices. The granularity of the data display allows consequent drill-down. 
+Furthermore, d-matrix offers context-sensitive categorization, hierarchical 
+sorting and statistical analysis.
+CONCLUSIONS: d-matrix enables data mining, with a high level of interactivity 
+between humans and computer as a primary factor. We believe that the presented 
+strategy can be very effective in general and especially useful for the 
+integration of distinct data types such as phenotypical and molecular data.
+
+DOI: 10.1186/1471-2105-5-168
+PMCID: PMC533865
+PMID: 15511298 [Indexed for MEDLINE]
+
+
+48. BMC Genomics. 2016 Jul 20;17(1):502. doi: 10.1186/s12864-016-2818-8.
+
+Erratum to: A systematic, large-scale comparison of transcription factor binding 
+site models.
+
+Hombach D(1)(2), Schwarz JM(1)(2), Robinson PN(3), Schuelke M(1)(2), Seelow 
+D(4)(5)(6).
+
+Author information:
+(1)Department of Neuropaediatrics, Charité-Universitätsmedizin Berlin, Berlin, 
+Germany.
+(2)NeuroCure Clinical Research Center, Charité - Universitätsmedizin Berlin, 
+Berlin, Germany.
+(3)Institute for Medical Genetics and Human Genetics, 
+Charité-Universitätsmedizin Berlin, Berlin, Germany.
+(4)Department of Neuropaediatrics, Charité-Universitätsmedizin Berlin, Berlin, 
+Germany. dominik.seelow@charite.de.
+(5)NeuroCure Clinical Research Center, Charité - Universitätsmedizin Berlin, 
+Berlin, Germany. dominik.seelow@charite.de.
+(6)Berliner Institut für Gesundheitsforschung/Berlin Institute of Health, 
+Berlin, Germany. dominik.seelow@charite.de.
+
+Erratum for
+    BMC Genomics. 2016 May 21;17 :388.
+
+DOI: 10.1186/s12864-016-2818-8
+PMCID: PMC4952225
+PMID: 27440159
